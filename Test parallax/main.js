@@ -1,3 +1,5 @@
+//Code Javascript pour faire le Parallax
+
 var parallax = document.getElementById("parallax")
 
 window.addEventListener("scroll", function(){
