@@ -27,10 +27,6 @@ body{
     width: 400vw;
     transform: rotate(90deg) translateY(-100vh); /*retourner la page de 90°*/
     transform-origin: top left; /*tourner par rapport à en haut à gauche*/
-
-
-
-   
 }
 
 .container{
