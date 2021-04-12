@@ -7,7 +7,6 @@ body{
     overflow: hidden;
 
     height: 100vh;
-    background: url("img/ciel.png") right;
     background-size: 100% 100%;
     background-attachment: scroll;
 
@@ -17,8 +16,8 @@ body{
     width: 100vw;
     height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
     font-size: 100px;
 }
 
@@ -36,53 +35,22 @@ body{
     height: 100vw;
     transform: rotate(-90deg) translateX(-100vh);
     transform-origin: top left;
-    overflow-x: hidden; /*Suprimer scroll horizontale*/
-    /*pour IE et mozilla*/ 
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+    /*Suprimer scroll horizontale :*/
+        overflow-x: hidden; 
+        /*pour IE et mozilla*/ 
+        -ms-overflow-style: none;
+        scrollbar-width: none; /*Retirer la barre du scroll horizontal*/
 }
 
 ::-webkit-scrollbar{ /*pour chrome et safari permet de suprimer la barre de scroll*/
     display: none;
 }
 
-/* .one{
-    background: #b1f8f2;
-}
-
-.two{
-    background: #fffc99;
-}
-
-.three{
-    background: #EAFDCF;
-}
-
-.four{
-    background: #8e8358;
-} */
-
-
-/*Montagne*/
-.one{
-    background-image: url("img/montagne.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 100vw;
-    position: relative;
-    top: 200px;
-}
-
-.two{
-    background-image: url("img/montagne\ 2.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 100vw;
-    position: relative;
-    top: 200px;
-}
-
 .homer{
-    z-index: 3;
-    width: 10vw;
+    position: relative;
+    top: 30vh;
+    left: 30vw;
+    bottom: 0;
+    z-index: 10;
+    width: 200px;
 }
