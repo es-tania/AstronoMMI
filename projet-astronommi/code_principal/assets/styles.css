@@ -1,0 +1,46 @@
+/*Parallax étoile*/
+
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.planète{
+    position: relative;
+    border: red solid;
+    margin: 0;
+    width: 20vw;
+}
+
+/*Page*/
+
+* {
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.étoile{
+    z-index: -10;
+}
+
+/* header {
+    background-image: url(image/galaxie.jpg);
+    background-attachment: fixed;
+} */
+
+/*Curseur*/
+
+*{
+    cursor: url(image/curseur.png), auto;
+}
+
+
