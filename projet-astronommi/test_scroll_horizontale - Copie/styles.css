@@ -1,0 +1,88 @@
+/*Faire un scroll horizontal :*/
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    overflow: hidden;
+
+    height: 100vh;
+    background: url("img/ciel.png") right;
+    background-size: 100% 100%;
+    background-attachment: scroll;
+
+}
+
+.slide{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+}
+
+.blocHorizontal{
+    display: flex;
+    /* flex-direction: row; mettre des ranger */
+    /* width: 400vw;  Parce que que 4 slide */
+    width: 200vw; /*Parce que 2 slide*/
+    transform: rotate(90deg) translateY(-100vh); /*retourner la page de 90°*/
+    transform-origin: top left; /*tourner par rapport à en haut à gauche*/
+}
+
+.container{
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-x: hidden; /*Suprimer scroll horizontale*/
+    /*pour IE et mozilla*/ 
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+::-webkit-scrollbar{ /*pour chrome et safari permet de suprimer la barre de scroll*/
+    display: none;
+}
+
+/* .one{
+    background: #b1f8f2;
+}
+
+.two{
+    background: #fffc99;
+}
+
+.three{
+    background: #EAFDCF;
+}
+
+.four{
+    background: #8e8358;
+} */
+
+
+/*Montagne*/
+.one{
+    background-image: url("img/montagne.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100vw;
+    position: relative;
+    top: 200px;
+}
+
+.two{
+    background-image: url("img/montagne\ 2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100vw;
+    position: relative;
+    top: 200px;
+}
+
+.homer{
+    z-index: 3;
+    width: 10vw;
+}

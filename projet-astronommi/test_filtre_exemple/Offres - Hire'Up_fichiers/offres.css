@@ -1,0 +1,250 @@
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: rgb(11, 11, 11);
+}
+
+.logo {
+    height:64px;
+    transition: all 0.2s ease-in;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+nav {
+    position: fixed;
+    background-color: rgba(11, 11, 11, 0.7);
+    height: 80px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin: 0px;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
+}
+
+nav ul li {
+    padding: 10px 50px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in;
+}
+
+nav ul li:hover, nav .active {
+    font-weight: bold;
+    color: #8CC63F;
+    text-shadow: 2px 2px 0 #303030;
+    transform: scale(1.1);
+    
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.contenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 80px;
+}
+
+.position {
+    position: relative;
+    width: fit-content;
+    height: 100%;
+}
+
+fieldset {
+    border: none;
+    padding-bottom: 0;
+    margin-bottom: 10px;
+}
+
+legend {
+    font-weight: 600;
+    color: #8CC63F;
+}
+
+.outside {
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.offres_menu {
+    font-family: Raleway, sans-serif;
+    position: fixed;
+    padding: 20px;
+    margin: 0px;
+    background-color: #282828;
+    color: white;
+    flex-grow: 2;
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: auto;
+    min-width: 250px;
+    max-width: 250px;
+}
+
+.offres {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column-reverse;
+    /* max-width: 100%; */
+    width: calc(100vw - 250px);
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+#offres_competences {
+    overflow: auto;
+    max-height: 40%;
+    margin-top: 5px;
+    padding-top: 0;
+}
+
+#offres_competences::-webkit-scrollbar, #offres_menu::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+#offres_competences::-webkit-scrollbar-thumb, #offres_menu::-webkit-scrollbar-thumb {
+  background-color: rgb(100,100,100);
+    border-radius: 10px;
+}
+
+#offre_tri {
+    display: block;
+    width: 100%;
+    margin: auto;
+    background-color: rgb(60, 60, 60);
+    border: none;
+    color: white;
+    height: 30px;
+    border-radius: 50px;
+    padding: 5px;
+    outline: none;
+}
+
+.annonce {
+    max-width: 800px;
+}
+
+.offre {
+    margin: 8px;
+    width: 90%;
+    max-width: 90%;
+    position: relative;
+    left: 5%;
+    
+}
+
+.accordion {
+    padding: 16px;
+    max-width: 100%;
+    min-width: 100%;
+    line-height: 0.6;
+    position: relative;
+    cursor: pointer;
+}
+
+.accordion::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute; 
+    bottom: 45%;
+    right: 40px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    -webkit-transition: -webkit-transform .3s;
+    transition: -webkit-transform .3s;
+    transition: transform .3s;
+    transition: transform .3s, -webkit-transform .3s;
+}
+
+.accordion.is-open::after {
+    content: '';
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: translateY(10px) rotate(-135deg) ;
+    transform: translateY(10px) rotate(-135deg) ;
+}
+
+.accordion-content {
+    max-height: 0px;
+    overflow: hidden;
+    -webkit-transition: max-height .4s;
+    transition: max-height .4s;
+    padding-left: 20px; 
+}
+
+.titre {
+    font-size: 1.2rem;
+}
+
+.metier {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.societe {
+    font-weight: normal;
+    margin-top: 4px;
+}
+
+.lieu {
+    color: #f3f3f3;
+    font-weight: normal;
+    font-size: 0.85rem;
+    margin-top: 2px;
+}
+
+.offre.comm {
+    background-color: #ff9933ee;
+}
+.offre.audiovisuel {
+    background-color: #ff3e2eee;
+}
+.offre.ux {
+    background-color: #bf46ecee;
+}
+.offre.marketing {
+    background-color: #ffda66ee;
+}
+.offre.reseaux {
+    background-color: #00cc88ee;
+}
+.offre.dev {
+    background-color: #6699ffee;
+}
+.offre.graph {
+    background-color: #ff66ccee;
+}
