@@ -1,0 +1,74 @@
+/*Parallax étoile*/
+
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.div{
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.planète1{
+    position: relative;
+    top: 20vh;
+    left: 20vw;
+    width: 20vw;
+}
+
+.planète2{
+    position: relative;
+    top: 30vh;
+    left: 60vw;
+    width: 20vw;
+}
+
+.planète3{
+    position: relative;
+    top: 30vh;
+    left: 20vw;
+    width: 30vw;
+}
+
+.planète4{
+    position: relative;
+    top: 30vh;
+    left: 60vw;
+    width: 20vw;
+}
+
+/*Page*/
+/* 
+* {
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+} */
+
+/* html {
+    height: 100%;
+    width: 100%;
+} */
+
+body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url("image/galaxie.jpg");
+    background-attachment: fixed;
+}
+
+/*Curseur*/
+
+*{
+    cursor: url("image/curseur.png"), auto;
+}
+
+
