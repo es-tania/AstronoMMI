@@ -8,34 +8,56 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="etoile.css">
     <link rel="icon" type="image/png" href="image/fav.png">
+    <style>
+        .parallax {
+            perspective: 100px;
+            height: 100vh;
+            overflow-y: auto;
+        }
+
+        /* .etoile {
+            z-index: -3;
+            transform: translateZ(-250px);
+            background-repeat: repeat;
+        } */
+
+        .stars,
+        .stars2,
+        .stars3 {
+            z-index: -3;
+            transform: translateZ(-50px) scale(1.5);
+        }
+    </style>
     <title>Test parallax</title>
 </head>
 
-<body id="parallax">
+<body><!--id="parallax">-->
 
-    <div class="etoile">
-        <div id='stars'></div>
-        <div id='stars2'></div>
-        <div id='stars3'></div>
-    </div>
-
-    <h1>Homer le boss !</h1>
-
-    <header>
-        <div>
-            <img src="image/planete1.png" alt="" class="planète1">
+    <header id="parallax" > <!--class="parallax"-->
+        <div class="etoile">
+            <div id='stars'></div>
+            <div id='stars2'></div>
+            <div id='stars3'></div>
         </div>
 
-        <div class="planète">
-            <img src="image/planete2.png" alt="" class="planète2">
-        </div>
+        <h1>Homer le boss !</h1>
 
-        <div class="planète">
-            <img src="image/planete3.png" alt="" class="planète3">
-        </div>
+        <div class="planete">
+            <div>
+                <img src="image/planete1.png" alt="" class="planète1">
+            </div>
 
-        <div class="planète">
-            <img src="image/planete4.png" alt="" class="planète4">
+            <div class="planète">
+                <img src="image/planete2.png" alt="" class="planète2">
+            </div>
+
+            <div class="planète">
+                <img src="image/planete3.png" alt="" class="planète3">
+            </div>
+
+            <div class="planète">
+                <img src="image/planete4.png" alt="" class="planète4">
+            </div>
         </div>
     </header>
 

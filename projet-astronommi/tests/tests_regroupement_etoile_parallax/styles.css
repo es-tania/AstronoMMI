@@ -9,14 +9,25 @@
 
 body {
     /* background-image: url("image/galaxie.jpg"); */
-    background: radial-gradient(#1b2735 0%, #090a0f 100%);
+    background-color: #090a0f;
     background-attachment: fixed;
     background-repeat: repeat;
 }
 
-.etoile{
+/* .etoile{
     z-index: -3;
-}
+    transform: translateZ(-250px) ;
+    background-repeat:  repeat;
+} */
+
+/* .stars, .stars2, .stars3{
+    z-index: -3;
+    transform: translateZ(-250px) ;
+} */
+
+/* .planete{
+    transform: translateZ(0px) scale(1);
+} */
 
 .planète1{
     position: relative;
