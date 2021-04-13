@@ -12,13 +12,17 @@ body{
 
 }
 
-.slide{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    /* justify-content: center;
-    align-items: center; */
-    font-size: 100px;
+.container{
+    
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    /*Suprimer scroll horizontale :*/
+        overflow-x: hidden; 
+        /*pour IE et mozilla*/ 
+        -ms-overflow-style: none;
+        scrollbar-width: none; /*Retirer la barre du scroll horizontal*/
 }
 
 .blocHorizontal{
@@ -30,16 +34,13 @@ body{
     transform-origin: top left; /*tourner par rapport à en haut à gauche*/
 }
 
-.container{
-    width: 100vh;
-    height: 100vw;
-    transform: rotate(-90deg) translateX(-100vh);
-    transform-origin: top left;
-    /*Suprimer scroll horizontale :*/
-        overflow-x: hidden; 
-        /*pour IE et mozilla*/ 
-        -ms-overflow-style: none;
-        scrollbar-width: none; /*Retirer la barre du scroll horizontal*/
+.slide{
+    width: 100vw;
+    height: 100vh;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+    font-size: 100px;
 }
 
 ::-webkit-scrollbar{ /*pour chrome et safari permet de suprimer la barre de scroll*/
