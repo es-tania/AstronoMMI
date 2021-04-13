@@ -5,13 +5,17 @@
     padding: 0;
     margin: 0;
     cursor: url("image/curseur.png"), auto;
-
 }
 
 body {
-    background-image: url("image/galaxie.jpg");
+    /* background-image: url("image/galaxie.jpg"); */
+    background: radial-gradient(#1b2735 0%, #090a0f 100%);
     background-attachment: fixed;
     background-repeat: repeat;
+}
+
+.etoile{
+    z-index: -3;
 }
 
 .planète1{
