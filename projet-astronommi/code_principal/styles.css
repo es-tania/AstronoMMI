@@ -8,6 +8,12 @@
 body{
     cursor: url("image/curseur.png"), auto;
     background-image: url(image/galaxie.jpg);
+    background-size: 150px;
+    background-repeat: repeat;
+}
+
+.layer1{
+    background-image: url("/image/etoile.png");
     background-size: 200px;
     background-repeat: repeat;
 }
@@ -48,9 +54,4 @@ h1{
     text-align: center;
 }
 
-.layer1{
-    background-image: url("/image/etoile.png");
-    background-size: 250px;
-    background-repeat: repeat;
-}
 
