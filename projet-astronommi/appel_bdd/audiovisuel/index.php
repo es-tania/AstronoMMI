@@ -49,11 +49,13 @@
         
     // Fiche métier du sous-domaine Image
         $sql = "SELECT *  
-        FROM astro_metier, astro_sousdomaine, astro_salairejunior, astro_niveauminacces
+        FROM astro_metier, astro_sousdomaine, astro_salairejunior, astro_niveauminacces, astro_rel_secteur_metier, astro_secteurpro
         WHERE astro_sousdomaine.nom_sousdom='Image' 
         AND astro_metier.id_sousdom=astro_sousdomaine.id_sousdom
         AND astro_metier.id_salaire=astro_salairejunior.id_salaire
-        AND astro_metier.id_niveau=astro_niveauminacces.id_niveau;";
+        AND astro_metier.id_niveau=astro_niveauminacces.id_niveau
+        AND astro_metier.id_metier=astro_rel_secteur_metier.id_metier
+        AND astro_rel_secteur_metier.id_secteur=astro_secteurpro.id_secteur;";
         // On prépare la requête avant l'envoi :
         $req = $link -> prepare($sql);
         $req -> execute();
@@ -64,7 +66,7 @@
         <p>Niveau minimum d’accès : '.$data['annee_bac'].'</p>
         <p>Salaire débutant : '.$data['tranche'].' €</p>
         <p>Statut(s) :</p>
-        <p>Secteur(s) professionnel(s) :</p>
+        <p>Secteur(s) professionnel(s) :'.$data['nom_secteur'].'</p>
         <p>Compétences requises : '.$data['competences'].'</p>
         <p>Métiers associés : '.$data['metiers_associes'].'</p>
         <p>Environnement : '.$data['environnement'].'</p>

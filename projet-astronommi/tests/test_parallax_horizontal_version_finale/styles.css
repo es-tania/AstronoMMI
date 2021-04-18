@@ -1,0 +1,46 @@
+/*Faire un scroll horizontal :*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.slide {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.blocHorizontal {
+    display: flex;
+    flex-direction: row;
+    width: 200vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Gérer le reste */
+
+.homer {
+    position: relative;
+    top: 40%;
+    left: 30vw;
+    bottom: 0;
+    z-index: 1;
+    width: 200px;
+}
