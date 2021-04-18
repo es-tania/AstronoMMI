@@ -27,7 +27,7 @@
         $req -> execute();
         while($data = $req -> fetch()){
         // On affiche chaque résultat sous forme d'un item de la liste
-        echo '<p>Intro :</p>
+        echo '<p>Intro :'.$data['intro'].'</p>
         <p>Métier : '.$data['nom_metier'].'</p>
         <p>Niveau minimum d’accès : '.$data['annee_bac'].'</p>
         <p>Salaire débutant : '.$data['tranche'].' €</p>
@@ -61,7 +61,7 @@
         $req -> execute();
         while($data = $req -> fetch()){
         // On affiche chaque résultat sous forme d'un item de la liste
-        echo '<p>Intro :</p>
+        echo '<p>Intro :</p>'.$data['intro'].'</p>
         <p>Métier : '.$data['nom_metier'].'</p>
         <p>Niveau minimum d’accès : '.$data['annee_bac'].'</p>
         <p>Salaire débutant : '.$data['tranche'].' €</p>
