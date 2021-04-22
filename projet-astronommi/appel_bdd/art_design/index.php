@@ -30,8 +30,9 @@
         <p>Intro :'.$data['intro'].'</p>
         <p>Niveau minimum d’accès : '.$data['annee_bac'].'</p>
         <p>Salaire débutant : '.$data['tranche'].' €</p>
-        <p>Statut(s) :</p>
-        <p>Secteur(s) professionnel(s) :</p>
+        <p>Statut(s) : <br>';
+        include('statut_secteur.php'); //On appel le fichier dans lequel il y a la requête pour statut et secteur
+        echo '</p>
         <p>Compétences requises : '.$data['competences'].'</p>
         <p>Métiers associés : '.$data['metiers_associes'].'</p>
         <p>Environnement : '.$data['environnement'].'</p>
