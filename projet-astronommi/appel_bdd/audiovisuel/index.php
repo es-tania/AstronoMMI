@@ -32,36 +32,7 @@
         <p>Niveau minimum d’accès : '.$data['annee_bac'].'</p>
         <p>Salaire débutant : '.$data['tranche'].' €</p>
         <p>Statut(s) : <br>';
-            $sql2 = "SELECT `nom_statut`  
-            FROM astro_metier, astro_sousdomaine, astro_rel_statut_metier, astro_statut
-            WHERE astro_sousdomaine.nom_sousdom='Décor' 
-            AND astro_metier.id_sousdom=astro_sousdomaine.id_sousdom
-            AND astro_metier.id_metier=astro_rel_statut_metier.id_metier
-            AND astro_rel_statut_metier.id_statut=astro_statut.id_statut;";
-            // On prépare la requête avant l'envoi :
-            $req2 = $link -> prepare($sql2);
-            $req2 -> execute();
-            while($data2 = $req2 -> fetch()){
-            // On affiche chaque résultat sous forme d'un item de la liste
-            echo $data2['nom_statut'].'<br>';
-            }
-            $req2 = null;
-        echo '</p>
-        <p>Secteur(s) professionnel(s) : <br>';
-            $sql3 = "SELECT `nom_secteur`  
-            FROM astro_metier, astro_sousdomaine, astro_rel_secteur_metier, astro_secteurpro
-            WHERE astro_sousdomaine.nom_sousdom='Décor' 
-            AND astro_metier.id_sousdom=astro_sousdomaine.id_sousdom
-            AND astro_metier.id_metier=astro_rel_secteur_metier.id_metier
-            AND astro_rel_secteur_metier.id_secteur=astro_secteurpro.id_secteur;";
-            // On prépare la requête avant l'envoi :
-            $req3 = $link -> prepare($sql3);
-            $req3 -> execute();
-            while($data3 = $req3 -> fetch()){
-            // On affiche chaque résultat sous forme d'un item de la liste
-            echo $data3['nom_secteur'].'<br>';
-            }
-            $req3 = null;
+        include('statut_secteur.php'); //On appel le fichier dans lequel il y a la requête pour statut et secteur
         echo '</p>
         <p>Compétences requises : '.$data['competences'].'</p>
         <p>Métiers associés : '.$data['metiers_associes'].'</p>
@@ -79,13 +50,11 @@
         
     // Fiche métier du sous-domaine Image
         $sql = "SELECT *  
-        FROM astro_metier, astro_sousdomaine, astro_salairejunior, astro_niveauminacces, astro_rel_secteur_metier, astro_secteurpro
+        FROM astro_metier, astro_sousdomaine, astro_salairejunior, astro_niveauminacces
         WHERE astro_sousdomaine.nom_sousdom='Image' 
         AND astro_metier.id_sousdom=astro_sousdomaine.id_sousdom
         AND astro_metier.id_salaire=astro_salairejunior.id_salaire
-        AND astro_metier.id_niveau=astro_niveauminacces.id_niveau
-        AND astro_metier.id_metier=astro_rel_secteur_metier.id_metier
-        AND astro_rel_secteur_metier.id_secteur=astro_secteurpro.id_secteur;";
+        AND astro_metier.id_niveau=astro_niveauminacces.id_niveau;";
         // On prépare la requête avant l'envoi :
         $req = $link -> prepare($sql);
         $req -> execute();
@@ -95,8 +64,9 @@
         <p>Présentation du métier : '.$data['intro'].'</p>
         <p>Niveau minimum d’accès : '.$data['annee_bac'].'</p>
         <p>Salaire débutant : '.$data['tranche'].' €</p>
-        <p>Statut(s) :</p>
-        <p>Secteur(s) professionnel(s) :'.$data['nom_secteur'].'</p>
+        <p>Statut(s) : <br> ';
+        include('statut_secteur.php');
+        echo '</p>
         <p>Compétences requises : '.$data['competences'].'</p>
         <p>Métiers associés : '.$data['metiers_associes'].'</p>
         <p>Environnement : '.$data['environnement'].'</p>
@@ -125,8 +95,9 @@
         <p>Présentation du métier : '.$data['intro'].'</p>
         <p>Niveau minimum d’accès : '.$data['annee_bac'].'</p>
         <p>Salaire débutant : '.$data['tranche'].' €</p>
-        <p>Statut(s) :</p>
-        <p>Secteur(s) professionnel(s) :</p>
+        <p>Statut(s) : <br> ';
+        include('statut_secteur.php');
+        echo '</p>
         <p>Compétences requises : '.$data['competences'].'</p>
         <p>Métiers associés : '.$data['metiers_associes'].'</p>
         <p>Environnement : '.$data['environnement'].'</p>
@@ -155,8 +126,9 @@
     <p>Présentation du métier : '.$data['intro'].'</p>
     <p>Niveau minimum d’accès : '.$data['annee_bac'].'</p>
     <p>Salaire débutant : '.$data['tranche'].' €</p>
-    <p>Statut(s) :</p>
-    <p>Secteur(s) professionnel(s) :</p>
+    <p>Statut(s) : <br> ';
+    include('statut_secteur.php');
+    echo '</p>
     <p>Compétences requises : '.$data['competences'].'</p>
     <p>Métiers associés : '.$data['metiers_associes'].'</p>
     <p>Environnement : '.$data['environnement'].'</p>
@@ -185,8 +157,9 @@
     <p>Métier : '.$data['nom_metier'].'</p>
     <p>Niveau minimum d’accès : '.$data['annee_bac'].'</p>
     <p>Salaire débutant : '.$data['tranche'].' €</p>
-    <p>Statut(s) :</p>
-    <p>Secteur(s) professionnel(s) :</p>
+    <p>Statut(s) : <br> ';
+    include('statut_secteur.php');
+    echo '</p>
     <p>Compétences requises : '.$data['competences'].'</p>
     <p>Métiers associés : '.$data['metiers_associes'].'</p>
     <p>Environnement : '.$data['environnement'].'</p>
@@ -195,28 +168,6 @@
     }
     $req = null;
     ?>
-
-    <?php 
-
-    // astro_secteurpro, astro_rel_secteur_metier, astro_rel_statut_metier, astro_statut
-    // AND astro_rel_secteur_metier.id_secteur=astro_secteurpro.id_secteur
-        // AND astro_metier.id_metier=astro_rel_secteur_metier.id_metier
-        // AND astro_rel_statut_metier.id_statut=astro_statut.id_statut
-        // AND astro_metier.id_metier=astro_rel_statut_metier.id_metier
-        // ;";
-
-
-        // while($data = $req -> fetch()){
-            //     echo '<p>'.$data['nom_statut'].'</p>';
-            // };
-            // $req = null;
-            // while($data = $req -> fetch()){
-            //     echo '<p>'.$data['nom_secteur'].'</p>';
-            // }
-            // $req = null;
-        // '<li>'.$data['competences'].'</li><li>'.$data['metiers_associes'].'</li><li>'.$data['environnement'].'</li><li>'.$data['lieux_exercices'].'</li><li>'.$data['formations'].'</li>';
-    ?>
-    <!-- Question 4 -->
 
 </body>
 
