@@ -17,7 +17,8 @@
     // Fiche métier du sous-domaine Multimédia 
         $sql = "SELECT *  
         FROM astro_metier, astro_domaine, astro_salairejunior, astro_niveauminacces
-        WHERE astro_metier.id_domaine='2'
+        WHERE astro_domaine.nom_domaine='Développement'
+        AND astro_metier.id_domaine=astro_domaine.id_domaine
         AND astro_metier.id_salaire=astro_salairejunior.id_salaire
         AND astro_metier.id_niveau=astro_niveauminacces.id_niveau;";
         // On prépare la requête avant l'envoi :
@@ -35,7 +36,7 @@
         <p>Métiers associés : '.$data['metiers_associes'].'</p>
         <p>Environnement : '.$data['environnement'].'</p>
         <p>Lieux d’exercices : '.$data['lieux_exercices'].'</p>
-        <p>Formations : '.$data['formations'].'</p>';
+        <p>Formations : '.$data['formations'].'</p><br>';
         }
         $req = null;
     ?>
