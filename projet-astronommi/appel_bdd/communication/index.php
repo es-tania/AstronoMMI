@@ -37,7 +37,7 @@
         <p>Métiers associés : '.$data['metiers_associes'].'</p>
         <p>Environnement : '.$data['environnement'].'</p>
         <p>Lieux d’exercices : '.$data['lieux_exercices'].'</p>
-        <p>Formations : '.$data['formations'].'</p>';
+        <p>Formations : '.$data['formations'].'</p><br>';
         }
         $req = null;
     ?>
@@ -49,13 +49,11 @@
         
     // Fiche métier du sous-domaine Presse
         $sql = "SELECT *  
-        FROM astro_metier, astro_sousdomaine, astro_salairejunior, astro_niveauminacces, astro_rel_secteur_metier, astro_secteurpro
+        FROM astro_metier, astro_sousdomaine, astro_salairejunior, astro_niveauminacces
         WHERE astro_sousdomaine.nom_sousdom='Presse' 
         AND astro_metier.id_sousdom=astro_sousdomaine.id_sousdom
         AND astro_metier.id_salaire=astro_salairejunior.id_salaire
-        AND astro_metier.id_niveau=astro_niveauminacces.id_niveau
-        AND astro_metier.id_metier=astro_rel_secteur_metier.id_metier
-        AND astro_rel_secteur_metier.id_secteur=astro_secteurpro.id_secteur;";
+        AND astro_metier.id_niveau=astro_niveauminacces.id_niveau";
         // On prépare la requête avant l'envoi :
         $req = $link -> prepare($sql);
         $req -> execute();
