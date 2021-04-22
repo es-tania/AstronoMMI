@@ -6,6 +6,8 @@ body {
     background-image: url(img/1.png) ;
 }
 
+/* Parallax en continue sur les différents calques */
+
 .layer{
     position: absolute;
     bottom: 0;
@@ -78,4 +80,16 @@ body {
     100% {
         background-position: 550px 100%;
     }
+}
+
+
+/* Gérer le reste */
+
+.homer {
+    position: relative;
+    top: 40%;
+    left: 30vw;
+    bottom: 0;
+    z-index: 1;
+    width: 200px;
 }
