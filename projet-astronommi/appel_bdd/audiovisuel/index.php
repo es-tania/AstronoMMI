@@ -31,8 +31,38 @@
         <p>Intro :'.$data['intro'].'</p>
         <p>Niveau minimum d’accès : '.$data['annee_bac'].'</p>
         <p>Salaire débutant : '.$data['tranche'].' €</p>
-        <p>Statut(s) :</p>
-        <p>Secteur(s) professionnel(s) :</p>
+        <p>Statut(s) : <br>';
+            $sql2 = "SELECT `nom_statut`  
+            FROM astro_metier, astro_sousdomaine, astro_rel_statut_metier, astro_statut
+            WHERE astro_sousdomaine.nom_sousdom='Décor' 
+            AND astro_metier.id_sousdom=astro_sousdomaine.id_sousdom
+            AND astro_metier.id_metier=astro_rel_statut_metier.id_metier
+            AND astro_rel_statut_metier.id_statut=astro_statut.id_statut;";
+            // On prépare la requête avant l'envoi :
+            $req2 = $link -> prepare($sql2);
+            $req2 -> execute();
+            while($data2 = $req2 -> fetch()){
+            // On affiche chaque résultat sous forme d'un item de la liste
+            echo $data2['nom_statut'].'<br>';
+            }
+            $req2 = null;
+        echo '</p>
+        <p>Secteur(s) professionnel(s) : <br>';
+            $sql3 = "SELECT `nom_secteur`  
+            FROM astro_metier, astro_sousdomaine, astro_rel_secteur_metier, astro_secteurpro
+            WHERE astro_sousdomaine.nom_sousdom='Décor' 
+            AND astro_metier.id_sousdom=astro_sousdomaine.id_sousdom
+            AND astro_metier.id_metier=astro_rel_secteur_metier.id_metier
+            AND astro_rel_secteur_metier.id_secteur=astro_secteurpro.id_secteur;";
+            // On prépare la requête avant l'envoi :
+            $req3 = $link -> prepare($sql3);
+            $req3 -> execute();
+            while($data3 = $req3 -> fetch()){
+            // On affiche chaque résultat sous forme d'un item de la liste
+            echo $data3['nom_secteur'].'<br>';
+            }
+            $req3 = null;
+        echo '</p>
         <p>Compétences requises : '.$data['competences'].'</p>
         <p>Métiers associés : '.$data['metiers_associes'].'</p>
         <p>Environnement : '.$data['environnement'].'</p>
@@ -106,9 +136,9 @@
         $req = null;
     ?>
 
-<h2>Direction</h2>
+    <h2>Direction</h2>
 
-<?php 
+    <?php 
 // Fiche métier du sous-domaine Montage
     $sql = "SELECT *  
     FROM astro_metier, astro_sousdomaine, astro_salairejunior, astro_niveauminacces
