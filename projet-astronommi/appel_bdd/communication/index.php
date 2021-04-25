@@ -31,8 +31,9 @@
         <p>Présentation du métier : '.$data['intro'].'</p>
         <p>Niveau minimum d’accès : '.$data['annee_bac'].'</p>
         <p>Salaire débutant : '.$data['tranche'].' €</p>
-        <p>Statut(s) :</p>
-        <p>Secteur(s) professionnel(s) :</p>
+        <p>Statut(s) : <br> ';
+        include('statut_secteur.php');
+        echo '</p>
         <p>Compétences requises : '.$data['competences'].'</p>
         <p>Métiers associés : '.$data['metiers_associes'].'</p>
         <p>Environnement : '.$data['environnement'].'</p>
@@ -63,8 +64,9 @@
         <p>Présentation du métier : </p>'.$data['intro'].'</p>
         <p>Niveau minimum d’accès : '.$data['annee_bac'].'</p>
         <p>Salaire débutant : '.$data['tranche'].' €</p>
-        <p>Statut(s) :</p>
-        <p>Secteur(s) professionnel(s) :</p>
+        <p>Statut(s) : <br> ';
+        include('statut_secteur.php');
+        echo '</p>
         <p>Compétences requises : '.$data['competences'].'</p>
         <p>Métiers associés : '.$data['metiers_associes'].'</p>
         <p>Environnement : '.$data['environnement'].'</p>
@@ -93,8 +95,9 @@
         <p>Présentation du métier : </p>'.$data['intro'].'</p>
         <p>Niveau minimum d’accès : '.$data['annee_bac'].'</p>
         <p>Salaire débutant : '.$data['tranche'].' €</p>
-        <p>Statut(s) :</p>
-        <p>Secteur(s) professionnel(s) :</p>
+        <p>Statut(s) : <br> ';
+        include('statut_secteur.php');
+        echo '</p>
         <p>Compétences requises : '.$data['competences'].'</p>
         <p>Métiers associés : '.$data['metiers_associes'].'</p>
         <p>Environnement : '.$data['environnement'].'</p>
