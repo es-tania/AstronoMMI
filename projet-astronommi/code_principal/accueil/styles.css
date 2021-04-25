@@ -54,4 +54,19 @@ h1{
     text-align: center;
 }
 
+img{
+    transition: 1s;
+}
+
+img:hover{
+    /* L'image est grossie de 25% */
+    -webkit-transform: scale(1.25);
+    /* Safari et Chrome */
+    -moz-transform: scale(1.25);
+    /* Firefox */
+    -ms-transform: scale(1.25);
+    /* Opera */
+    transform: scale(1.25);
+    transition: 1s;
+}
 

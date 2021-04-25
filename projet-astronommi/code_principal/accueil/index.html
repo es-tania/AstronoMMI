@@ -9,21 +9,36 @@
     <link rel="stylesheet" href="etoile.css">
     <link rel="icon" type="image/png" href="image/fav.png">
     <title>Test parallax</title>
+    <style>
+        img:hover{
+            /* L'image est grossie de 25% */
+            -webkit-transform: scale(1.25);
+            /* Safari et Chrome */
+            -moz-transform: scale(1.25);
+            /* Firefox */
+            -ms-transform: scale(1.25);
+            /* Internet Explorer 9 */
+            -o-transform: scale(1.25);
+            /* Opera */
+            transform: scale(1.25);
+            transition: 1s;
+        }
+    </style>
 </head>
 
 <body id="parallax">
 
     <div id="parallax">
-    <div class="layer1">
-        <h1>Homer le boss !</h1>
-        <div class="planete">
-        <img src="image/planete1.png" alt="" class="planète1">
-        <img src="image/planete2.png" alt="" class="planète2">
-        <img src="image/planete3.png" alt="" class="planète3">
-        <img src="image/planete4.png" alt="" class="planète4">
+        <div class="layer1">
+            <h1>Homer le boss !</h1>
+            <div class="planete">
+                <img src="image/planete1.png" alt="" class="planète1">
+                <img src="image/planete2.png" alt="" class="planète2">
+                <img src="image/planete3.png" alt="" class="planète3">
+                <img src="image/planete4.png" alt="" class="planète4">
+            </div>
         </div>
     </div>
-</div>
 
 </body>
 <script type="text/javascript" src="main.js"></script>
