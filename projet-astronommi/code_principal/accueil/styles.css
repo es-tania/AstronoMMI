@@ -12,11 +12,15 @@ body{
     background-repeat: repeat;
 }
 
+/* Fond étoile */
+
 .layer1{
     background-image: url("image/etoile.png");
     background-size: 200px;
     background-repeat: repeat;
 }
+
+/* Positionnement des planètes */
 
 .planète1{
     position: relative;
@@ -54,18 +58,13 @@ h1{
     text-align: center;
 }
 
+/* Effet zoom sur les planètes */
+
 img{
     transition: 1s;
 }
 
 img:hover{
-    /* L'image est grossie de 25% */
-    -webkit-transform: scale(1.25);
-    /* Safari et Chrome */
-    -moz-transform: scale(1.25);
-    /* Firefox */
-    -ms-transform: scale(1.25);
-    /* Opera */
     transform: scale(1.25);
     transition: 1s;
 }
