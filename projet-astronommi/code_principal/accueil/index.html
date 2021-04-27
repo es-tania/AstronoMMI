@@ -6,21 +6,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="etoile.css">
     <link rel="icon" type="image/png" href="image/fav.png">
-    <title>Test parallax</title>
+    <title>Accueil - Astronommi</title>
 </head>
 
-<body id="parallax"><!--ID qui permet de faire l'effet parallax-->
-        <div class="layer1"><!--Div qui permet d'avoir le 2ème fond planète en background-->
-            <h1>Homer le boss !</h1><!--Parce que c le boss tous simplement-->
-            <div class="planete"><!--Planètes-->
-                <img src="image/planetes_audio.png" alt="" class="planète1">
-                <img src="image/planete_dev.png" alt="" class="planète2">
-                <img src="image/plante_com.png" alt="" class="planète3">
-                <img src="image/planetes_art.png" alt="" class="planète4">
+<body id="parallax">
+    <!--ID qui permet de faire l'effet parallax-->
+    <div class="layer1">
+        <!--Div qui permet d'avoir le 2ème fond planète en background-->
+        <div class="first">
+            <!-- Div pour placer tous les élements au haut de la page -->
+            <img src="image/planete2.png" alt="" class="logo">
+            <!-- <img src="image/burger-menu.svg" alt="" class="BurgerMenu"> -->
+            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px" y="0px" viewBox="0 0 250.579 250.579" style="enable-background:new 0 0 250.579 250.579;"
+                xml:space="preserve">
+                <g id="Menu">
+                    <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M22.373,76.068h205.832c12.356,0,22.374-10.017,22.374-22.373
+		c0-12.356-10.017-22.373-22.374-22.373H22.373C10.017,31.323,0,41.339,0,53.696C0,66.052,10.017,76.068,22.373,76.068z
+		 M228.205,102.916H22.373C10.017,102.916,0,112.933,0,125.289c0,12.357,10.017,22.373,22.373,22.373h205.832
+		c12.356,0,22.374-10.016,22.374-22.373C250.579,112.933,240.561,102.916,228.205,102.916z M228.205,174.51H22.373
+		C10.017,174.51,0,184.526,0,196.883c0,12.356,10.017,22.373,22.373,22.373h205.832c12.356,0,22.374-10.017,22.374-22.373
+		C250.579,184.526,240.561,174.51,228.205,174.51z" />
+                </g>
+            </svg>
+
+            <img src="image/fusee.png" alt="" class="rocket">
+            <img src="image/planete1.png" alt="" class="DUTPlanet clickable">
+            <img src="image/satellite.png" alt="" class="satellite1 clickable">
+            <img src="image/satellite.png" alt="" class="satellite2 clickable">
+            <h1>Astronommi</h1>
+            <!--Parce que c le boss tous simplement-->
+            <p>Découvre les métiers possibles après le DUT MMI</p>
+            <div class="FiltersOrScroll">
+                <a href="#" class="FiltersButton">Utilise les filtres de recherche pour trouver un métier</a>
+                <p>OU</p>
+                <p>↓ Balade toi dans la galaxie ! ↓</p>
             </div>
         </div>
+        <div class="planete">
+            <!--Planètes-->
+            <img src="image/planetes_audio.png" alt="" class="planète1 clickable">
+            <img src="image/planete_dev.png" alt="" class="planète2 clickable">
+            <img src="image/plante_com.png" alt="" class="planète3 clickable">
+            <img src="image/planetes_art.png" alt="" class="planète4 clickable">
+        </div>
+    </div>
+    <footer>
+        <form action="envoi.php" method="get">
+            <legend>Pour nous contacter</legend>
+            <input type="text" name="nom_utilisateur" id="nom_utilisateur" placeholder="Nom*"><br>
+            <input type="text" name="prenom_utilisateur" id="prenom_utilisateur" placeholder="Prénom*"><br>
+            <input type="email" name="courriel" id="courriel" placeholder="Email*"><br>
+            <textarea rows="5" cols="50" name="message" placeholder="Message"></textarea><br>
+            <input type="submit" id="envoi" value="Envoyer">
+        </form>
+        <img src="image/surfaceplanete.png" alt="" class="BottomPlanet">
+    </footer>
 
 </body>
 <script type="text/javascript" src="main.js"></script>
