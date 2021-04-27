@@ -10,6 +10,7 @@ echo $data2['nom_statut'].'<br>';
 }
 $req2 = null;
 echo '</p>
+<br>
 <p>Secteur(s) professionnel(s) : <br>';
 $sql3 = "SELECT * 
 FROM astro_metier, astro_rel_secteur_metier, astro_secteurpro

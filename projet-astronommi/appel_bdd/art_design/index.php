@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="modal.css">
     <title>Audiovisuel - Métiers</title>
 </head>
 
@@ -26,18 +27,47 @@
         $req -> execute();
         while($data = $req -> fetch()){
         // On affiche chaque résultat sous forme d'un item de la liste
-        echo '<p>Métier : '.$data['nom_metier'].'</p>
-        <p>Intro :'.$data['intro'].'</p>
-        <p>Niveau minimum d’accès : '.$data['annee_bac'].'</p>
-        <p>Salaire débutant : '.$data['tranche'].' €</p>
-        <p>Statut(s) : <br>';
-        include('statut_secteur.php'); //On appel le fichier dans lequel il y a la requête pour statut et secteur
-        echo '</p>
-        <p>Compétences requises : '.$data['competences'].'</p>
-        <p>Métiers associés : '.$data['metiers_associes'].'</p>
-        <p>Environnement : '.$data['environnement'].'</p>
-        <p>Lieux d’exercices : '.$data['lieux_exercices'].'</p>
-        <p>Formations : '.$data['formations'].'</p><br>';
+        echo '  <div class="card">
+                <div class="content-wrapper">
+                    <h2 class="titre">'.$data['nom_metier'].'</h2>
+                        <p class="intro">'.$data['intro'].'</p>
+                        <p>...</p>
+                </div>
+                <a href="#'.$data['id_metier'].'" role="button" class="button">En savoir plus</a>
+            </div>
+            <div class="modal-wrapper modal" id="'.$data['id_metier'].'">
+                <div class="modal-body">
+                    <div class="modal-header">
+                        <h2 class="titre">'.$data['nom_metier'].'</h2>
+                        <a href="#!" role="button" class="close" aria-label="close this modal">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
+                            </svg>
+                        </a>
+                    </div>
+                    <br>
+                    <p>'.$data['intro'].'</p>
+                    <br>
+                    <p>Niveau minimum d’accès : '.$data['annee_bac'].'</p>
+                    <br>
+                    <p>Salaire débutant : '.$data['tranche'].' €</p>
+                    <br>
+                    <p>Statut(s) : <br>';
+                    include('statut_secteur.php'); //On appel le fichier dans lequel il y a la requête pour statut et secteur
+                    echo '</p>
+                    <br>
+                    <p>Compétences requises : '.$data['competences'].'</p>
+                    <br>
+                    <p>Métiers associés : '.$data['metiers_associes'].'</p>
+                    <br>
+                    <p>Environnement : '.$data['environnement'].'</p>
+                    <br>
+                    <p>Lieux d’exercices : '.$data['lieux_exercices'].'</p>
+                    <br>
+                    <p>Formations : '.$data['formations'].'</p>
+                    </div>
+                    <a href="#!" class="outside-trigger"></a>
+                </div>';
         }
         $req = null;
     ?>
