@@ -37,6 +37,10 @@ body{
     background-repeat: repeat;
 }
 
+footer{
+    z-index: 10;
+}
+
 /* Haut de la page Accueil */
 
 .first{
