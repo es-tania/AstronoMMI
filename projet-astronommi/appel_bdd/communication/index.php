@@ -54,7 +54,7 @@
                     <p>Salaire débutant : '.$data['tranche'].' €</p>
                     <br>
                     <p>Statut(s) : <br>';
-                    include('statut_secteur.php'); //On appel le fichier dans lequel il y a la requête pour statut et secteur
+                    include('statut_secteur_sous_dom.php'); //On appel le fichier dans lequel il y a la requête pour statut et secteur
                     echo '</p>
                     <br>
                     <p>Compétences requises : '.$data['competences'].'</p>
