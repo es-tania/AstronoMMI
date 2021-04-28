@@ -8,3 +8,10 @@ window.addEventListener("scroll", function () {
     //console.log('offset * 0.7'+ offset * 0.7)
     parallax.style.backgroundPositionY = offset * 0.5 + "px";
 })
+
+
+$(document).ready(function () {
+
+    $(".code").load("index.html");
+
+});
