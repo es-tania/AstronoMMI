@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" href="image/fav.png">
+    <link rel="icon" type="image/png" href="image/logo_avec_nom.png">
     <title>Accueil - Astronommi</title>
 </head>
 

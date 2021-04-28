@@ -6,6 +6,57 @@
     <title>Formulaire de contact</title>
 </head>
 
+<style>
+
+@font-face {
+    font-family: 'SpaceAge';
+    src: url(fonts/SpaceAge.woff) format('woff'),
+    url(fonts/SpaceAge.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'Arial Rounded MT Bold';
+    src: url(fonts/ArialRoundedMTBold.woff) format('woff'),
+    url(fonts/ArialRoundedMTBold.woff2) format('woff2');
+}
+body {
+    overflow-y: hidden;
+    cursor: url("image/curseur.png"), auto;
+    background-image: url(image/galaxie.jpg);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+}
+h1 {
+    font-family: 'SpaceAge', sans-serif ;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+p {
+    font-family:'Arial Rounded MT Bold', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 1.125rem;
+    padding: 5px;
+}
+a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background-color: #39854c;
+    padding: 5px;
+    border-radius: 20px;
+    width: 12vw;
+    font-family: 'Arial Rounded MT Bold', sans-serif;
+    font-size: 1.125rem;
+    transition: background-color 0.8s ease;
+}
+
+
+</style>
+
 <body>
     <?php 
 

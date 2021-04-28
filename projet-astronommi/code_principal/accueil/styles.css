@@ -37,10 +37,6 @@ body{
     background-repeat: repeat;
 }
 
-footer{
-    z-index: 10;
-}
-
 /* Haut de la page Accueil */
 
 .first{
@@ -83,13 +79,13 @@ p{
     width: 70px;
     position: absolute;
     top: 20px;
-    left: 20px;
+    left: 130px;
 }
 svg{
     width: 60px;
     position: absolute;
     top: 20px;
-    left: 110px;
+    left: 50px;
     fill: white;
 }
 
@@ -201,6 +197,7 @@ footer{
     justify-content: center;
     margin-top: 250PX;
     padding: 0;
+    z-index: 10;
 }
 
 .BottomPlanet{
