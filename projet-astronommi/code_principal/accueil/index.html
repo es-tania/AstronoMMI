@@ -6,19 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="menu.css">
     <link rel="icon" type="image/png" href="image/logo_avec_nom.png">
     <title>Accueil - Astronommi</title>
 </head>
 
-<body><!--id="parallax"-->
+<body id="accueil">
+    <!--id="parallax"-->
     <!-- ID qui permet de faire l'effet parallax
     <div class="layer1"> -->
-        <!--Div qui permet d'avoir le 2ème fond planète en background-->
-        <div class="first">
-            <!-- Div pour placer tous les élements au haut de la page -->
-            <img src="image/logo_avec_nom.png" alt="" class="logo">
-            <!-- <img src="image/burger-menu.svg" alt="" class="BurgerMenu"> -->
-            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    <!--Div qui permet d'avoir le 2ème fond planète en background-->
+    <div class="first">
+        <!-- Div pour placer tous les élements au haut de la page -->
+        <a href="#accueil"><img src="image/logo_avec_nom.png" alt="" class="logo"></a>
+        <!-- <img src="image/burger-menu.svg" alt="" class="BurgerMenu"> -->
+        <!-- <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                 x="0px" y="0px" viewBox="0 0 250.579 250.579" style="enable-background:new 0 0 250.579 250.579;"
                 xml:space="preserve">
                 <g id="Menu">
@@ -29,29 +31,57 @@
 		C10.017,174.51,0,184.526,0,196.883c0,12.356,10.017,22.373,22.373,22.373h205.832c12.356,0,22.374-10.017,22.374-22.373
 		C250.579,184.526,240.561,174.51,228.205,174.51z" />
                 </g>
-            </svg>
+            </svg> -->
 
-            <img src="image/fusee.png" alt="" class="rocket">
-            <img src="image/planete1.png" alt="" class="DUTPlanet clickable">
-            <img src="image/satellite.png" alt="" class="satellite1 clickable">
-            <img src="image/satellite.png" alt="" class="satellite2 clickable">
-            <h1>Astronommi</h1>
-            <!--Parce que c le boss tous simplement-->
-            <p>Découvre les métiers possibles après le DUT MMI</p>
-            <div class="FiltersOrScroll">
-                <a href="#" class="FiltersButton">Utilise les filtres de recherche pour trouver un métier</a>
-                <p>OU</p>
-                <p>↓ Balade toi dans la galaxie ! ↓</p>
+        <img src="image/fusee.png" alt="" class="rocket">
+        <img src="image/planete1.png" alt="" class="DUTPlanet clickable">
+        <img src="image/satellite.png" alt="" class="satellite1 clickable">
+        <img src="image/satellite.png" alt="" class="satellite2 clickable">
+        <h1>Astronommi</h1>
+        <!--Parce que c le boss tous simplement-->
+        <p>Découvre les métiers possibles après le DUT MMI</p>
+        <div class="FiltersOrScroll">
+            <a href="#" class="FiltersButton">Utilise les filtres de recherche pour trouver un métier</a>
+            <p>OU</p>
+            <p>↓ Balade toi dans la galaxie ! ↓</p>
+        </div>
+    </div>
+
+    <div class="menu">
+        <!-- Div pour le menu burger -->
+        <button class="click-bouton">
+            <!-- Création de l'icon du menu -->
+            <div id="icon-menu">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-        </div>
-        <div class="planete">
-            <!--Planètes-->
-            <img src="image/planetes_audio.png" alt="" class="planète1 clickable">
-            <img src="image/planete_dev.png" alt="" class="planète2 clickable">
-            <img src="image/plante_com.png" alt="" class="planète3 clickable">
-            <img src="image/planetes_art.png" alt="" class="planète4 clickable">
-        </div>
-        <!-- <footer>
+        </button>
+        <nav class="sidebar">
+            <h1>Menu</h1>
+            <div class="menu-link">
+                <h2>Planètes</h2>
+                <ul>
+                    <li><a href="#" class="nav-link">Audiovisuel</a></li><br>
+                    <li><a href="#" class="nav-link">Développement</a></li><br>
+                    <li><a href="#" class="nav-link">Communication</a></li><br>
+                    <li><a href="#" class="nav-link">Art&Design</a></li>
+                    <h2>Infos</h2>
+                    <li><a href="#" class="nav-link">Le BUT MMI</a></li><br>
+                    <li><a href="#" class="nav-link">A propos</a></li><br>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="planete">
+        <!--Planètes-->
+        <img src="image/planetes_audio.png" alt="" class="planète1 clickable">
+        <img src="image/planete_dev.png" alt="" class="planète2 clickable">
+        <img src="image/plante_com.png" alt="" class="planète3 clickable">
+        <img src="image/planetes_art.png" alt="" class="planète4 clickable">
+    </div>
+    <!-- <footer>
             <form action="envoi.php" method="get">
                 <legend>Pour nous contacter</legend>
                 <input type="text" name="nom_utilisateur" id="nom_utilisateur" placeholder="Nom*"><br>
@@ -65,7 +95,21 @@
     <!-- </div> -->
 
 </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script type="text/javascript" src="app.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript">
+    // Fonction qui permet de faire apparaître le menu de droite
+    $(document).ready(function () {
+        $('.click-bouton').click(function () {
+            $('.sidebar').toggleClass('active');
+            $('button').toggleClass('active-2');
+        });
+
+        $("#icon-menu").click(function () {
+            $(this).toggleClass("open");
+        });
+    });
+</script>
 
 </html>

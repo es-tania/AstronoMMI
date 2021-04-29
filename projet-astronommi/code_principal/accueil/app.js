@@ -1,5 +1,4 @@
 //Code Javascript pour faire le Parallax
-
 var parallax = document.getElementById("parallax")
 
 window.addEventListener("scroll", function () {
@@ -9,9 +8,15 @@ window.addEventListener("scroll", function () {
     parallax.style.backgroundPositionY = offset * 0.5 + "px";
 })
 
-
-$(document).ready(function () {
-
-    $(".code").load("index.html");
-
+// Animation bouton du menu
+const menuBtn = document.querySelector('.menu-btn');
+let menuOpen = false;
+menuBtn.addEventListener('click', () => {
+  if(!menuOpen) {
+    menuBtn.classList.add('open');
+    menuOpen = true;
+  } else {
+    menuBtn.classList.remove('open');
+    menuOpen = false;
+  }
 });

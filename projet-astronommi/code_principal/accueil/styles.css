@@ -10,6 +10,8 @@
     url(fonts/ArialRoundedMTBold.woff2) format('woff2');
 }
 
+
+
 /*Parallax étoile*/
 *{
     border: 0;
@@ -77,10 +79,12 @@ p{
 
 .logo{
     width: 70px;
-    position: absolute;
+    position: fixed;
     top: 20px;
-    left: 130px;
+    left: 20px;
+    transition: .3s;
 }
+
 svg{
     width: 60px;
     position: absolute;
