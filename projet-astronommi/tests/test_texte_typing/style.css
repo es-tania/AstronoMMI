@@ -1,0 +1,66 @@
+@font-face {
+    font-family: "Chainprinter";
+    src: url("/fonts/chainprinter/Chainprinter.woff2") format("woff2"),
+        url("/fonts/chainprinter/Chainprinter.woff") format("woff");
+}
+
+@font-face {
+    font-family: "ComputerPixel";
+    src: url("/fonts/computer_pixel/computer_pixel-7.woff2") format("woff2"),
+        url("/fonts/computer_pixel/computer_pixel-7.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Robotesqa";
+    src: url("/fonts/robotesqa/robotesqa-4f.woff2") format("woff2"),
+        url("/fonts/robotesqa/robotesqa-4f.woff") format("woff");
+}
+
+body {
+    background-color: #000;
+    padding: 1%;
+    /* color: chartreuse; */
+    font-family:"Robotesqa" ;
+    font-size: 1em;
+}
+
+.console {
+    /* font-family: "Chainprinter"; */
+    /* font-family: "ComputerPixel"; */
+    font-size: 1.5rem;
+    font-family:"Robotesqa" ;
+}
+
+.texte{
+    visibility: hidden;
+    position: absolute;
+}
+
+#caption{
+    color: chartreuse;
+}
+
+#caption p{
+    color: white;
+    width: 80vw;
+}
+
+#caption a{
+    color: chartreuse;
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+    top: 25vh;
+}
+
+#test-typing{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
