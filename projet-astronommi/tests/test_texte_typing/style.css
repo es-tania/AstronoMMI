@@ -1,19 +1,19 @@
 @font-face {
     font-family: "Chainprinter";
-    src: url("/fonts/chainprinter/Chainprinter.woff2") format("woff2"),
-        url("/fonts/chainprinter/Chainprinter.woff") format("woff");
+    src: url("fonts/chainprinter/Chainprinter.woff2") format("woff2"),
+        url("fonts/chainprinter/Chainprinter.woff") format("woff");
 }
 
 @font-face {
     font-family: "ComputerPixel";
-    src: url("/fonts/computer_pixel/computer_pixel-7.woff2") format("woff2"),
-        url("/fonts/computer_pixel/computer_pixel-7.woff") format("woff");
+    src: url("fonts/computer_pixel/computer_pixel-7.woff2") format("woff2"),
+        url("fonts/computer_pixel/computer_pixel-7.woff") format("woff");
 }
 
 @font-face {
     font-family: "Robotesqa";
-    src: url("/fonts/robotesqa/robotesqa-4f.woff2") format("woff2"),
-        url("/fonts/robotesqa/robotesqa-4f.woff") format("woff");
+    src: url("fonts/robotesqa/robotesqa-4f.woff2") format("woff2"),
+        url("fonts/robotesqa/robotesqa-4f.woff") format("woff");
 }
 
 body {

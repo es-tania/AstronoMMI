@@ -92,7 +92,7 @@
                     
     // Fiche métier du sous-domaine Décor 
     $sql = "SELECT *  
-            FROM astro_metier, astro_sousdomaine, astro_salairejunior, astro_niveauminacces, astro_domaine
+            FROM astro_metier, astro_sousdomaine, astro_salairejunior, astro_niveauminacces
             WHERE astro_sousdomaine.nom_sousdom='Décor' 
             AND astro_metier.id_sousdom=astro_sousdomaine.id_sousdom
             AND astro_metier.id_salaire=astro_salairejunior.id_salaire
@@ -122,8 +122,6 @@
                     </div>
                     <br>
                     <p>'.$data['intro'].'</p>
-                    <br>
-                    <p> Domaine : '.$data['nom_domaine'].'</p>
                     <br>
                     <p>Niveau minimum d’accès : '.$data['annee_bac'].'</p>
                     <br>
@@ -156,7 +154,7 @@
         
     // Fiche métier du sous-domaine Image
     $sql = "SELECT *  
-            FROM astro_metier, astro_sousdomaine, astro_salairejunior, astro_niveauminacces, astro_domaine
+            FROM astro_metier, astro_sousdomaine, astro_salairejunior, astro_niveauminacces
             WHERE astro_sousdomaine.nom_sousdom='Image' 
             AND astro_metier.id_sousdom=astro_sousdomaine.id_sousdom
             AND astro_metier.id_salaire=astro_salairejunior.id_salaire
@@ -187,8 +185,6 @@
                     <br>
                     <p>'.$data['intro'].'</p>
                     <br>
-                    <p> Domaine : '.$data['nom_domaine'].'</p>
-                    <br>
                     <p>Niveau minimum d’accès : '.$data['annee_bac'].'</p>
                     <br>
                     <p>Salaire débutant : '.$data['tranche'].' €</p>
@@ -218,7 +214,7 @@
     <?php 
     // Fiche métier du sous-domaine Montage
     $sql = "SELECT *  
-            FROM astro_metier, astro_sousdomaine, astro_salairejunior, astro_niveauminacces, astro_domaine
+            FROM astro_metier, astro_sousdomaine, astro_salairejunior, astro_niveauminacces
             WHERE astro_sousdomaine.nom_sousdom='Montage/Son' 
             AND astro_metier.id_sousdom=astro_sousdomaine.id_sousdom
             AND astro_metier.id_salaire=astro_salairejunior.id_salaire
@@ -249,8 +245,6 @@
                     <br>
                     <p>'.$data['intro'].'</p>
                     <br>
-                    <p> Domaine : '.$data['nom_domaine'].'</p>
-                    <br>
                     <p>Niveau minimum d’accès : '.$data['annee_bac'].'</p>
                     <br>
                     <p>Salaire débutant : '.$data['tranche'].' €</p>
@@ -280,7 +274,7 @@
     <?php 
     // Fiche métier du sous-domaine Montage
     $sql = "SELECT *  
-            FROM astro_metier, astro_sousdomaine, astro_salairejunior, astro_niveauminacces, astro_domaine
+            FROM astro_metier, astro_sousdomaine, astro_salairejunior, astro_niveauminacces
             WHERE astro_sousdomaine.nom_sousdom='Direction' 
             AND astro_metier.id_sousdom=astro_sousdomaine.id_sousdom
             AND astro_metier.id_salaire=astro_salairejunior.id_salaire
@@ -311,8 +305,6 @@
                     <br>
                     <p>'.$data['intro'].'</p>
                     <br>
-                    <p> Domaine : '.$data['nom_domaine'].'</p>
-                    <br>
                     <p>Niveau minimum d’accès : '.$data['annee_bac'].'</p>
                     <br>
                     <p>Salaire débutant : '.$data['tranche'].' €</p>
@@ -342,7 +334,7 @@
     <?php 
     // Fiche métier du sous-domaine Montage
     $sql = "SELECT *  
-    FROM astro_metier, astro_sousdomaine, astro_salairejunior, astro_niveauminacces, astro_domaine
+    FROM astro_metier, astro_sousdomaine, astro_salairejunior, astro_niveauminacces
     WHERE astro_sousdomaine.nom_sousdom='Texte/écrit' 
     AND astro_metier.id_sousdom=astro_sousdomaine.id_sousdom
     AND astro_metier.id_salaire=astro_salairejunior.id_salaire
@@ -373,8 +365,6 @@
             </div>
             <br>
             <p>'.$data['intro'].'</p>
-            <br>
-            <p> Domaine : '.$data['nom_domaine'].'</p>
             <br>
             <p>Niveau minimum d’accès : '.$data['annee_bac'].'</p>
             <br>
@@ -408,7 +398,7 @@
         
     // Fiche métier du sous-domaine Multimédia 
         $sql = "SELECT *  
-        FROM astro_metier, astro_sousdomaine, astro_salairejunior, astro_niveauminacces, astro_domaine
+        FROM astro_metier, astro_sousdomaine, astro_salairejunior, astro_niveauminacces
         WHERE astro_sousdomaine.nom_sousdom='Multimédia' 
         AND astro_metier.id_sousdom=astro_sousdomaine.id_sousdom
         AND astro_metier.id_salaire=astro_salairejunior.id_salaire
@@ -438,8 +428,6 @@
                     </div>
                     <br>
                     <p>'.$data['intro'].'</p>
-                    <br>
-                    <p> Domaine : '.$data['nom_domaine'].'</p>
                     <br>
                     <p>Niveau minimum d’accès : '.$data['annee_bac'].'</p>
                     <br>
@@ -472,7 +460,7 @@
         
     // Fiche métier du sous-domaine Presse
         $sql = "SELECT *  
-        FROM astro_metier, astro_sousdomaine, astro_salairejunior, astro_niveauminacces, astro_domaine
+        FROM astro_metier, astro_sousdomaine, astro_salairejunior, astro_niveauminacces
         WHERE astro_sousdomaine.nom_sousdom='Presse' 
         AND astro_metier.id_sousdom=astro_sousdomaine.id_sousdom
         AND astro_metier.id_salaire=astro_salairejunior.id_salaire
@@ -503,8 +491,6 @@
                     <br>
                     <p>'.$data['intro'].'</p>
                     <br>
-                    <p> Domaine : '.$data['nom_domaine'].'</p>
-                    <br>
                     <p>Niveau minimum d’accès : '.$data['annee_bac'].'</p>
                     <br>
                     <p>Salaire débutant : '.$data['tranche'].' €</p>
@@ -534,7 +520,7 @@
     <?php 
     // Fiche métier du sous-domaine Management
         $sql = "SELECT *  
-        FROM astro_metier, astro_sousdomaine, astro_salairejunior, astro_niveauminacces, astro_domaine
+        FROM astro_metier, astro_sousdomaine, astro_salairejunior, astro_niveauminacces
         WHERE astro_sousdomaine.nom_sousdom='Management' 
         AND astro_metier.id_sousdom=astro_sousdomaine.id_sousdom
         AND astro_metier.id_salaire=astro_salairejunior.id_salaire
@@ -564,8 +550,6 @@
                     </div>
                     <br>
                     <p>'.$data['intro'].'</p>
-                    <br>
-                    <p> Domaine : '.$data['nom_domaine'].'</p>
                     <br>
                     <p>Niveau minimum d’accès : '.$data['annee_bac'].'</p>
                     <br>
