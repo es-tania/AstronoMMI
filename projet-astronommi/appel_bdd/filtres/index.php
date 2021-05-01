@@ -57,8 +57,6 @@
                     <br>
                     <p>'.$data['intro'].'</p>
                     <br>
-                    <p> Domaine : '.$data['nom_domaine'].'</p>
-                    <br>
                     <p>Niveau minimum d’accès : '.$data['annee_bac'].'</p>
                     <br>
                     <p>Salaire débutant : '.$data['tranche'].' €</p>
