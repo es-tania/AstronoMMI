@@ -20,7 +20,7 @@
     ?>
     <!-- <h1>Fiche métier du domaine de l'Art&Design</h1> -->
 
-     
+    <?php 
     include('secret.php');
         
     // Fiche métier du sous-domaine Décor 
@@ -33,36 +33,6 @@
         // On prépare la requête avant l'envoi :
         $req = $link -> prepare($sql);
         $req -> execute();
-
-
-        echo '<ul>';
-            $id_album_precedent = -1;
-            while($data = $req -> fetch()){
-                if($id_album_precedent != $data["id_album"]){
-                $fermeture_balises = "";
-            if($id_album_precedent>-1){
-            // Ce n'est pas le premier album :
-            // il faut fermer les balises <ul> et <li> de l'album précédent :
-            $fermeture_balises = "</ul></li>";
-            }
-            // On affiche les informations sur l'album
-            echo $fermeture_balises.'
-            <li><b>'.$data['nom_album'].'</b><br><img class="album" src="'
-            .$data['pochette'].'" alt="Pochette de l\'album « '
-            .$data["nom_album"].' »"><ul>
-            ';
-            }
-        echo '<li>'.$data['titre_chanson'].'</li>
-        ';
-
-        $id_album_precedent = $data["id_album"];
-        }
-        $req = null;
-        echo '  </ul></li>
-        </ul>';
-
-
-
         while($data = $req -> fetch()){
         // On affiche chaque résultat sous forme d'un item de la liste
         echo '
