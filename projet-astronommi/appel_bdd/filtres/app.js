@@ -5,6 +5,6 @@ $(document).ready(function () {
         
     // });
 
-    $(".fiches").load("index.html")
+    // $(".fiches").load("filtre.html")
 
 });

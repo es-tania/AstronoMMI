@@ -69,7 +69,7 @@ body {
 }
 
 .modal-wrapper {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(84, 163, 187, 0.7);
     top: 0;
     /* bottom: 0; */
     /* left: 0;
@@ -83,7 +83,7 @@ body {
 }
 
 .modal-body {
-    background-color:white;
+    background-color:rgb(223, 247, 254, 0.7);
     width: 60vw;
     border-radius: 16px;
     padding: 32px;

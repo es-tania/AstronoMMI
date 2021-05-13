@@ -1,0 +1,51 @@
+::-webkit-scrollbar{
+    display: none;
+}
+
+body {
+    margin: 0;
+    background-image: url('image/galaxie.jpg');
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tablette{
+    position: absolute;
+    top: 5px;
+    z-index: 1;
+    width: 100vw;
+    height: 103vh;
+}
+
+
+.fondtab{
+    position: relative;
+    left: 25px;
+    margin: auto;
+    height: 92vh;
+    width: 64.7vw;
+    background-color: #dff7fe;
+    border-radius: 3.5vw;
+}
+
+section{
+    position: absolute;
+    height: 92vh;
+    width: 64.7vw;
+    z-index: 2;
+    overflow: auto;
+
+}
+
+h1{
+    height: 150vh;
+    text-align: center;
+
+}
+
+
+
+

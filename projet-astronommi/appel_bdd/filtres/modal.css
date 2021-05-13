@@ -52,7 +52,7 @@ body {
     background: #ebebeb;
     /* border: 1px solid #5a72b5; */
     border-radius: 4px;
-    color: black;
+    color: #ebebeb;
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -69,7 +69,9 @@ body {
 }
 
 .modal-wrapper {
-    background-color: rgba(0, 0, 0, 0.7);
+    /* background-color: rgba(223, 247, 254, 0.7); */
+    background-color: rgb(247, 1, 1);
+    background-color: #dff7fe;
     top: 0;
     /* bottom: 0; */
     /* left: 0;
@@ -83,7 +85,8 @@ body {
 }
 
 .modal-body {
-    background-color:white;
+    /* background-color:white; */
+    background-color: rgb(223, 247, 254, 0.7);;
     width: 60vw;
     border-radius: 16px;
     padding: 32px;
