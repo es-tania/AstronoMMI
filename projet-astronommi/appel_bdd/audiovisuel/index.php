@@ -16,8 +16,9 @@
     include('secret.php');             
     // Fiche métier du sous-domaine Décor 
     $sql = "SELECT *  
-            FROM astro_metier, astro_sousdomaine, astro_salairejunior, astro_niveauminacces
-            WHERE astro_sousdomaine.id_sousdom=astro_metier.id_sousdom 
+            FROM astro_metier, astro_sousdomaine, astro_salairejunior, astro_niveauminacces, astro_domaine
+            WHERE astro_metier.id_domaine=astro_domaine.id_domaine
+            AND astro_domaine.nom_domaine='Audiovisuel' 
             AND astro_metier.id_sousdom=astro_sousdomaine.id_sousdom
             AND astro_metier.id_salaire=astro_salairejunior.id_salaire
             AND astro_metier.id_niveau=astro_niveauminacces.id_niveau
