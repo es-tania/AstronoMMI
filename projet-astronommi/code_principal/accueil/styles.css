@@ -109,14 +109,14 @@ svg{
     left: 20vw;
 }
 
-.satellite1{
+.apropos{
     width: 15%;
     position: absolute;
-    top: 50px;
+    top: 10vh;
     right: 35vw;
 }
 
-.satellite2{
+.contact{
     width: 15%;
     position: absolute;
     top: 20vh;
