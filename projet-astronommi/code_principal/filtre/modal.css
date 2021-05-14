@@ -1,39 +1,43 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
-
 * {
   box-sizing: border-box;
   margin: 0;
 }
 
-body {
-    /* color: #121943; */
-    /* display: flex; */
-    /* flex-direction: grid; */
-    font-family: "Lato", sans-serif;
-    font-size: 0.85rem;
-    margin: 0;
-    height: 100vh;
-    /* place-items: center; */
+.fiches{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 1vw;
+    margin-top: 10px;
 }
 
 .card {
-    display: inline-block;
-    background-image: linear-gradient(48deg, #fff 0%, #e5efe9 100%);
-    border-top-right-radius: 16px;
-    border-bottom-left-radius: 16px;
-    box-shadow: -20px 20px 35px 1px rgba(10, 49, 86, 0.18);
-    /* display: flex;
-    flex-direction: column; */
-    padding: 20px 15px;
-    margin: 40px;
-    /* width: 15vw; */
-    width: 300px;
-    height: 280px;
+    position: relative;
+    border-radius: 15px;
+    padding: 17px 10px;
+    margin:8px;
+    width: 11vw;
+    border: #00f6e8 solid;
+    overflow-wrap:break-word;
 }
 
-.content-wrapper {
-    /* font-size: 1.1em; */
-    margin-bottom: 44px;
+@media screen and (max-width:1630px) {
+    .card{
+        width:16.5vw;
+    }
+}
+
+.card h2{
+    font-family: 'Space age';
+    color:#00f6e8;
+    text-align: center;
+}
+
+.card p{
+    font-family: 'Arial Rounded MT';
+    color:#00f6e8;
+    font-size: 0.75rem;
+    padding-bottom: 10px;
 }
 
 .content-wrapper .intro {
@@ -43,32 +47,41 @@ body {
 }
 
 .titre {
-    font-size: 1.5em;
-    margin-bottom: 15px;
+    font-size: 1.1em;
+    margin-bottom: 13px;
 }
 
 .button {
-    background: #ebebeb;
-    /* border: 1px solid #5a72b5; */
-    border-radius: 4px;
+    font-family: 'Arial Rounded MT Bold';
+    font-size: 1em;
     color: black;
-    cursor: pointer;
+    text-decoration: none;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1em;
-    font-weight: 700;
-    height: 40px;
-    text-decoration: none;
+    /* position: relative;
+    bottom: 0px; */
 
+    background: #00f6e8;
+    /* border: 1px solid #5a72b5; */
+    border-radius: 4px;
+    height: 40px;
+    width:fit-content;
+
+    cursor: pointer;
 }
 
 .button:hover {
-    background-color: rgb(207, 207, 207);
+    background-color: transparent;
+    color: #00f6e8;
+    border: #00f6e8 solid 1px;
 }
 
+/* Modal (qui apparaît après clic) */
+
 .modal-wrapper {
-    background-color: rgba(84, 163, 187, 0.7);
+    background-color: rgba(0, 18, 26, 0.7);
     top: 0;
     bottom: 0;
     left: 0;
@@ -84,18 +97,36 @@ body {
 }
 
 .modal-body {
-    background-color:rgb(223, 247, 254);
-    width: 60vw;
+    background-color: rgba(0, 18, 26, 0.8);
     border-radius: 16px;
     padding: 32px;
     margin: 40px;
+    border: #00f6e8 solid;
+    box-shadow: 0px 0px 50px 15px #00f6eaa6;
 }
 
-@media screen and (max-width:1300px) {
+@media screen and (max-width:1450px) {
     .modal-body {
         position: absolute;
         top: 0;
+        width: 80vw;
     }
+}
+
+@media screen and (min-width:1300px) {
+    .modal-body {
+        width: 50vw;
+    }
+}
+
+.modal-body p{
+    font-family: 'Arial Rounded MT';
+    color: #92fffa;
+}
+
+.modal-header h2{
+    font-family: 'SpaceAge';
+    color: #92fffa;
 }
 
 .modal-header {
@@ -108,6 +139,7 @@ body {
     opacity: 0;
     transition: opacity 0.25s ease-in-out;
     visibility: hidden;
+    
 }
 
 .modal:target {
