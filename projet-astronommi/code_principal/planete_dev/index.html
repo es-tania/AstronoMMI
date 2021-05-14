@@ -19,7 +19,7 @@
             <div><img src="img/Homer.png" alt="" class="homer"></div>
 
             <div class="slide">
-                
+
                 <div class="layer layer-1"></div>
                 <div class="layer layer-2"></div>
                 <div class="layer layer-3"></div>
@@ -28,7 +28,7 @@
                 <div class="layer layer-6"></div>
             </div>
 
-                        <div class="menu">
+            <div class="menu">
                 <!-- Div pour le menu burger -->
                 <button class="click-bouton">
                     <!-- Création de l'icon du menu -->
@@ -41,14 +41,16 @@
                 <nav class="sidebar">
                     <h1>Menu</h1>
                     <div class="menu-link">
-                        <a href="#" class="nav-link"><h2>Accueil</h2></a>
+                        <a href="#" class="nav-link">
+                            <h2>Accueil</h2>
+                        </a>
                         <h2>Planètes</h2>
                         <ul>
                             <li><a href="#" class="nav-link">Audiovisuel</a></li><br>
                             <li><a href="#" class="nav-link">Communication</a></li><br>
-                            <li><a href="#" class="nav-link">Audiovisuel</a></li>
+                            <li><a href="#" class="nav-link">Art&Design</a></li>
                         </ul>
-                            <h2>Infos</h2>
+                        <h2>Infos</h2>
                         <ul>
                             <li><a href="#" class="nav-link">Le BUT MMI</a></li><br>
                             <li><a href="#" class="nav-link">A propos</a></li><br>
@@ -69,7 +71,7 @@
                 $('.sidebar').toggleClass('active');
                 $('button').toggleClass('active-2');
             });
-    
+
             $("#icon-menu").click(function () {
                 $(this).toggleClass("open");
             });
