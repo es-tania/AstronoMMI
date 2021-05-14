@@ -25,7 +25,7 @@
                 <textarea rows="5" cols="50" name="message" placeholder="Message"></textarea><br>
                 <input type="submit" id="envoi" value="Envoyer">
             </form>
-            <img src="image/surfaceplanete.png" alt="" class="BottomPlanet">
+            <img src="image/planete_footer.png" alt="" class="BottomPlanet">
         </footer>
     </div>
 
