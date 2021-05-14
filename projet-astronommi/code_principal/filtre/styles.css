@@ -1,3 +1,18 @@
+@font-face {
+    font-family: 'SpaceAge';
+    src: url(fonts/SpaceAge.woff) format('woff'),
+    url(fonts/SpaceAge.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Arial Rounded MT Bold';
+    src: url(fonts/ArialRoundedMTBold.woff) format('woff'),
+    url(fonts/ArialRoundedMTBold.woff2) format('woff2');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700&display=swap');
+
+
 ::-webkit-scrollbar{
     display: none;
 }
@@ -7,9 +22,17 @@ body {
     background-image: url('image/galaxie.jpg');
     overflow: hidden;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100vw;
+    position: relative;
+}
+
+.logo{
+    width: 70px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    transition: .3s;
+    z-index: 3;
 }
 
 .tablette{
@@ -20,31 +43,32 @@ body {
     height: 103vh;
 }
 
-
-.fondtab{
+main{
     position: relative;
-    left: 25px;
+    top: 6vh;
+    /* left: 25vw; */
     margin: auto;
-    height: 92vh;
-    width: 64.7vw;
-    background-color: #dff7fe;
-    border-radius: 3.5vw;
-}
-
-section{
-    position: absolute;
-    height: 92vh;
-    width: 64.7vw;
+    height: 89vh;
+    width: 60vw;
     z-index: 2;
-    overflow: auto;
-
+    border: springgreen solid;
+    display: flex;
 }
 
-h1{
-    height: 150vh;
+main h1{
     text-align: center;
-
+    font-family: 'SpaceAge';
+    color: #00f6e8;
+    border: pink solid;
+    height: max-content;
 }
+
+.filtre{
+    color: #00f6e8;
+    border: red solid;
+    height: max-content;
+}
+
 
 
 

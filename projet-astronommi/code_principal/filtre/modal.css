@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+    /* color: #121943; */
+    /* display: flex; */
+    /* flex-direction: grid; */
+    font-family: "Lato", sans-serif;
+    font-size: 0.85rem;
+    margin: 0;
+    height: 100vh;
+    /* place-items: center; */
+}
+
+.card {
+    display: inline-block;
+    background-image: linear-gradient(48deg, #fff 0%, #e5efe9 100%);
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    box-shadow: -20px 20px 35px 1px rgba(10, 49, 86, 0.18);
+    /* display: flex;
+    flex-direction: column; */
+    padding: 20px 15px;
+    margin: 40px;
+    /* width: 15vw; */
+    width: 300px;
+    height: 280px;
+}
+
+.content-wrapper {
+    /* font-size: 1.1em; */
+    margin-bottom: 44px;
+}
+
+.content-wrapper .intro {
+    margin-bottom: 0;
+    height: 80px;
+    overflow: hidden;
+}
+
+.titre {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.button {
+    background: #ebebeb;
+    /* border: 1px solid #5a72b5; */
+    border-radius: 4px;
+    color: black;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    font-weight: 700;
+    height: 40px;
+    text-decoration: none;
+
+}
+
+.button:hover {
+    background-color: rgb(207, 207, 207);
+}
+
+.modal-wrapper {
+    background-color: rgba(84, 163, 187, 0.7);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    overflow: auto;
+}
+
+.modal-body {
+    background-color:rgb(223, 247, 254);
+    width: 60vw;
+    border-radius: 16px;
+    padding: 32px;
+    margin: 40px;
+}
+
+@media screen and (max-width:1300px) {
+    .modal-body {
+        position: absolute;
+        top: 0;
+    }
+}
+
+.modal-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.modal {
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+    visibility: hidden;
+}
+
+.modal:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal:target .modal-body {
+    opacity: 1;
+    transform: translateY(1);
+}
+
+.modal .modal-body {
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+    z-index: 1;
+}
+
+.close svg {
+    width: 16px;
+}
+
