@@ -16,7 +16,7 @@
         <?php 
         include('index.html')
         ?>
-        <footer>
+        <footer id="contact">
             <form action="envoi.php" method="get">
                 <legend>Pour nous contacter</legend>
                 <input type="text" name="nom_utilisateur" id="nom_utilisateur" placeholder="Nom*"><br>
