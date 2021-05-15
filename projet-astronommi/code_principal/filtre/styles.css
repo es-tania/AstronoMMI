@@ -1,19 +1,19 @@
 @font-face {
     font-family: 'SpaceAge';
     src: url(fonts/SpaceAge.woff) format('woff'),
-    url(fonts/SpaceAge.woff2) format('woff2');
+        url(fonts/SpaceAge.woff2) format('woff2');
 }
 
 @font-face {
     font-family: 'Arial Rounded MT Bold';
     src: url(fonts/ArialRoundedMTBold.woff) format('woff'),
-    url(fonts/ArialRoundedMTBold.woff2) format('woff2');
+        url(fonts/ArialRoundedMTBold.woff2) format('woff2');
 }
 
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700&display=swap');
 
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     display: none;
 }
 
@@ -26,7 +26,7 @@ body {
     position: relative;
 }
 
-.logo{
+.logo {
     width: 70px;
     position: absolute;
     top: 20px;
@@ -35,7 +35,7 @@ body {
     z-index: 3;
 }
 
-.tablette{
+.tablette {
     position: absolute;
     top: 5px;
     z-index: 1;
@@ -43,33 +43,148 @@ body {
     height: 103vh;
 }
 
-main{
+main {
     position: relative;
-    top: 6vh;
+    top: 5vh;
     /* left: 25vw; */
     margin: auto;
     height: 89vh;
     width: 60vw;
     z-index: 2;
-    border: springgreen solid;
     display: flex;
 }
 
-main h1{
+/* Titre principal de la tablette */
+
+main h1 {
     text-align: center;
     font-family: 'SpaceAge';
     color: #00f6e8;
-    border: pink solid;
     height: max-content;
+    width: 100%;
+    margin-top: 7vh;
+    font-size: 2rem;
 }
 
-.filtre{
+@media screen and (max-width:1630px) {
+    main h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Section filtre */
+
+.filtre {
+    position: absolute;
+    bottom: 7vh;
     color: #00f6e8;
-    border: red solid;
-    height: max-content;
+    /* border: red solid; */
+    height: 58vh;
+    width: 17vw;
+    display: inline-block;
+    margin: 5vh;
+    overflow: auto;
 }
 
+form {
+    padding-left: 3vw;
+}
 
+main section>h2 {
+    font-family: 'SpaceAge';
+    font-size: 2rem;
+    color: #00f6e8;
+    text-align: center;
+    margin: 0;
+    padding-top: 0.5vh;
+}
 
+form>h2 {
+    font-family: 'Arial Rounded MT Bold';
+    font-size: 1rem;
+    margin-top: 12px;
+    margin-bottom: 4px;
+}
 
+form>label,input{
+    font-family: 'Arial Rounded MT';
+    font-size: 0.8rem;
+    padding-top: 5px;
+    padding-right: 10px;
+}
 
+@media screen and (max-width:1500px) {
+    .filtre>h2{
+        font-size: 1.3rem;
+    }
+
+    .filtre{
+        margin: 4vh;
+    }
+
+    form>h2{
+        font-size: 0.8rem;
+        margin-top: 7px;
+    }
+
+    form > label, input {
+        font-size: 0.7rem;
+        padding-top: 0;
+    }
+
+    form{
+        padding-bottom: 10px;
+    }
+}
+
+/* Section fiches métiers */
+
+.cartefiche {
+    position: absolute;
+    bottom: 10vh;
+    left: 22vw;
+    display: inline-block;
+    width: 38vw;
+    height: 60vh;
+    /* margin-top: 5vh; */
+    overflow: auto;
+}
+
+@media screen and (max-width:1500px) {
+    .cartefiche>h2{
+        font-size: 1.3rem;
+    }
+
+}
+
+/* Modification du bouton type checkbox */
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"] +label {
+    position: relative;
+    padding-left: 1.1rem;
+}
+
+input[type="checkbox"]+label::before,
+input[type="checkbox"]+label::after {
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    bottom: 0;
+    left: 0;
+    content: '';
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 1rem;
+}
+
+input[type="checkbox"]+label::before {
+    border: 1px solid #00f6e8;
+}
+
+input[type="checkbox"]:checked+label::after {
+    background-color: #00f6e8;
+}
