@@ -5,54 +5,15 @@
 <link rel="stylesheet" href="modal.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script type="text/javascript" src="app.js"></script>
-<style>
-#overlay {
-  position: fixed;
-  display: none;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.5);
-  z-index: 2;
-  cursor: pointer;
-  overflow: hidden;
-}
 
-#text{
-    width: 100vw;
-    height: 100vh;
-    background-image: url(medias/tablette.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    padding: 100px 20vw 100px 20vw;
-    overflow: hidden;
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  font-size: 50px;
-  color: white;
-  transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%); */
-}
-.batiment-son{
-    position: relative;
-    top:40%;
-    left: 100vw;
-    bottom: 0;
-    z-index: 1;
-    height: 50vh;
-    cursor: pointer;
-}
-</style>
+<title>Planète Audiovisuel</title>
 </head>
 <body>
 
 <div id="overlay">
   <div id="text">
-  <a href="#!" role="button" class="close" aria-label="close this modal" onclick="off()">
+  <div class="fiches">
+  <a href="#!" role="button" class="close close-tablet" aria-label="close this modal" onclick="off()">
                             <svg viewBox="0 0 24 24">
                                 <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
                             </svg>
@@ -123,6 +84,7 @@
                 }
                 $req = null;
             ?>
+            </div>
       </div>
 </div>
 

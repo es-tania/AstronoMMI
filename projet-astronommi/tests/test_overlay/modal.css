@@ -13,7 +13,7 @@ body {
     font-family: "Lato", sans-serif;
     font-size: 0.85rem;
     margin: 0;
-    /* height: 100vh; */
+    height: 100vh;
     /* place-items: center; */
     
 }
@@ -26,16 +26,16 @@ body {
     box-shadow: -20px 20px 35px 1px rgba(10, 49, 86, 0.18);
     /* display: flex;
     flex-direction: column; */
-    padding: 20px 15px;
-    margin: 40px;
+    padding: 10px 10px;
+    margin: 15px;
     /* width: 15vw; */
-    width: 200px;
-    height: 100px;
+    width: 20vw;
+    height: 30vh;
 }
 
 .content-wrapper {
     /* font-size: 1.1em; */
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .content-wrapper .intro {
@@ -73,11 +73,12 @@ body {
     background-color: rgba(124, 75, 47, 0.7);
     top: 0;
     /* bottom: 0; */
-    /* left: 0;
-    right: 0; */
-    height: 100%;
-    width: 100%;
-    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -85,12 +86,12 @@ body {
 
 .modal-body {
     background-color:rgb(223, 247, 254, 0.7);
-    width: 60vw;
+    width: 80vw;
     border-radius: 16px;
     padding: 32px;
-    margin: 40px;
+    margin:auto;
     position: absolute;
-    top: 0;
+    top: 10px;
 }
 
 .modal-header {
@@ -123,5 +124,67 @@ body {
 
 .close svg {
     width: 16px;
+    float: right;
 }
 
+
+
+
+
+
+/* POUR L'OVERLAY */
+
+.close-tablet{
+    fill: #fff;
+}
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  #text{
+      width: 100vw;
+      height: 100vh;
+      background-image: url(medias/tablette.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      padding: 100px 25vw 100px 25vw;
+      overflow: hidden;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%); */
+  }
+  
+  /* .fiches{
+width: 70vw;
+  } */
+
+
+  /* BATIMENT SON CLIQUABLE */
+  .batiment-son{
+      position: relative;
+      top:40%;
+      left: 100vw;
+      bottom: 0;
+      z-index: 1;
+      height: 50vh;
+      cursor: pointer;
+  }
