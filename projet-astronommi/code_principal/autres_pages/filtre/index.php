@@ -7,6 +7,7 @@
     <title>Page filtre</title>
     <link rel="stylesheet" href="assets/styles.css">
     <link rel="stylesheet" href="assets/modal.css">
+    <link rel="icon" type="image/png" href="assets/image/logo_avec_nom.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript" src="assets/app.js"></script>
 </head>

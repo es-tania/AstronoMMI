@@ -9,7 +9,7 @@
         AND astro_metier.id_salaire=astro_salairejunior.id_salaire
         AND astro_metier.id_niveau=astro_niveauminacces.id_niveau
         GROUP BY astro_metier.id_metier
-        ORDER BY astro_domaine.nom_domaine, astro_metier.nom_metier;";
+        ORDER BY astro_metier.nom_metier;";
         // On prépare la requête avant l'envoi :
         $req = $link -> prepare($sql);
         $req -> execute();

@@ -16,7 +16,8 @@
         <?php 
         include('accueil.html')
         ?>
-        <footer id="contact">
+        <div id="contact" class="footer">
+            <img src="assets/image/planete_footer.png" alt="">
             <form action="envoi.php" method="get">
                 <legend>Pour nous contacter</legend>
                 <input type="text" name="nom_utilisateur" id="nom_utilisateur" placeholder="Nom*"><br>
@@ -25,8 +26,8 @@
                 <textarea rows="5" cols="50" name="message" placeholder="Message"></textarea><br>
                 <input type="submit" id="envoi" value="Envoyer">
             </form>
-            <img src="assets/image/planete_footer.png" alt="" class="BottomPlanet">
-        </footer>
+            
+        </div>
     </div>
 
 </body>
