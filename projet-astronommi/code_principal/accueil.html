@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="assets/menu.css">
+    <link rel="icon" type="image/png" href="assets/image/logo_avec_nom.png">
+    <title>Accueil - Astronommi</title>
+</head>
+
+<body>
+    <div class="first" id="accueil">
+        <!-- Div pour placer tous les élements au haut de la page -->
+        <a href="#accueil"><img src="assets/image/logo_avec_nom.png" alt="" class="logo"></a>
+        <img src="assets/image/fusee.png" alt="" class="rocket">
+        <img src="assets/image/planete_dev.png" alt="" class="DUTPlanet clickable">
+        <img src="assets/image/satellite.png" alt="" class="apropos clickable">
+        <a href="#contact"><img src="assets/image/satellite.png" alt="" class="contact clickable"></a>
+        <h1>Astronommi</h1>
+        <p>Découvre les métiers possibles après le DUT MMI</p>
+        <div class="FiltersOrScroll">
+            <a href="#" class="FiltersButton">Utilise les filtres de recherche pour trouver un métier</a>
+            <p>OU</p>
+            <p>↓ Balade toi dans la galaxie ! ↓</p>
+        </div>
+    </div>
+
+    <div class="menu">
+        <!-- Div pour le menu burger -->
+        <button class="click-bouton">
+            <!-- Création de l'icon du menu -->
+            <div id="icon-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+        <nav class="sidebar">
+            <h1>Menu</h1>
+            <div class="menu-link">
+                <h2>Planètes</h2>
+                <ul>
+                    <li><a href="../planete_audio/index.html" class="nav-link">Audiovisuel</a></li><br>
+                    <li><a href="../planete_dev/index.html" class="nav-link">Développement</a></li><br>
+                    <li><a href="../planete_com/index.html" class="nav-link">Communication</a></li><br>
+                    <li><a href="../planete_art/index.html" class="nav-link">Art&Design</a></li>
+                    <h2>Infos</h2>
+                    <li><a href="#" class="nav-link">Le BUT MMI</a></li><br>
+                    <li><a href="#" class="nav-link">A propos</a></li><br>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="planete">
+        <!--Planètes-->
+        <a href="../planete_audio/index.html"><img src="assets/image/planetes_audio.png" alt="" class="planète1 clickable"></a>
+        <a href="../planete_dev/index.html"><img src="assets/image/planete_dev.png" alt="" class="planète2 clickable"></a>
+        <a href="../planete_com/index.html"><img src="assets/image/plante_com.png" alt="" class="planète3 clickable"></a>
+        <a href="../planete_art/index.html"><img src="assets/image/planetes_art.png" alt="" class="planète4 clickable"></a>
+    </div>
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="assets/app.js"></script>
+<script type="text/javascript">
+    // Fonction qui permet de faire apparaître le menu de droite
+    $(document).ready(function () {
+        $('.click-bouton').click(function () {
+            $('.sidebar').toggleClass('active');
+            $('button').toggleClass('active-2');
+        });
+
+        $("#icon-menu").click(function () {
+            $(this).toggleClass("open");
+        });
+    });
+</script>
+
+</html>
