@@ -43,12 +43,12 @@
 
 
                 <!-- Sous-domaine pour communication -->
-                <input type="checkbox" name="sous-domaine" id="multimedia" class="check"><label
+                <input type="checkbox" name="sous-domaine" id="multimedia" class="sousdom check"><label
                     for="multimedia">Multimédia</label><br>
 
-                <input type="checkbox" name="sous-domaine" id="presse" class="check"><label for="presse">Presse</label>
+                <input type="checkbox" name="sous-domaine" id="presse" class="sousdom check"><label for="presse">Presse</label>
 
-                <input type="checkbox" name="sous-domaine" id="management" class="check"><label for="management">Management</label>
+                <input type="checkbox" name="sous-domaine" id="management" class="sousdom check"><label for="management">Management</label>
 
 
                 <h2>Niveau minimum d'accès</h2>
