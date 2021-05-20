@@ -2,6 +2,7 @@
     font-family: 'SpaceAge';
     src: url(fonts/SpaceAge.woff) format('woff'),
         url(fonts/SpaceAge.woff2) format('woff2');
+        font-weight: 400;
 }
 
 @font-face {
@@ -46,7 +47,6 @@ body {
 main {
     position: relative;
     top: 5vh;
-    /* left: 25vw; */
     margin: auto;
     height: 89vh;
     width: 60vw;
@@ -78,7 +78,6 @@ main h1 {
     position: absolute;
     bottom: 7vh;
     color: #00f6e8;
-    /* border: red solid; */
     height: 58vh;
     width: 17vw;
     display: inline-block;
@@ -110,7 +109,7 @@ form>label,input{
     font-family: 'Arial Rounded MT';
     font-size: 0.8rem;
     padding-top: 5px;
-    padding-right: 10px;
+    padding-right: 9px;
 }
 
 @media screen and (max-width:1500px) {
@@ -141,12 +140,10 @@ form>label,input{
 
 .cartefiche {
     position: absolute;
-    bottom: 10vh;
+    bottom: 9.8vh;
     left: 22vw;
-    display: inline-block;
     width: 38vw;
-    height: 60vh;
-    /* margin-top: 5vh; */
+    height: 59vh;
     overflow: auto;
 }
 

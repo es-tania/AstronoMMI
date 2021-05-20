@@ -5,6 +5,4 @@ $(document).ready(function () {
         
     // });
 
-    // $(".fiches").load("fiches.php")
-
 });
