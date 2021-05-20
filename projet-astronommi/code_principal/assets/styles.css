@@ -226,10 +226,12 @@ svg{
 
 form{
     position: absolute;
-    top: 35vh;
+    /* top: 35vh; */
     margin: 50px;
     text-align: center;
-    margin-bottom: 20vh;
+    margin-bottom: 20px;
+    bottom: 10vh;
+    border: red solid;
 }
 
 input, textarea{
@@ -268,6 +270,17 @@ legend{
     margin: 15px;
     margin-bottom: 30px;
 }
+
+@media screen and (max-width:1430px) {
+    form{
+        bottom: 0vh;
+    }
+
+    legend{
+        font-size: 1.8rem;
+    }
+}
+
 
 ::placeholder{
     font-family:'Arial Rounded MT Bold', sans-serif;
