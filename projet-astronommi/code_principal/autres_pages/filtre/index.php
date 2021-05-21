@@ -7,12 +7,14 @@
     <title>Page filtre</title>
     <link rel="stylesheet" href="assets/styles.css">
     <link rel="stylesheet" href="assets/modal.css">
+    <link rel="stylesheet" href="../page_chargement.css">
     <link rel="icon" type="image/png" href="assets/image/logo_avec_nom.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript" src="assets/app.js"></script>
 </head>
 
 <body>
+    <?php include('../page_chargement.php')?>
     <main>
         <h1>Trier les fiches métiers<br> selon votre envie</h1>
         <section class="filtre">
@@ -20,40 +22,49 @@
             <!--Filtre-->
             <form action="index.php" method="POST">
                 <h2>Domaine</h2>
-                
+
                 <input type="checkbox" name="art&design" id="art" class="check"><label for="art">Art&Design</label><br>
 
                 <input type="checkbox" name="domaine" value="audiovisuel" id="audio" class="check"><label
                     for="audio">Audiovisuel</label><br>
 
-                <input type="checkbox" name="communication" id="com" class="check"><label for="com">Communication</label><br>
+                <input type="checkbox" name="communication" id="com" class="check"><label
+                    for="com">Communication</label><br>
 
-                <input type="checkbox" name="développement" id="dev" class="check"><label for="dev">Développement</label>
+                <input type="checkbox" name="développement" id="dev" class="check"><label
+                    for="dev">Développement</label>
 
 
                 <h2>Sous-domaine</h2>
-                <input type="checkbox" name="sous-domaine" value="decor" id="decor" class="sousdom check"><label for="decor">Décor</label>
+                <input type="checkbox" name="sous-domaine" value="decor" id="decor" class="sousdom check"><label
+                    for="decor">Décor</label>
 
-                <input type="checkbox" name="sous-domaine" id="image" class="sousdom check"><label for="image">Image</label><br>
+                <input type="checkbox" name="sous-domaine" id="image" class="sousdom check"><label
+                    for="image">Image</label><br>
 
-                <input type="checkbox" name="sous-domaine" id="montage" class="sousdom check"><label for="montage">Montage/Son</label>
+                <input type="checkbox" name="sous-domaine" id="montage" class="sousdom check"><label
+                    for="montage">Montage/Son</label>
 
-                <input type="checkbox" name="sous-domaine" id="direction" class="sousdom check"><label for="direction">Direction</label><br>
+                <input type="checkbox" name="sous-domaine" id="direction" class="sousdom check"><label
+                    for="direction">Direction</label><br>
 
-                <input type="checkbox" name="sous-domaine" id="texte" class="sousdom check"><label for="texte">Texte/écrit</label>
+                <input type="checkbox" name="sous-domaine" id="texte" class="sousdom check"><label
+                    for="texte">Texte/écrit</label>
 
 
                 <!-- Sous-domaine pour communication -->
                 <input type="checkbox" name="sous-domaine" id="multimedia" class="sousdom check"><label
                     for="multimedia">Multimédia</label><br>
 
-                <input type="checkbox" name="sous-domaine" id="presse" class="sousdom check"><label for="presse">Presse</label>
+                <input type="checkbox" name="sous-domaine" id="presse" class="sousdom check"><label
+                    for="presse">Presse</label>
 
-                <input type="checkbox" name="sous-domaine" id="management" class="sousdom check"><label for="management">Management</label>
+                <input type="checkbox" name="sous-domaine" id="management" class="sousdom check"><label
+                    for="management">Management</label>
 
 
                 <h2>Niveau minimum d'accès</h2>
-                <input type="checkbox" name="bac2" id="bac2" class="check"><label for="bac2" >Bac +2</label>
+                <input type="checkbox" name="bac2" id="bac2" class="check"><label for="bac2">Bac +2</label>
 
                 <input type="checkbox" name="bac3" id="bac3" class="check"><label for="bac3">Bac +3</label><br>
 
@@ -75,12 +86,15 @@
 
 
                 <h2>Statut</h2>
-                <input type="checkbox" name="artisan" id="artisan" class="check"><label for="artisan">Artisan</label><br>
+                <input type="checkbox" name="artisan" id="artisan" class="check"><label
+                    for="artisan">Artisan</label><br>
 
-                <input type="checkbox" name="intermittent" id="intermittent" class="check"><label for="intermittent">Intermittent du
+                <input type="checkbox" name="intermittent" id="intermittent" class="check"><label
+                    for="intermittent">Intermittent du
                     spectacle</label><br>
 
-                <input type="checkbox" name="salarié" id="salarie" class="check"><label for="salarie">Salarié</label><br>
+                <input type="checkbox" name="salarié" id="salarie" class="check"><label
+                    for="salarie">Salarié</label><br>
 
                 <input type="checkbox" name="indépendant" id="independant" class="check"><label
                     for="independant">Indépendant(free-lance)</label><br>
@@ -97,10 +111,13 @@
     </main>
     <!-- Modal -->
     <?php include('metiers.php')?>
-
     <img src="assets/image/tablette1.png" alt="" class="tablette">
     <a href="../../index.php"><img src="assets/image/logo_avec_nom.png" alt="" class="logo"></a>
-
+    <script>
+        $(document).ready(function () {
+            $('.fond').fadeOut("200")/*je cache le loader après le chargement de la page*/
+        });
+    </script>
 </body>
 
 </html>
