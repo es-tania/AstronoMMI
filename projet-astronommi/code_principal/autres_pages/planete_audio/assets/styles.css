@@ -160,7 +160,7 @@ body {
     position: relative;
     bottom: 7vh;
     left: -1vw;
-    border: solid red 3px;
+    /* border: solid red 3px; */
     width: 48vw;
     height: 56vh;
     overflow: auto;
@@ -354,11 +354,11 @@ position: fixed;
 
 .homer {
     position: relative;
-    top: 40%;
-    left: 30vw;
+    top: 27%;
+    left: 70vw;
     bottom: 0;
     z-index: 1;
-    width: 200px;
+    height: 70vh;
 }
 
 .batiments{

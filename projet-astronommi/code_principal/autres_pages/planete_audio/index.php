@@ -71,7 +71,7 @@
             
 
         <!-- Elements sur la planètes (batiments, personnages etc) -->
-            <div><img src="assets/img/Homer.png" alt="" class="homer"></div>
+            <div><img src="assets/img/perso_audiovisuel.png" alt="" class="homer"></div>
             <a onclick="on()"><img src="assets/img/batiment-son.png" alt="" class="batiments son"></a>
             <a onclick="on()"><img src="assets/img/image.png" alt="" class="batiments image"></a>
             <a onclick="on()"><img src="assets/img/Decor.png" alt="" class="batiments decor"></a>

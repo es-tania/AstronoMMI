@@ -17,7 +17,11 @@
     <div class="container">
         <!--Ces deux premières div permettant de faire le scroll horizontal-->
         <div class="blocHorizontal">
-            <div><img src="assets/img/Homer.png" alt="" class="homer"></div>
+            <div><img src="assets/img/perso_dev.png" alt="" class="homer"></div>
+            <a onclick="on()"><img src="assets/img/batiment-son.png" alt="" class="batiments son"></a>
+            <a onclick="on()"><img src="assets/img/image.png" alt="" class="batiments image"></a>
+            <a onclick="on()"><img src="assets/img/Decor.png" alt="" class="batiments decor"></a>
+            <a onclick="on()"><img src="assets/img/texte.png" alt="" class="batiments texte"></a>
 
             <div class="slide">
 
@@ -76,6 +80,17 @@
                 $(this).toggleClass("open");
             });
         });
+    </script>
+
+    <!-- Code pour que les fiches apparaissent -->
+    <script>
+        function on() {
+        document.getElementById("overlay").style.display = "block";
+        }
+
+        function off() {
+        document.getElementById("overlay").style.display = "none";
+        }
     </script>
 </body>
 
