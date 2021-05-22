@@ -1,16 +1,24 @@
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
+body {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: #fff;
+    font-size: 0.85rem;
+    margin: 0;
+    height: 100vh;
+}
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700&display=swap');
 
 body {
-    background-image: url(img/1.png) ;
+    background-image: url(img/1.png);
 }
 
 /* Parallax en continue sur les différents calques */
 
-.layer{
+.layer {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -18,18 +26,18 @@ body {
     height: 100%;
 }
 
-.layer-0{
+.layer-0 {
     background: url(img/8.png) 0 100% repeat-x;
     background-size: auto 90vh;
 }
 
-.layer-1{
+.layer-1 {
     background: url(img/7.png) 0 100% repeat-x;
     background-size: auto 90vh;
 }
 
 
-.layer-2{
+.layer-2 {
     background: url(img/6.png) 0 100% repeat-x;
     background-size: auto 90vh;
     z-index: -1;
@@ -67,8 +75,6 @@ body {
     z-index: -5;
 }
 
-
-
 @-webkit-keyframes parallax_fg {
     0% {
         background-position: 2765px 100%;
@@ -89,97 +95,151 @@ body {
     }
 }
 
-/* OVERLAY */
+/* Pour l'effet d'OVERLAY donc affichage de la tablette*/
+.overlay {
+    position: fixed;
+    display: none;
+    width: 100vw;
+    height: 103vh;
+    top: 0;
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  /* overflow:auto; */
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    cursor: pointer;
+    overflow: hidden;
 }
 
-body {
-    /* color: #121943; */
-    /* display: flex; */
-    /* flex-direction: grid; */
-    font-family: 'M PLUS Rounded 1c', sans-serif;
-    color: #fff;
-    font-size: 0.85rem;
-    margin: 0;
-    height: 100vh;
-    /* place-items: center; */
-    
+.tablette{
+    position: absolute;
+    top: 5px;
+    z-index: 0;
+    width: 100%;
+    height: 103vh;
 }
 
-.fiches{
-    display:flex;
+#text {
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+    width: 100vw;
+    height: 103vh;
+    padding: 0px 25vw 100px 25vw;
+    overflow: hidden;
+    margin: auto;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: flex-start;
-    flex-direction: row;
+}
+
+.fiches {
+    position: relative;
+    top: 5vh;
+    margin: auto;
+    height: 89vh;
+    width: 60vw;
+    display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
 
     margin-top: 10px;
+}
+
+/* .close-tablet {
+    fill: #fff;
+} */
+
+.precedent { /*Bouton précedent*/
+    position: absolute;
+    width: 40px;
+    right: 0;
+    top: 6vh;
+}
+
+.titre-fiche-metier {
+    font-family: 'SpaceAge';
+    color: #00f6e8;
+    font-size: 1.5rem;
+    text-align: center;
+
+    padding-top: 40px;
+    width: 30vw;
+
+    margin-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width:1400px) {
+    .titre-fiche-metier{
+        font-size: 1.3rem;
+        padding-top: 10px;
+        /* width: 30vw; */
+    }
+}
+
+.cartefiche {
+    position: absolute;
+    top: 20.5vh;
+    left: 1vw;
+
+    width: 50vw;
+    height: 57vh;
+    padding: 10px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    overflow: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .card {
     position: relative;
     border-radius: 15px;
     padding: 17px 10px;
-    margin:8px;
-    width: 11vw;
+    margin: 8px;
+    width: 15vw;
     border: #00f6e8 solid;
-    overflow-wrap:break-word;
+    overflow-wrap: break-word;
+    height: max-content;
 }
+
 @media screen and (max-width:1630px) {
-    .card{
-        width:16.5vw;
+    .card {
+        width: 16.5vw;
+    }
+
+    .cartefiche{
+    justify-content: center;
     }
 }
 
-.card h2{
-    font-family: 'Space age';
-    color:#00f6e8;
-    text-align: center;
-}
-
-.card p{
-    font-family: 'Arial Rounded MT';
-    color:#00f6e8;
-    font-size: 0.75rem;
-    padding-bottom: 10px;
-}
-
-
 .content-wrapper {
-
     margin-bottom: 10px;
-}
-.haut-tablette{
-    margin-bottom: 10vh;
-}
-.cartefiche {
-    position: relative;
-    bottom: 7vh;
-    left: -1vw;
-    /* border: solid red 3px; */
-    width: 48vw;
-    height: 56vh;
-    overflow: auto;
-    overflow-x: hidden;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
 }
 
 .content-wrapper .intro {
     margin-bottom: 0;
-    height: 80px;
+    height: 81px;
     overflow: hidden;
 }
 
-.titre {
-    font-size: 1.1em;
+.titre{
+    font-family: 'Space age';
+    color: #00f6e8;
+    text-align: center;
+    font-size: 1.2rem;
     margin-bottom: 13px;
+}
+
+.card p {
+    font-family: 'Arial Rounded MT';
+    color: #00f6e8;
+    font-size: 0.75rem;
+    padding-bottom: 10px;
 }
 
 .button {
@@ -208,8 +268,8 @@ body {
     border: #00f6e8 solid 1px;
 }
 
-
 /* Modal (qui apparaît après clic) */
+
 .modal-wrapper {
     background-color: rgba(0, 18, 26, 0.7);
     top: 0;
@@ -236,6 +296,7 @@ body {
     position: absolute;
     top: 2vh;
 }
+
 @media screen and (max-width:1450px) {
     .modal-body {
         top: 0;
@@ -249,7 +310,7 @@ body {
     }
 }
 
-.modal-body p{
+.modal-body p {
     font-family: 'Arial Rounded MT';
     color: #92fffa;
 }
@@ -287,72 +348,9 @@ body {
     float: right;
 }
 
-
-/* POUR L'OVERLAY */
-
-.close-tablet{
-    fill: #fff;
-}
-#overlay {
-position: fixed;
-    display: none;
-    width:100vw;
-    height: 103vh;
-    top: 0;
-
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.5);
-    z-index: 2;
-    cursor: pointer;
-    overflow: hidden;
-  }
-  
-  #text{
-      position: absolute;
-      top: 5px;
-      z-index: 1;
-      width: 100vw;
-      height: 103vh;
-      background-image: url(img/tablette.png);
-      background-size:contain;
-      background-repeat:no-repeat;
-      background-attachment:fixed;
-      padding: 100px 25vw 100px 25vw;
-      overflow: hidden;
-      margin: auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      
-    /* position: absolute;
-    top: 50%;
-    left: 50%;
-    font-size: 50px;
-    color: white;
-    transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%); */
-  }
-
-  .titre-fiche-metier{
-    font-family: 'SpaceAge';
-    font-size: 1.5rem;
-    color: #00f6e8;
-    text-align: center;
-  }
-
-  /* .tablette {
-    position: absolute;
-    top: 5px;
-    z-index: 1;
-    width: 100vw;
-    height: 103vh;
-} */
-
-
 /* Gérer le reste */
 
-.homer {
+.perso {
     position: relative;
     top: 27%;
     left: 70vw;
@@ -361,33 +359,41 @@ position: fixed;
     height: 70vh;
 }
 
-.batiments{
+.batiments {
     position: relative;
     margin: 20px;
-    top:40%;
     left: 90vw;
-    bottom: 0;
+    bottom: 20%;
     z-index: 1;
     height: 40vh;
     cursor: pointer;
 }
 
-.son{
-    top: 50%;
+.son {
+    bottom: 40%;
+    top: 30%;
+    height: 60vh;
 }
 
-.image{
-    top: 55%;
+.image {
+    top: 60%;
+    bottom: 10%;
+    height: 30vh;
 }
-.decor{
+
+.decor {
     height: 35vh;
-    top: 53%;
-}
-.texte{
-    top: 55%;
+    top: 57%;
 }
 
-.direction{
+.texte {
+    top: 40%;
+    height: 50vh;
+    bottom: 10%;
+}
+
+.direction {
     top: 55%;
     right: 50px;
+    height: 40vh;
 }

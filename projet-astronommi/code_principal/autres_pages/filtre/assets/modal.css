@@ -16,7 +16,8 @@
     border-radius: 15px;
     padding: 17px 10px;
     margin:8px;
-    width: 11vw;
+    width:16.5vw;
+    flex-wrap: wrap;
     border: #00f6e8 solid;
     overflow-wrap:break-word;
 }

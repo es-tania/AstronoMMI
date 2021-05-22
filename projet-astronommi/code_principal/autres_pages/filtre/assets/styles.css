@@ -83,6 +83,8 @@ main h1 {
     display: inline-block;
     margin: 5vh;
     overflow: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
 form {
@@ -145,6 +147,8 @@ form>label,input{
     width: 38vw;
     height: 59vh;
     overflow: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
 @media screen and (max-width:1500px) {
