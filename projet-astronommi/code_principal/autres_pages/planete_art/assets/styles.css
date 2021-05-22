@@ -173,18 +173,18 @@ body {
 
 .homer {
     position: relative;
-    top: 40%;
-    left: 30vw;
+    top: 25%;
+    left: 65vw;
     bottom: 0;
     z-index: 1;
-    width: 200px;
+height: 75vh;
 }
 
 .batiments{
     position: relative;
     margin: 20px;
     top:40%;
-    left: 90vw;
+    left: 75vw;
     bottom: 0;
     z-index: 1;
     height: 40vh;
@@ -193,18 +193,19 @@ body {
 
 .front{
     top: 50%;
+    left: 80vw;
 }
 
 .back{
     top: 50%;
-    left: 97vw;
+    left: 85vw;
 }
 .fullstack{
     height: 35vh;
     top: 53%;
-    left: 105vw;
+    left: 90vw;
 }
 .reseau{
     top: 55%;
-    left: 110vw;
+    left: 95vw;
 }

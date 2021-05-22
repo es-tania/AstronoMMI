@@ -94,7 +94,7 @@
         <div class="blocHorizontal">
 
         
-            <div><img src="assets/img/Homer.png" alt="" class="homer"></div>
+            <div><img src="assets/img/perso_art.png" alt="" class="homer"></div>
             <a role="button" href="#19"><img src="assets/img/batiment-son.png" alt="" class="batiments front"></a>
             <a role="button" href="#20"><img src="assets/img/image.png" alt="" class="batiments back"></a>
             <a role="button" href="#21"><img src="assets/img/Decor.png" alt="" class="batiments fullstack"></a>
