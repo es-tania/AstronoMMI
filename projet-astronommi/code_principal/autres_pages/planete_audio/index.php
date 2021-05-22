@@ -43,16 +43,16 @@
     if($data['nom_sousdom'] != $sousdom_precedent){
         echo('<h2 class="titre-fiche-metier">Fiches métier du sous-domaine : '.$data['nom_sousdom'].'</h2></div> <section class="cartefiche">');
     };
-    echo '  <div class="card">
-                <div class="content-wrapper">
-                    <h2 class="titre">'.$data['nom_metier'].'</h2>
-                        <p class="intro">'.$data['intro'].'</p>
-                        <p>...</p>
-                </div>
-                <a href="#'.$data['id_metier'].'" role="button" class="button">En savoir plus</a>
-            </div>
-            
-';
+    echo '
+    <div class="card fiche dom-'.$data['id_domaine'].' sousdom-'.$data['id_sousdom'].'">
+        <div class="content-wrapper">
+            <h2 class="titre">'.$data['nom_metier'].'</h2>
+            <p class="intro">'.$data['intro'].'</p>
+            <p>...</p>
+        </div>
+        <a href="#'.$data['id_metier'].'" role="button" class="button">En savoir plus</a>
+    </div>
+    ';
                 
                 $sousdom_precedent = $data['nom_sousdom'];
                 }
