@@ -16,6 +16,7 @@
      <div id="overlay">
   <div id="text">
   <div class="fiches">
+      <div class="haut-tablette">
   <a href="#!" role="button" class="close close-tablet" aria-label="close this modal" onclick="off()">
                             <svg viewBox="0 0 24 24">
                                 <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
@@ -40,7 +41,7 @@
     while($data = $req -> fetch()){
     // On affiche chaque résultat sous forme d'un item de la liste
     if($data['nom_sousdom'] != $sousdom_precedent){
-        echo('<h2 class="titre-fiche-metier">Fiches métier du sous-domaine : '.$data['nom_sousdom'].'</h2>');
+        echo('<h2 class="titre-fiche-metier">Fiches métier du sous-domaine : '.$data['nom_sousdom'].'</h2></div>');
     };
     echo '  <div class="card">
                 <div class="content-wrapper">
