@@ -84,7 +84,7 @@ body {
 
 /* FICHE METIER */
 .modal-wrapper {
-    background-color: rgba(0, 18, 26, 0.7);
+    background-color: rgba(13, 0, 26, 0.7);
     top: 0;
     bottom: 0;
     left: 0;
@@ -100,14 +100,15 @@ body {
 }
 
 .modal-body {
-    background-color: rgba(0, 18, 26, 0.8);
+    background-color: rgba(16, 0, 26, 0.8);
     border-radius: 16px;
     padding: 32px;
-    margin: 40px;
-    border: #00f6e8 solid;
-    box-shadow: 0px 0px 50px 15px #00f6eaa6;
+
+    border: #3f0063a6 solid;
+    box-shadow: 0px 0px 50px 15px #3f0063a6;
     position: absolute;
     top: 2vh;
+
 }
 
 @media screen and (max-width:1450px) {
@@ -125,12 +126,12 @@ body {
 
 .modal-body p{
     font-family: 'Arial Rounded MT';
-    color: #92fffa;
+    color: #eed1ffa6;
 }
 
 .modal-header h2{
     font-family: 'SpaceAge';
-    color: #92fffa;
+    color: #eed1ffa6;
     font-size: 1.8rem;
 }
 
@@ -199,22 +200,21 @@ body {
     cursor: pointer;
 }
 
-.son{
+.front{
     top: 50%;
 }
 
-.image{
-    top: 55%;
+.back{
+    top: 50%;
+    left: 97vw;
 }
-.decor{
+.fullstack{
     height: 35vh;
     top: 53%;
+    left: 105vw;
 }
-.texte{
+.reseau{
     top: 55%;
+    left: 110vw;
 }
 
-.direction{
-    top: 55%;
-    right: 50px;
-}

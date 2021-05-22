@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="assets/styles.css">
     <link rel="stylesheet" href="assets/menu.css">
     <link rel="icon" type="image/png" href="assets/img/logo_avec_nom.png">
-    <title>Planète Développement</title>
+    <title>Planète Art&Design</title>
 </head>
 
 <body>
+
 <div id="overlay">
   <div id="text">
   <div class="fiche">
@@ -29,7 +30,7 @@
             WHERE astro_metier.id_domaine=astro_domaine.id_domaine
             AND astro_metier.id_salaire=astro_salairejunior.id_salaire
             AND astro_metier.id_niveau=astro_niveauminacces.id_niveau
-            AND astro_domaine.nom_domaine='Développement'";
+            AND astro_domaine.nom_domaine='Art&Design'";
     // On prépare la requête avant l'envoi :
     $req = $link -> prepare($sql);
     $req -> execute();
@@ -86,17 +87,21 @@
             </div>
       </div>
 </div>
+    
+
     <div class="container">
-        <!--Ces deux premières div permettent de faire le scroll horizontal-->
+        <!--Ces deux premières div permettant de faire le scroll horizontal-->
         <div class="blocHorizontal">
-            <div><img src="assets/img/perso_dev.png" alt="" class="homer"></div>
-            <a role="button" href="#15"><img src="assets/img/batiment-son.png" alt="" class="batiments front"></a>
-            <a role="button" href="#16"><img src="assets/img/image.png" alt="" class="batiments back"></a>
-            <a role="button" href="#17"><img src="assets/img/Decor.png" alt="" class="batiments fullstack"></a>
-            <a role="button" href="#18"><img src="assets/img/texte.png" alt="" class="batiments reseau"></a>
+
+        
+            <div><img src="assets/img/Homer.png" alt="" class="homer"></div>
+            <a role="button" href="#19"><img src="assets/img/batiment-son.png" alt="" class="batiments front"></a>
+            <a role="button" href="#20"><img src="assets/img/image.png" alt="" class="batiments back"></a>
+            <a role="button" href="#21"><img src="assets/img/Decor.png" alt="" class="batiments fullstack"></a>
+            <a role="button" href="#22"><img src="assets/img/texte.png" alt="" class="batiments reseau"></a>
 
             <div class="slide">
-
+                
                 <div class="layer layer-1"></div>
                 <div class="layer layer-2"></div>
                 <div class="layer layer-3"></div>
@@ -104,7 +109,6 @@
                 <div class="layer layer-5"></div>
                 <div class="layer layer-6"></div>
             </div>
-
             <div class="menu">
                 <!-- Div pour le menu burger -->
                 <button class="click-bouton">
@@ -118,16 +122,14 @@
                 <nav class="sidebar">
                     <h1>Menu</h1>
                     <div class="menu-link">
-                        <a href="#" class="nav-link">
-                            <h2>Accueil</h2>
-                        </a>
+                        <a href="../../index.php" class="nav-link"><h2>Accueil</h2></a>
                         <h2>Planètes</h2>
                         <ul>
-                            <li><a href="#" class="nav-link">Audiovisuel</a></li><br>
-                            <li><a href="#" class="nav-link">Communication</a></li><br>
-                            <li><a href="#" class="nav-link">Art&Design</a></li>
+                            <li><a href="../planete_dev/index.html" class="nav-link">Développement</a></li><br>
+                            <li><a href="../planete_com/index.html" class="nav-link">Communication</a></li><br>
+                            <li><a href="../planete_audio/index.html" class="nav-link">Audiovisuel</a></li>
                         </ul>
-                        <h2>Infos</h2>
+                            <h2>Infos</h2>
                         <ul>
                             <li><a href="#" class="nav-link">Le BUT MMI</a></li><br>
                             <li><a href="#" class="nav-link">A propos</a></li><br>
@@ -135,7 +137,6 @@
                     </div>
                 </nav>
             </div>
-
         </div>
     </div>
 
@@ -147,13 +148,12 @@
                 $('.sidebar').toggleClass('active');
                 $('button').toggleClass('active-2');
             });
-
+    
             $("#icon-menu").click(function () {
                 $(this).toggleClass("open");
             });
         });
     </script>
-
 </body>
 
 </html>
