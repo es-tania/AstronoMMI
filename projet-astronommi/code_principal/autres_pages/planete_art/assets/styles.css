@@ -191,21 +191,36 @@ height: 75vh;
     cursor: pointer;
 }
 
-.front{
+.infographiste{
     top: 50%;
     left: 80vw;
 }
 
-.back{
+.maquettiste{
     top: 50%;
     left: 85vw;
 }
-.fullstack{
+.webdesigner{
     height: 35vh;
     top: 53%;
     left: 90vw;
 }
-.reseau{
+.designer{
     top: 55%;
     left: 95vw;
+}
+
+.concepteur{
+    top: 55%;
+    left: 100vw;
+}
+
+.game{
+    top: 55%;
+    left: 105vw;
+}
+
+.motion{
+    top: 55%;
+    left: 110vw;
 }

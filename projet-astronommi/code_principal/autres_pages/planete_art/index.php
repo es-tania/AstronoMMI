@@ -95,10 +95,13 @@
 
         
             <div><img src="assets/img/perso_art.png" alt="" class="homer"></div>
-            <a role="button" href="#19"><img src="assets/img/batiment-son.png" alt="" class="batiments front"></a>
-            <a role="button" href="#20"><img src="assets/img/image.png" alt="" class="batiments back"></a>
-            <a role="button" href="#21"><img src="assets/img/Decor.png" alt="" class="batiments fullstack"></a>
-            <a role="button" href="#22"><img src="assets/img/texte.png" alt="" class="batiments reseau"></a>
+            <a role="button" href="#19"><img src="assets/img/batiment-son.png" alt="" class="batiments infographiste"></a>
+            <a role="button" href="#20"><img src="assets/img/image.png" alt="" class="batiments maquettiste"></a>
+            <a role="button" href="#21"><img src="assets/img/Decor.png" alt="" class="batiments webdesigner"></a>
+            <a role="button" href="#22"><img src="assets/img/texte.png" alt="" class="batiments designer"></a>
+            <a role="button" href="#23"><img src="assets/img/image.png" alt="" class="batiments concepteur"></a>
+            <a role="button" href="#24"><img src="assets/img/Decor.png" alt="" class="batiments game"></a>
+            <a role="button" href="#25"><img src="assets/img/texte.png" alt="" class="batiments motion"></a>
 
             <div class="slide">
                 
