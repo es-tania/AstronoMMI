@@ -13,16 +13,17 @@
 </head>
 
 <body>
-     <div id="overlay">
-  <div id="text">
-  <div class="fiches">
-      <div class="haut-tablette">
-  <a href="#!" role="button" class="close close-tablet" aria-label="close this modal" onclick="off()">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
-                            </svg>
-                        </a>
-  <?php 
+    <div id="overlay">
+        <div id="text">
+            <div class="fiches">
+                <div class="haut-tablette">
+                    <a href="#!" role="button" class="close close-tablet" aria-label="close this modal" onclick="off()">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
+                        </svg>
+                    </a>
+                    <?php 
     include('../../secret.php');             
     // Fiche métier du sous-domaine Décor 
     $sql = "SELECT *  
@@ -58,6 +59,7 @@
                 }
                 $req = null;
             ?>
+<<<<<<< Updated upstream
             
             </div>
             </section>
@@ -86,70 +88,102 @@
                 <div class="layer layer-4"></div>
                 <div class="layer layer-5"></div>
                 <div class="layer layer-6"></div>
-            </div>
+=======
 
-            <div class="menu">
-                <!-- Div pour le menu burger -->
-                <button class="click-bouton">
-                    <!-- Création de l'icon du menu -->
-                    <div id="icon-menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </button>
-                <nav class="sidebar">
-                    <h1>Menu</h1>
-                    <div class="menu-link">
-                        <a href="#" class="nav-link"><h2>Accueil</h2></a>
-                        <h2>Planètes</h2>
-                        <ul>
-                            <li><a href="#" class="nav-link">Développement</a></li><br>
-                            <li><a href="#" class="nav-link">Communication</a></li><br>
-                            <li><a href="#" class="nav-link">Art&Design</a></li>
-                        </ul>
-                            <h2>Infos</h2>
-                        <ul>
-                            <li><a href="#" class="nav-link">Le BUT MMI</a></li><br>
-                            <li><a href="#" class="nav-link">A propos</a></li><br>
-                        </ul>
-                    </div>
-                </nav>
+                </div>
+                </section>
+>>>>>>> Stashed changes
             </div>
-           
-
         </div>
-    </div>
+        <?php include('metiers.php')?>
+
+        <div class="container">
+            <!--Ces deux premières div permettant de faire le scroll horizontal-->
+            <div class="blocHorizontal">
 
 
-    <!-- Fonction qui permet de faire apparaître le menu de droite -->
+                <!-- Elements sur la planètes (batiments, personnages etc) -->
+                <div><img src="assets/img/Homer.png" alt="" class="homer"></div>
+                <a onclick="on()"><img src="assets/img/batiment-son.png" alt="" class="batiments son"></a>
+                <a onclick="on()"><img src="assets/img/image.png" alt="" class="batiments image"></a>
+                <a onclick="on()"><img src="assets/img/Decor.png" alt="" class="batiments decor"></a>
+                <a onclick="on()"><img src="assets/img/texte.png" alt="" class="batiments texte"></a>
+                <a onclick="on()"><img src="assets/img/direction.png" alt="" class="batiments direction"></a>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
+                <div class="slide">
+                    <div class="layer layer-0"></div>
+                    <div class="layer layer-1"></div>
+                    <div class="layer layer-2"></div>
+                    <div class="layer layer-3"></div>
+                    <div class="layer layer-4"></div>
+                    <div class="layer layer-5"></div>
+                    <div class="layer layer-6"></div>
+                </div>
 
-            console.log($("body").scrollLeft());
-            $('.click-bouton').click(function () {
-                $('.sidebar').toggleClass('active');
-                $('button').toggleClass('active-2');
+                <div class="menu">
+                    <!-- Div pour le menu burger -->
+                    <button class="click-bouton">
+                        <!-- Création de l'icon du menu -->
+                        <div id="icon-menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </button>
+                    <nav class="sidebar">
+                        <h1>Menu</h1>
+                        <div class="menu-link">
+                            <a href="#" class="nav-link">
+                                <h2>Accueil</h2>
+                            </a>
+                            <h2>Planètes</h2>
+                            <ul>
+                                <li><a href="#" class="nav-link">Développement</a></li><br>
+                                <li><a href="#" class="nav-link">Communication</a></li><br>
+                                <li><a href="#" class="nav-link">Art&Design</a></li>
+                            </ul>
+                            <h2>Infos</h2>
+                            <ul>
+                                <li><a href="#" class="nav-link">Le BUT MMI</a></li><br>
+                                <li><a href="#" class="nav-link">A propos</a></li><br>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <!-- Fonction qui permet de faire apparaître le menu de droite -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+
+                console.log($("body").scrollLeft());
+                $('.click-bouton').click(function () {
+                    $('.sidebar').toggleClass('active');
+                    $('button').toggleClass('active-2');
+                });
+
+                $("#icon-menu").click(function () {
+                    $(this).toggleClass("open");
+                });
             });
-    
-            $("#icon-menu").click(function () {
-                $(this).toggleClass("open");
-            });
-        });
-    </script>
+        </script>
 
-<!-- Code pour l'overlay (la tablette apparait) -->
-    <script>
-        function on() {
-        document.getElementById("overlay").style.display = "block";
-        }
+        <!-- Code pour l'overlay (la tablette apparait) -->
+        <script>
+            function on() {
+                document.getElementById("overlay").style.display = "block";
+            }
 
-        function off() {
-        document.getElementById("overlay").style.display = "none";
-        }
-    </script>
+            function off() {
+                document.getElementById("overlay").style.display = "none";
+            }
+        </script>
 </body>
 
 </html>
