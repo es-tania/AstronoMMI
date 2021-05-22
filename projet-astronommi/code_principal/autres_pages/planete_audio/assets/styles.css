@@ -111,8 +111,9 @@ body {
 }
 
 .fiches{
-    display: flex;
+    display:flex;
     justify-content: center;
+    align-items: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
 
@@ -152,14 +153,22 @@ body {
 
     margin-bottom: 10px;
 }
-
+.haut-tablette{
+    margin-bottom: 10vh;
+}
 .cartefiche {
-    position: absolute;
-    bottom: 9.8vh;
-    left: 22vw;
-    width: 38vw;
-    height: 59vh;
+    position: relative;
+    bottom: 7vh;
+    left: -1vw;
+    border: solid red 3px;
+    width: 48vw;
+    height: 56vh;
     overflow: auto;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .content-wrapper .intro {
@@ -244,11 +253,7 @@ body {
     font-family: 'Arial Rounded MT';
     color: #92fffa;
 }
-.modal-header h2{
-    font-family: 'SpaceAge';
-    color: #92fffa;
-    font-size: 1.8rem;
-}
+
 .modal-header {
     display: flex;
     align-items: baseline;
