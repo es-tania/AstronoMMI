@@ -122,9 +122,8 @@
             function off() {
                 $('.overlay').css('display', 'none');
             }
-
-            <?php include('../page_chargement/app.js')?>
         </script>
+        <script type="text/javascript" src="../page_chargement/app.js"></script>
 </body>
 
 </html>

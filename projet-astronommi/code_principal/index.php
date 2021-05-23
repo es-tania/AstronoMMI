@@ -6,11 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="autres_pages/page_chargement/page_chargement.css">
     <link rel="icon" type="image/png" href="assets/image/logo_avec_nom.png">
     <title>Accueil - Astronommi</title>
 </head>
 
 <body id="parallax">
+    <div class="fond"><img src="autres_pages/page_chargement/logo_avec_nom.png" alt=""><span class="loader"></span></div>
     <!--ID qui permet de faire l'effet parallax-->
     <div class="layer1">
         <?php 
@@ -32,6 +34,7 @@
 
 </body>
 <script type="text/javascript" src="assets/app.js"></script>
+<script type="text/javascript" src="autres_pages/page_chargement/app.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
 </html>

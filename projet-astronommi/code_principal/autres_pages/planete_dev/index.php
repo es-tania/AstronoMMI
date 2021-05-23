@@ -8,11 +8,14 @@
     <link rel="stylesheet" href="assets/scroll_horizontal.css">
     <link rel="stylesheet" href="assets/styles.css">
     <link rel="stylesheet" href="assets/menu.css">
+    <link rel="stylesheet" href="../page_chargement/page_chargement.css">
     <link rel="icon" type="image/png" href="assets/img/logo_avec_nom.png">
     <title>Planète Développement</title>
 </head>
 
 <body>
+
+<?php include('../page_chargement/page_chargement.php')?>
 <div id="overlay">
   <div id="text">
   <div class="fiche">
@@ -153,6 +156,7 @@
             });
         });
     </script>
+    <script type="text/javascript" src="../page_chargement/app.js"></script>
 
 </body>
 
