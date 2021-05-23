@@ -9,8 +9,6 @@
     <link rel="stylesheet" href="assets/modal.css">
     <link rel="stylesheet" href="../page_chargement/page_chargement.css">
     <link rel="icon" type="image/png" href="assets/image/logo_avec_nom.png">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/app.js"></script>
 </head>
 
 <body>
@@ -114,9 +112,11 @@
     <?php include('metiers.php')?>
     <img src="assets/image/tablette1.png" alt="" class="tablette">
     <a href="../../index.php"><img src="assets/image/logo_avec_nom.png" alt="" class="logo"></a>
-    <script>
-        <?php include('../page_chargement/app.js')?>
-    </script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/app.js"></script>
+    <script type="text/javascript" src="../page_chargement/app.js"></script>
 </body>
 
 </html>

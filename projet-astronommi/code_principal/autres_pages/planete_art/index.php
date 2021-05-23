@@ -115,7 +115,10 @@
                 <div class="layer layer-5"></div>
                 <div class="layer layer-6"></div>
             </div>
-            <div class="menu">
+            
+        </div>
+    </div>
+    <div class="menu">
                 <!-- Div pour le menu burger -->
                 <button class="click-bouton">
                     <!-- Création de l'icon du menu -->
@@ -145,8 +148,6 @@
                     </div>
                 </nav>
             </div>
-        </div>
-    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript">
