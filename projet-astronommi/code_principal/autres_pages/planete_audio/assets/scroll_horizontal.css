@@ -1,6 +1,7 @@
 /*Faire un scroll horizontal :*/
 
 body {
+    cursor: url("img/curseur.png"), auto;
     margin: 0;
     padding: 0;
 }

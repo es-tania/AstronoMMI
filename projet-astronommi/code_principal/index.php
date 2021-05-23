@@ -22,11 +22,11 @@
             <img src="assets/image/planete_footer.png" alt="">
             <form action="envoi.php" method="get">
                 <legend>Pour nous contacter</legend>
-                <input type="text" name="nom_utilisateur" id="nom_utilisateur" placeholder="Nom*" required="Merci d'entrer votre nom."
+                <input type="text" name="nom_utilisateur" id="nom_utilisateur" placeholder="Nom*" required
                 data-validation-required-message="Merci d'entrer votre nom."><br>
-                <input type="text" name="prenom_utilisateur" id="prenom_utilisateur" placeholder="Prénom*" required=""
+                <input type="text" name="prenom_utilisateur" id="prenom_utilisateur" placeholder="Prénom*" required
                 data-validation-required-message="Merci d'entrer votre prénom."><br>
-                <input type="email" name="courriel" id="courriel" placeholder="Email*" required=""
+                <input type="email" name="courriel" id="courriel" placeholder="Email*" required
                 data-validation-required-message="Merci d'entrer votre adresse de courriel."><br>
                 <textarea rows="5" cols="50" name="message" placeholder="Message"></textarea><br>
                 <input type="submit" id="envoi" value="Envoyer">
