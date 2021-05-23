@@ -19,6 +19,7 @@
 }
 
 body {
+    cursor: url("image/curseur.png"), auto;
     margin: 0;
     background-image: url('image/galaxie.jpg');
     overflow: hidden;
@@ -184,6 +185,10 @@ input[type="checkbox"] {
 input[type="checkbox"] +label {
     position: relative;
     padding-left: 1.1rem;
+}
+
+input[type="checkbox"] +label:hover{
+    cursor: pointer;
 }
 
 input[type="checkbox"]+label::before,

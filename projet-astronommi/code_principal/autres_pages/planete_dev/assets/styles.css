@@ -125,6 +125,7 @@ body {
 }
 
 .modal-body p{
+    margin: 0;
     font-family: 'Arial Rounded MT';
     color: #eed1ffa6;
 }

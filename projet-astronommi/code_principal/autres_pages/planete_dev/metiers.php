@@ -14,9 +14,9 @@
         <br>
         <p>Niveau minimum d’accès : '.$data['annee_bac'].'</p>
         <br>
-        <p>Salaire débutant : '.$data['tranche'].' €</p>
+        <p><u><b>Salaire débutant</u></b> : '.$data['tranche'].' €</p>
         <br>
-        <p>Statut(s) : <br>';
+        <p><u><b>Statut(s)</u></b> : <br>';
         include('statut_secteur.php'); //On appel le fichier dans lequel il y a la requête pour statut et secteur
         echo '</p>
         <br>

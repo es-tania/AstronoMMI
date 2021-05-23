@@ -4,6 +4,7 @@
 }
 
 body {
+    cursor: url("img/curseur.png"), auto;
     font-family: 'M PLUS Rounded 1c', sans-serif;
     color: #fff;
     /* font-size: 0.85rem; */

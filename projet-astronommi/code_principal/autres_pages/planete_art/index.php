@@ -61,26 +61,27 @@
                     <br>
                     <p>'.$data['intro'].'</p>
                     <br>
-                    <p>Niveau minimum d’accès : '.$data['annee_bac'].'</p>
+                    <p><u><b>Niveau minimum d’accès</u></b> : '.$data['annee_bac'].'</p>
                     <br>
-                    <p>Salaire débutant : '.$data['tranche'].' €</p>
+                    <p><u><b>Salaire débutant</u></b> : '.$data['tranche'].' €</p>
                     <br>
-                    <p>Statut(s) : <br>';
-                    include('statut_secteur.php'); //On appelle le fichier dans lequel il y a la requête pour statut et secteur
+                    <p><u><b>Statut(s)</u></b> : <br>';
+                    include('statut_secteur.php'); //On appel le fichier dans lequel il y a la requête pour statut et secteur
                     echo '</p>
                     <br>
-                    <p>Compétences requises : '.$data['competences'].'</p>
+                    <p><u><b>Compétences requises</u></b> : <br>'.$data['competences'].'</p>
                     <br>
-                    <p>Métiers associés : '.$data['metiers_associes'].'</p>
+                    <p><u><b>Métiers associés</u></b> : '.$data['metiers_associes'].'</p>
                     <br>
-                    <p>Environnement : '.$data['environnement'].'</p>
+                    <p><u><b>Environnement</u></b> : '.$data['environnement'].'</p>
                     <br>
-                    <p>Lieux d’exercices : '.$data['lieux_exercices'].'</p>
+                    <p><u><b>Lieux d’exercices</u></b> : '.$data['lieux_exercices'].'</p>
                     <br>
-                    <p>Formations : '.$data['formations'].'</p>
-                    </div>
-                    <a href="#!" class="outside-trigger"></a>
-                </div>';
+                    <p><u><b>Formations</u></b> :<br> '.$data['formations'].'</p>
+                </div>
+                <a href="#!" class="outside-trigger"></a>
+            </div>
+        ';
 
                 }
                 $req = null;

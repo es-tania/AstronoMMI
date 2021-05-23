@@ -4,6 +4,7 @@
 
 body {
     background-image: url(img/1.png) ;
+    cursor: url("img/curseur.png"), auto;
 }
 
 /* Parallax en continue sur les différents calques */
@@ -125,6 +126,7 @@ body {
 }
 
 .modal-body p{
+    margin: 0;
     font-family: 'Arial Rounded MT';
     color: #ffd4efa6;
 }
