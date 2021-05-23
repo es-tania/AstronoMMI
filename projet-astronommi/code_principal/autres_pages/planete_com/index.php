@@ -43,14 +43,14 @@
                 <nav class="sidebar">
                     <h1>Menu</h1>
                     <div class="menu-link">
-                        <a href="#" class="nav-link">
+                        <a href="../../index.php" class="nav-link">
                             <h2>Accueil</h2>
                         </a>
                         <h2>Planètes</h2>
                         <ul>
-                            <li><a href="#" class="nav-link">Développement</a></li><br>
-                            <li><a href="#" class="nav-link">Art&Design</a></li><br>
-                            <li><a href="#" class="nav-link">Audiovisuel</a></li>
+                            <li><a href="../planete_dev/index.php" class="nav-link">Développement</a></li><br>
+                            <li><a href="../planete_art/index.php" class="nav-link">Art&Design</a></li><br>
+                            <li><a href="../planete_audio/index.php" class="nav-link">Audiovisuel</a></li>
                         </ul>
                         <h2>Infos</h2>
                         <ul>
