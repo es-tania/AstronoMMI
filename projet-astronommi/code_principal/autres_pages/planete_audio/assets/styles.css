@@ -154,8 +154,8 @@ body {
 .precedent { /*Bouton précedent*/
     position: absolute;
     width: 40px;
-    right: 0;
-    top: 6vh;
+    left: 0;
+    top: 9vh;
 }
 
 .titre-fiche-metier {
