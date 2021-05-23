@@ -7,14 +7,14 @@
     <title>Page filtre</title>
     <link rel="stylesheet" href="assets/styles.css">
     <link rel="stylesheet" href="assets/modal.css">
-    <link rel="stylesheet" href="../page_chargement.css">
+    <link rel="stylesheet" href="../page_chargement/page_chargement.css">
     <link rel="icon" type="image/png" href="assets/image/logo_avec_nom.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript" src="assets/app.js"></script>
 </head>
 
 <body>
-    <?php include('../page_chargement.php')?>
+    <?php include('../page_chargement/page_chargement.php')?>
     <main>
         <h1>Trier les fiches métiers<br> selon votre envie</h1>
         <section class="filtre">
@@ -114,9 +114,7 @@
     <img src="assets/image/tablette1.png" alt="" class="tablette">
     <a href="../../index.php"><img src="assets/image/logo_avec_nom.png" alt="" class="logo"></a>
     <script>
-        $(document).ready(function () {
-            $('.fond').fadeOut("200")/*je cache le loader après le chargement de la page*/
-        });
+        <?php include('../page_chargement/app.js')?>
     </script>
 </body>
 

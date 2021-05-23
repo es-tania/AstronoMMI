@@ -13,16 +13,15 @@
 </head>
 
 <body>
-
-<div id="overlay">
-  <div id="text">
-  <div class="fiche">
-  <!-- <a href="#!" role="button" class="close close-tablet" aria-label="close this modal" onclick="off()">
+    <div id="overlay">
+        <div id="text">
+            <div class="fiche">
+                <!-- <a href="#!" role="button" class="close close-tablet" aria-label="close this modal" onclick="off()">
                             <svg viewBox="0 0 24 24">
                                 <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
                             </svg>
                         </a> -->
-  <?php 
+                <?php 
     include('../../secret.php');             
     // Fiche métier du sous-domaine Décor 
     $sql = "SELECT *  
@@ -85,17 +84,18 @@
                 $req = null;
             ?>
             </div>
-      </div>
-</div>
-    
+        </div>
+    </div>
+
 
     <div class="container">
         <!--Ces deux premières div permettant de faire le scroll horizontal-->
         <div class="blocHorizontal">
 
-        
+
             <div><img src="assets/img/perso_art.png" alt="" class="homer"></div>
-            <a role="button" href="#19"><img src="assets/img/batiment-son.png" alt="" class="batiments infographiste"></a>
+            <a role="button" href="#19"><img src="assets/img/batiment-son.png" alt=""
+                    class="batiments infographiste"></a>
             <a role="button" href="#20"><img src="assets/img/image.png" alt="" class="batiments maquettiste"></a>
             <a role="button" href="#21"><img src="assets/img/Decor.png" alt="" class="batiments webdesigner"></a>
             <a role="button" href="#22"><img src="assets/img/texte.png" alt="" class="batiments designer"></a>
@@ -104,7 +104,7 @@
             <a role="button" href="#25"><img src="assets/img/texte.png" alt="" class="batiments motion"></a>
 
             <div class="slide">
-                
+
                 <div class="layer layer-1"></div>
                 <div class="layer layer-2"></div>
                 <div class="layer layer-3"></div>
@@ -125,14 +125,16 @@
                 <nav class="sidebar">
                     <h1>Menu</h1>
                     <div class="menu-link">
-                        <a href="../../index.php" class="nav-link"><h2>Accueil</h2></a>
+                        <a href="../../index.php" class="nav-link">
+                            <h2>Accueil</h2>
+                        </a>
                         <h2>Planètes</h2>
                         <ul>
                             <li><a href="../planete_dev/index.html" class="nav-link">Développement</a></li><br>
                             <li><a href="../planete_com/index.html" class="nav-link">Communication</a></li><br>
                             <li><a href="../planete_audio/index.html" class="nav-link">Audiovisuel</a></li>
                         </ul>
-                            <h2>Infos</h2>
+                        <h2>Infos</h2>
                         <ul>
                             <li><a href="#" class="nav-link">Le BUT MMI</a></li><br>
                             <li><a href="#" class="nav-link">A propos</a></li><br>
@@ -151,7 +153,7 @@
                 $('.sidebar').toggleClass('active');
                 $('button').toggleClass('active-2');
             });
-    
+
             $("#icon-menu").click(function () {
                 $(this).toggleClass("open");
             });

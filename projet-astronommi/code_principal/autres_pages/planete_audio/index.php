@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="assets/scroll_horizontal.css">
     <link rel="stylesheet" href="assets/styles.css">
     <link rel="stylesheet" href="assets/menu.css">
+    <link rel="stylesheet" href="../page_chargement/page_chargement.css">
     <link rel="icon" type="image/png" href="assets/img/logo_avec_nom.png">
     <title>Planète Audiovisuel</title>
 </head>
 
 <body>
-
+    <?php include('../page_chargement/page_chargement.php')?>
     <div class="overlay">
         <img src="assets/img/tablette.png" alt="" class="tablette">
         <div id="text">
@@ -93,12 +94,13 @@
         </div>
 
 
-        <!-- Fonction qui permet de faire apparaître le menu de droite -->
+        
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script type="text/javascript">
+        
             $(document).ready(function () {
-
+                // Fonction qui permet de faire apparaître le menu de droite
                 console.log($("body").scrollLeft());
                 $('.click-bouton').click(function () {
                     $('.sidebar').toggleClass('active');
@@ -108,11 +110,11 @@
                 $("#icon-menu").click(function () {
                     $(this).toggleClass("open");
                 });
-            });
-        </script>
 
-        <!-- Code pour l'overlay (la tablette apparait) -->
-        <script>
+                
+            });
+            // Code pour l'overlay (la tablette apparait)
+
             function on() {
                 $('.overlay').css('display', 'block');
             }
@@ -120,6 +122,8 @@
             function off() {
                 $('.overlay').css('display', 'none');
             }
+
+            <?php include('../page_chargement/app.js')?>
         </script>
 </body>
 
