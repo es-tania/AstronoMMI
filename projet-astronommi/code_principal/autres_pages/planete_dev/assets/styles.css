@@ -4,6 +4,7 @@
 
 body {
     background-image: url(img/1.png) ;
+    cursor: url(img/curseur.png), auto;
 }
 
 /* Parallax en continue sur les différents calques */
