@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).ready(function(){
 
     if ($(".check").prop("checked") != "false") {
         $(".check").trigger("click")
