@@ -1,12 +1,12 @@
 * {
     box-sizing: border-box;
-    margin: 0;
+    /* margin: 0; */
 }
 
 body {
     font-family: 'M PLUS Rounded 1c', sans-serif;
     color: #fff;
-    font-size: 0.85rem;
+    /* font-size: 0.85rem; */
     margin: 0;
     height: 100vh;
 }
@@ -209,7 +209,7 @@ body {
 
 @media screen and (max-width:1630px) {
     .card {
-        width: 16.5vw;
+        width: 20vw;
     }
 
     .cartefiche{
@@ -233,6 +233,7 @@ body {
     text-align: center;
     font-size: 1.2rem;
     margin-bottom: 13px;
+    margin-top: 0;
 }
 
 .card p {
@@ -240,6 +241,7 @@ body {
     color: #00f6e8;
     font-size: 0.75rem;
     padding-bottom: 10px;
+    margin: 0;
 }
 
 .button {
@@ -313,6 +315,7 @@ body {
 .modal-body p {
     font-family: 'Arial Rounded MT';
     color: #92fffa;
+    margin: 0;
 }
 
 .modal-header {

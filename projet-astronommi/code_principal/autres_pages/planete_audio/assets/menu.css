@@ -19,7 +19,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 50;
 }
 
 .sidebar {
@@ -40,7 +40,7 @@ nav h1 {
     text-align: left;
     padding-left: 20px;
     margin-top: 17vh;
-    margin-bottom: 0;
+    /* margin-bottom: 0; */
     font-family: 'SpaceAge';
 }
 
@@ -48,15 +48,27 @@ nav h2 {
     font-family: 'SpaceAge';
     font-size: 4vh;
     text-align: left;
-    padding-left: 20px;
+    /* padding-left: 20px;
+    padding-bottom: 20px; */
+    padding: 1.5vh;
     color: white;
-    /* margin-left: 1.5vh; */
+    margin: 1.5vh;
 }
+
+/* nav h2 {
+    font-family: 'SpaceAge';
+    font-size: 4vh;
+    text-align: right;
+    padding: 1.5vh;
+    color: white;
+    margin: 1.5vh;
+} */
 
 .menu-link li {
     text-align: left;
     list-style-type: none;
-    margin-left: 20px;
+    /* margin-left: 20px; */
+    margin-right: 3vh;
 }
 
 .menu-link ul{
