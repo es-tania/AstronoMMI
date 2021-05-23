@@ -200,20 +200,10 @@ svg{
     width: 100vw;
     padding: 0;
     margin: 0;
-    /* height: max-content; */
-    /* position: relative; */
-    /* bottom: 0; */
     display: flex;
     align-items: center;
     justify-content: center;
-    /* margin-top: 400px; */
-    /* padding: 0; */
-    /* z-index: 10; */
     overflow: hidden;
-    /* background-image: url('image/planete_footer.png');
-    background-size: 180vh;
-    background-position:top;
-    background-repeat: no-repeat; */
 }
 
 .footer img{
@@ -226,7 +216,6 @@ svg{
 
 form{
     position: absolute;
-    /* top: 35vh; */
     margin: 50px;
     text-align: center;
     margin-bottom: 20px;
