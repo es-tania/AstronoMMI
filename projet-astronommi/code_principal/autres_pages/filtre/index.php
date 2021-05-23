@@ -17,6 +17,7 @@
     <?php include('../page_chargement/page_chargement.php')?>
     <main>
         <h1>Trier les fiches métiers<br> selon votre envie</h1>
+        <h2 class="consigne">Décocher les éléments qui ne vous intéressent pas.</h2>
         <section class="filtre">
             <h2>Filtre</h2>
             <!--Filtre-->

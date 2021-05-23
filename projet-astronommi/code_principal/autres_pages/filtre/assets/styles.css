@@ -66,9 +66,26 @@ main h1 {
     font-size: 2rem;
 }
 
+.consigne {
+    font-family: 'Arial Rounded MT';
+    font-weight: lighter;
+    color: #00f6e8;
+    height: max-content;
+    font-size: 1rem;
+    position: absolute;
+    top: 15vh;
+    text-align: center;
+    width: 100%;
+}
+
 @media screen and (max-width:1630px) {
     main h1 {
         font-size: 1.5rem;
+    }
+
+    .consigne{
+        font-size: 0.8rem;
+        top: 16vh;
     }
 }
 
