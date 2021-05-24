@@ -34,9 +34,10 @@
     <div class="container">
         <!--Ces deux premières div permettant de faire le scroll horizontal-->
         <div class="blocHorizontal">
-
-
             <!-- Elements sur la planètes (batiments, personnages etc) -->
+            <img src="assets/img/fusee.png" alt="" class="fusee">
+            <h1 class="destination">Destination :<br>Planète Audiovisuel</h1>
+            <p class="intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt fuga labore temporibus, placeat impedit nemo voluptatem odio fugit mollitia nobis, doloremque harum ut error distinctio. Quia atque molestiae dolorem facilis? Sunt fuga labore temporibus, placeat impedit nemo voluptatem odio fugit mollitia nobis, doloremque harum ut error distinctio. Quia atque molestiae dolorem facilis? Sunt fuga labore temporibus, placeat impedit nemo voluptatem odio fugit mollitia nobis, doloremque harum ut error distinctio. Quia atque molestiae dolorem facilis?</p>
             <div><img src="assets/img/perso_audiovisuel.png" alt="" class="perso"></div>
             <a onclick="on()" id="son"><img src="assets/img/batiment-son.png" alt="" class="batiments son" id="son"></a>
             <a onclick="on()" id="image"><img src="assets/img/image.png" alt="" class="batiments image"></a>

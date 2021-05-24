@@ -94,9 +94,10 @@
         <!--Ces deux premières div permettent de faire le scroll horizontal-->
         <div class="blocHorizontal">
             <img src="assets/img/fusee.png" alt="" class="fusee">
-            <h1 class="destination">Destination :<br>Planète Audiovisuel</h1>
-            <p class="intro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita veniam temporibus error quisquam nemo. Quis, laboriosam ducimus. Impedit esse, nam atque quaerat suscipit, voluptatibus ad quas exercitationem tempore adipisci sapiente?</p>
-            <div><img src="assets/img/perso_dev.png" alt="" class="homer"></div>
+            <h1 class="destination">Destination :<br>Planète Développement</h1>
+            <p class="intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt fuga labore temporibus, placeat impedit nemo voluptatem odio fugit mollitia nobis, doloremque harum ut error distinctio. Quia atque molestiae dolorem facilis? Sunt fuga labore temporibus, placeat impedit nemo voluptatem odio fugit mollitia nobis, doloremque harum ut error distinctio. Quia atque molestiae dolorem facilis? Sunt fuga labore temporibus, placeat impedit nemo voluptatem odio fugit mollitia nobis, doloremque harum ut error distinctio. Quia atque molestiae dolorem facilis?
+</p>
+            <div><img src="assets/img/perso_dev.png" alt="" class="perso"></div>
             <a role="button" href="#15"><img src="assets/img/batiment-son.png" alt="" class="batiments front"></a>
             <a role="button" href="#16"><img src="assets/img/image.png" alt="" class="batiments back"></a>
             <a role="button" href="#17"><img src="assets/img/Decor.png" alt="" class="batiments fullstack"></a>
