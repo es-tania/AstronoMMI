@@ -78,6 +78,7 @@
                 </a>
                 <h2>Planètes</h2>
                 <ul>
+                    <li class="nav-link planete_actuel">Audiovisuel</li><br>
                     <li><a href="../planete_dev/index.php" class="nav-link">Développement</a></li><br>
                     <li><a href="../planete_com/index.php" class="nav-link">Communication</a></li><br>
                     <li><a href="../planete_art/index.php" class="nav-link">Art&Design</a></li>
