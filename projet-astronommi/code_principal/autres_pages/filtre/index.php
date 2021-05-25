@@ -116,7 +116,11 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript" src="assets/app.js"></script>
-    <script type="text/javascript" src="../page_chargement/app.js"></script>
+    <script type="text/javascript" src="../page_chargement/app.js">
+    $(document).ready(function () {
+    $('.fond').fadeOut("200");/*je cache le loader après le chargement de la page*/
+});
+    </script>
 </body>
 
 </html>

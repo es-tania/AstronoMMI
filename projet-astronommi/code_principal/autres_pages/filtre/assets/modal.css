@@ -1,3 +1,20 @@
+@font-face {
+    font-family: 'SpaceAge';
+    src: url('fonts/space_age-webfont.woff2') format('woff2'),
+         url('fonts/space_age-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Arial Rounded MT Bold';
+    src: url('fonts/ArialRoundedMTBold.woff') format('woff'),
+        url('fonts/ArialRoundedMTBold.woff2') format('woff2');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;

@@ -1,7 +1,10 @@
 @font-face {
     font-family: 'SpaceAge';
-    src: url(fonts/SpaceAge.woff) format('woff'),
-    url(fonts/SpaceAge.woff2) format('woff2');
+    src: url('fonts/space_age-webfont.woff2') format('woff2'),
+         url('fonts/space_age-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 @font-face {
