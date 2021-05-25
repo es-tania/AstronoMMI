@@ -1,5 +1,5 @@
      <?php
-    include('secret.php');
+    include('../../secret.php');
         
     // Fiche métier
         $sql = "SELECT *  

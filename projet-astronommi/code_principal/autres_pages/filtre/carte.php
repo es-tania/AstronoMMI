@@ -1,5 +1,5 @@
      <?php
-    include('secret.php');
+    include('../../secret.php');
         
     // Fiche métier du sous-domaine Décor 
         $sql = "SELECT *  
