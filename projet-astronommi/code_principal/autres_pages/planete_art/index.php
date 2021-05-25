@@ -143,9 +143,9 @@
                 </a>
                 <h2>Planètes</h2>
                 <ul>
-                    <li><a href="../planete_audio/index.php" class="nav-link">Audiovisuel</li><br>
-                    <li><a href="../planete_dev/index.php" class="nav-link">Développement</a></li><br>
-                    <li><a href="../planete_com/index.php" class="nav-link">Communication</a></li><br>
+                    <li><a href="../planete_audio/index.php" class="nav-link">Audiovisuel</li>
+                    <li><a href="../planete_dev/index.php" class="nav-link">Développement</a></li>
+                    <li><a href="../planete_com/index.php" class="nav-link">Communication</a></li>
                     <li class="nav-link planete_actuel">Art&Design</li>
                 </ul>
                 <h2>Infos</h2>
