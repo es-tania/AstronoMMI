@@ -178,26 +178,26 @@ body {
 
     /* overflow: hidden;
     height: 300vh; */
-height: 95vh;
-position: absolute;
-    bottom: -65px;
-    left: -17vw;
+    height:130vh;
+    position: absolute;
+    bottom: 25px;
+    left: 1vw;
     z-index: 3;
 }
 .destination{
     position: absolute;
     font-family: 'SpaceAge', Arial, Helvetica, sans-serif;
     color: #000;
-    text-shadow: 3px 3px #480072;
-    font-size: 3rem;
+    text-shadow: 3px 3px #987ea7;
+    font-size: 2.5rem;
     top: 1vh;
-    left: 20vw;
+    left: 30vw;
     z-index: 3;
     height: 200px;
 }
 .intro{
     color: #fff;
-    font-size: 1rem;
+    font-size: 0.6875rem;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     display: flex;
@@ -209,7 +209,7 @@ position: absolute;
     padding: 10vh;
     position: absolute;
     top: 30vh;
-    left: 25vw;
+    left: 30vw;
     z-index: 3;
     border-radius: 72% 28% 70% 50% / 57% 70% 50% 63% ;
     background-color: rgba(16, 0, 26, 0.8);

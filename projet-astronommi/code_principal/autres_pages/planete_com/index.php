@@ -18,7 +18,11 @@
     <div class="container">
         <!--Ces deux premières div permettant de faire le scroll horizontal-->
         <div class="blocHorizontal">
-            <div><img src="assets/img/Homer.png" alt="" class="homer"></div>
+            <!-- Elements sur la planètes (batiments, personnages etc) -->
+        <img src="assets/img/fusee.png" alt="" class="fusee">
+            <h1 class="destination">Destination :<br>Planète Communication</h1>
+            <p class="intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt fuga labore temporibus, placeat impedit nemo voluptatem odio fugit mollitia nobis, doloremque harum ut error distinctio. Quia atque molestiae dolorem facilis? Sunt fuga labore temporibus, placeat impedit nemo voluptatem odio fugit mollitia nobis, doloremque harum ut error distinctio. Quia atque molestiae dolorem facilis? Sunt fuga labore temporibus, placeat impedit nemo voluptatem odio fugit mollitia nobis, doloremque harum ut error distinctio. Quia atque molestiae dolorem facilis?</p>
+            <div><img src="assets/img/Homer.png" alt="" class="perso"></div>
 
             <div class="slide">
                 <div class="layer layer-0"></div>
