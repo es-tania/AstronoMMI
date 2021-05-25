@@ -16,7 +16,7 @@
             <div class="modal-wrapper modal" id="'.$data['id_metier'].'">
                 <div class="modal-body">
                     <div class="modal-header">
-                        <h2 class="titre">'.$data['nom_metier'].'</h2>
+                        <h2 class="titre2">'.$data['nom_metier'].'</h2>
                         <a href="#!" role="button" class="close" aria-label="close this modal">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                             xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="17" height="17" x="0" y="0"

@@ -94,7 +94,7 @@
     <div class="container">
         <!--Ces deux premières div permettant de faire le scroll horizontal-->
         <div class="blocHorizontal">
-        <img src="assets/img/fusee.png" alt="" class="fusee">
+            <img src="assets/img/fusee.png" alt="" class="fusee">
             <h1 class="destination">Destination :<br>Planète Art et Design</h1>
             <p class="presentation">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt fuga labore temporibus, placeat impedit nemo voluptatem odio fugit mollitia nobis, doloremque harum ut error distinctio. Quia atque molestiae dolorem facilis? Sunt fuga labore temporibus, placeat impedit nemo voluptatem odio fugit mollitia nobis, doloremque harum ut error distinctio. Quia atque molestiae dolorem facilis? Sunt fuga labore temporibus, placeat impedit nemo voluptatem odio fugit mollitia nobis, doloremque harum ut error distinctio. Quia atque molestiae dolorem facilis?</p>
 
@@ -117,39 +117,40 @@
                 <div class="layer layer-5"></div>
                 <div class="layer layer-6"></div>
             </div>
-            
+
         </div>
     </div>
     <div class="menu">
-                <!-- Div pour le menu burger -->
-                <button class="click-bouton">
-                    <!-- Création de l'icon du menu -->
-                    <div id="icon-menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </button>
-                <nav class="sidebar">
-                    <h1>Menu</h1>
-                    <div class="menu-link">
-                        <a href="../../index.php" class="nav-link">
-                            <h2>Accueil</h2>
-                        </a>
-                        <h2>Planètes</h2>
-                        <ul>
-                            <li><a href="../planete_dev/index.php" class="nav-link">Développement</a></li><br>
-                            <li><a href="../planete_com/index.php" class="nav-link">Communication</a></li><br>
-                            <li><a href="../planete_audio/index.php" class="nav-link">Audiovisuel</a></li>
-                        </ul>
-                        <h2>Infos</h2>
-                        <ul>
-                            <li><a href="#" class="nav-link">Le BUT MMI</a></li><br>
-                            <li><a href="#" class="nav-link">A propos</a></li><br>
-                        </ul>
-                    </div>
-                </nav>
+        <!-- Div pour le menu burger -->
+        <button class="click-bouton">
+            <!-- Création de l'icon du menu -->
+            <div id="icon-menu">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
+        </button>
+        <nav class="sidebar">
+            <h1>Menu</h1>
+            <div class="menu-link">
+                <a href="../../index.php" class="nav-link">
+                    <h2>Accueil</h2>
+                </a>
+                <h2>Planètes</h2>
+                <ul>
+                    <li><a href="../planete_audio/index.php" class="nav-link">Audiovisuel</a></li>
+                    <li><a href="../planete_dev/index.php" class="nav-link">Développement</a></li>
+                    <li><a href="../planete_com/index.php" class="nav-link">Communication</a></li>
+                    <li class="nav-link planete_actuel">Art&Design</li>
+                </ul>
+                <h2>Infos</h2>
+                <ul>
+                    <li><a href="#" class="nav-link">Le BUT MMI</a></li>
+                    <li><a href="#" class="nav-link">A propos</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript">

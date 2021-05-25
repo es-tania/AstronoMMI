@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'SpaceAge';
+    font-family: "SpaceAge";
     src: url('fonts/space_age-webfont.woff2') format('woff2'),
          url('fonts/space_age-webfont.woff') format('woff');
     font-weight: normal;
@@ -8,7 +8,7 @@
 }
 
 @font-face {
-    font-family: 'Arial Rounded MT Bold';
+    font-family: "Arial Rounded MT Bold";
     src: url('fonts/ArialRoundedMTBold.woff') format('woff'),
         url('fonts/ArialRoundedMTBold.woff2') format('woff2');
 }
@@ -61,7 +61,7 @@ main {
 
 main h1 {
     text-align: center;
-    font-family: 'SpaceAge';
+    font-family: "SpaceAge";
     color: #00f6e8;
     height: max-content;
     width: 100%;
@@ -112,7 +112,7 @@ form {
 }
 
 main section>h2 {
-    font-family: 'SpaceAge';
+    font-family: "SpaceAge";
     font-size: 2rem;
     color: #00f6e8;
     text-align: center;
