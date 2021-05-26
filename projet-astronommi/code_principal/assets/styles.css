@@ -114,13 +114,16 @@ svg{
     top: 50vh;
     left: 10vw;
     transform: rotate(12deg);
+    cursor: not-allowed;
 }
 
-.DUTPlanet{
+.mmi{
     width: 15%;
     position: absolute;
     top: 15vh;
     left: 20vw;
+    transform: rotate(-100deg);
+    transition: 1s;
 }
 
 .apropos{
@@ -128,6 +131,8 @@ svg{
     position: absolute;
     top: 10vh;
     right: 35vw;
+    transform: rotate(-80deg);
+    transition: 1s;
 }
 
 .contact{
@@ -135,8 +140,13 @@ svg{
     position: absolute;
     top: 20vh;
     right: 10vw;
+    transition: 1s;
 }
 
+.satellite:hover{
+    width: 20%;
+    transition: 1s;
+}
 
 .FiltersButton{
     display: block;
@@ -254,7 +264,7 @@ input[type="submit"] {
     width: 15vw;
     margin-top: 20px;
     font-family: 'SpaceAge', sans-serif;
-    font-size: 1.625rem;
+    font-size: 1rem;
     transition: background-color 0.8s ease;
     border: none;
 }

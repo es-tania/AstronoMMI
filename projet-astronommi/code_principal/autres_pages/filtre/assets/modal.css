@@ -8,9 +8,12 @@
 }
 
 @font-face {
-    font-family: 'Arial Rounded MT Bold';
-    src: url('fonts/ArialRoundedMTBold.woff') format('woff'),
-        url('fonts/ArialRoundedMTBold.woff2') format('woff2');
+    font-family: 'Arial Rounded MT';
+    src: url('fonts/arial-rounded-mt-webfont.woff2') format('woff2'),
+         url('fonts/arial-rounded-mt-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700&display=swap');
@@ -92,7 +95,7 @@
 }
 
 .button {
-    font-family: 'Arial Rounded MT Bold';
+    font-family: 'Arial Rounded MT';
     font-size: 1em;
     color: black;
     text-decoration: none;
