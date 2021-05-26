@@ -5,6 +5,7 @@ body{
     position: absolute;
     z-index: 100;
     background-color: black;
+    background-repeat: repeat;
     width: 100vw;
     height: 100vh;
 }

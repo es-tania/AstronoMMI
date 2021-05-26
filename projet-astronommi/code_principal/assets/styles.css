@@ -9,8 +9,17 @@
 
 @font-face {
     font-family: 'Arial Rounded MT Bold';
-    src: url(fonts/ArialRoundedMTBold.woff) format('woff'),
-    url(fonts/ArialRoundedMTBold.woff2) format('woff2');
+    src: url('fonts/ArialRoundedMTBold.woff') format('woff'),
+    url('fonts/ArialRoundedMTBold.woff2') format('woff2');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Arial Rounded MT';
+    src: url('fonts/arial-rounded-mt-webfont.woff2') format('woff2'),
+         url('fonts/arial-rounded-mt-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 
@@ -23,6 +32,7 @@ html{
     border: 0;
     padding: 0;
     margin: 0;
+    font-weight: normal;
 }
 
 body{
@@ -32,7 +42,7 @@ body{
     background-repeat: repeat;
     overflow-x: hidden;
 
-    font-family:'Arial Rounded MT Bold', sans-serif;
+    font-family:'Arial Rounded MT', sans-serif;
     font-size: 1.125rem;
 }
 
@@ -68,16 +78,16 @@ body{
 
 h1{
     font-family: 'SpaceAge', sans-serif ;
-    font-size: 5vw;
+    font-size: 6vw;
     color: white;
     text-align: center;
 }
 
 p{
-    font-family:'Arial Rounded MT Bold', sans-serif;
+    font-family:'Arial Rounded MT', sans-serif;
     color: white;
     text-align: center;
-    font-size: 1.125rem;
+    font-size: 1.2rem;
     padding: 5px;
     position: relative;
 }
@@ -103,6 +113,7 @@ svg{
     position: absolute;
     top: 50vh;
     left: 10vw;
+    transform: rotate(12deg);
 }
 
 .DUTPlanet{
@@ -131,7 +142,7 @@ svg{
     display: block;
     text-decoration: none;
     background-color: #314489;
-    font-family:'Arial Rounded MT Bold', sans-serif;
+    font-family:'Arial Rounded MT', sans-serif;
     color: white;
     text-align: center;
     font-size: 1rem;

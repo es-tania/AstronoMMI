@@ -35,7 +35,7 @@
         <!--Ces deux premières div permettant de faire le scroll horizontal-->
         <div class="blocHorizontal">
             <!-- Elements sur la planètes (batiments, personnages etc) -->
-            <img src="assets/img/fusee.png" alt="" class="fusee">
+            <img src="assets/img/fusee.svg" alt="" class="fusee">
             <h1 class="destination">Destination :<br>Planète Audiovisuel</h1>
             <p class="presentation">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt fuga labore temporibus, placeat impedit nemo voluptatem odio fugit mollitia nobis, doloremque harum ut error distinctio. Quia atque molestiae dolorem facilis? Sunt fuga labore temporibus, placeat impedit nemo voluptatem odio fugit mollitia nobis, doloremque harum ut error distinctio. Quia atque molestiae dolorem facilis? Sunt fuga labore temporibus, placeat impedit nemo voluptatem odio fugit mollitia nobis, doloremque harum ut error distinctio. Quia atque molestiae dolorem facilis?</p>
             <div><img src="assets/img/perso_audiovisuel.png" alt="" class="perso"></div>

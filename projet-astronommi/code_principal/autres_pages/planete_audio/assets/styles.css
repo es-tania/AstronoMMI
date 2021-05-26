@@ -373,16 +373,15 @@ body {
 
     /* overflow: hidden;
     height: 300vh; */
-    height:130vh;
+    height:120vh;
     position: absolute;
     bottom: 25px;
-    left: 1vw;
     z-index: 3;
 }
 .destination{
     position: absolute;
     font-family: "SpaceAge", sans-serif;
-    color: #000;
+    color: white;
     text-shadow: 3px 3px #610000;
     font-size: 2.5rem;
     top: 1vh;
