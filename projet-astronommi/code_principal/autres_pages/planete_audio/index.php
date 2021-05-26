@@ -35,17 +35,39 @@
         <!--Ces deux premières div permettant de faire le scroll horizontal-->
         <div class="blocHorizontal">
             <!-- Elements sur la planètes (batiments, personnages etc) -->
-            <img src="assets/img/fusee.png" alt="" class="fusee">
-            <h1 class="destination">Destination :<br>Planète Audiovisuel</h1>
-            <p class="presentation">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt fuga labore temporibus, placeat impedit nemo voluptatem odio fugit mollitia nobis, doloremque harum ut error distinctio. Quia atque molestiae dolorem facilis? Sunt fuga labore temporibus, placeat impedit nemo voluptatem odio fugit mollitia nobis, doloremque harum ut error distinctio. Quia atque molestiae dolorem facilis? Sunt fuga labore temporibus, placeat impedit nemo voluptatem odio fugit mollitia nobis, doloremque harum ut error distinctio. Quia atque molestiae dolorem facilis?</p>
-            <div><img src="assets/img/perso_audiovisuel.png" alt="" class="perso"></div>
-            <a onclick="on()" id="son"><img src="assets/img/batiment-son.png" alt="" class="batiments son" id="son"></a>
-            <a onclick="on()" id="image"><img src="assets/img/image.png" alt="" class="batiments image"></a>
-            <a onclick="on()" id="decor"><img src="assets/img/Decor.png" alt="" class="batiments decor"></a>
-            <a onclick="on()" id="texte"><img src="assets/img/texte.png" alt="" class="batiments texte"></a>
-            <a onclick="on()" id="direction"><img src="assets/img/direction.png" alt="" class="batiments direction"></a>
+            <div class="slide-1">
+                <img src="assets/img/fusee.png" alt="" class="fusee">
+                <h1 class="destination">Destination :<br>Planète Audiovisuel</h1>
+                <div>
+                <p class="presentation">Bienvenue sur la planète audiovisuelle !<br>
+                Ici, vous pourrez découvrir différents métiers qui permettent d’exercer dans ce domaine.
+                Mais au final, c’est quoi l’audiovisuel ?<br>L’audiovisuel est un domaine qui se réfère à tout travail qui utilise à la fois, du son et de l'image, et qui englobe donc les équipements et les procédés utilisés pour la télévision, le cinéma,ou encore la vidéo.
+                    Il peut aussi être utilisé pour le multimédia.
+                    L’audiovisuel est constitué de différentes étapes qui sont l’écriture, le développement, la
+                    préproduction, la production et la postproduction. Ainsi, pour toutes ces étapes, il existe
+                    plusieurs métiers différents qui sont mis en jeu.
+                    Pour faire bref, ce domaine en regroupe plusieurs autres tels que le cinéma, l’animation, les effets
+                    visuels, le son et l’image qui seront présentés.
+                    En continuant votre aventure sur ma planète, vous verrez les différents métiers du domaine de
+                    l'audiovisuel.<br>
+                    Bonne découverte !
+                </p>
+                </div>
+                <img src="assets/img/perso_audiovisuel.png" alt="" class="perso">
+            </div>
 
+            <div class="slide-2">
+                <a onclick="on()" id="image"><img src="assets/img/image.png" alt="" class="batiments image"></a>
+                <a onclick="on()" id="son"><img src="assets/img/batiment-son.png" alt="" class="batiments son"
+                        id="son"></a>
+            </div>
 
+            <div class="slide-3">
+                <a onclick="on()" id="decor"><img src="assets/img/Decor.png" alt="" class="batiments decor"></a>
+                <a onclick="on()" id="texte"><img src="assets/img/texte.png" alt="" class="batiments texte"></a>
+                <a onclick="on()" id="direction"><img src="assets/img/direction.png" alt=""
+                        class="batiments direction"></a>
+            </div>
 
             <div class="slide">
                 <div class="layer layer-0"></div>

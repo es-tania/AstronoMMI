@@ -376,13 +376,17 @@ body {
 
 /* Gérer le reste */
 
-.fusee{
+/* Première slide avec fusée et perso */
 
-    /* overflow: hidden;
-    height: 300vh; */
-    height:120vh;
-    width: 30vw;
-    position: absolute;
+.slide-1{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.fusee{
+    width: 35vw;
     bottom: 25px;
     z-index: 3;
 }
@@ -392,79 +396,119 @@ body {
     color: white;
     text-shadow: 3px 3px #610000;
     font-size: 2.5rem;
-    top: 1vh;
+    top: 2vh;
     left: 30vw;
     z-index: 3;
     height: 200px;
 }
-.presentation{
-    color: #fff;
-    font-size: 0.6875rem;
-    font-family: Arial, Helvetica, sans-serif;
+
+.slide-1 div{
+    box-sizing: border-box;
     text-align: center;
     display: flex;
-    align-items: center;
     justify-content: center;
-    display: inline-block;
-    width: 45vw;
-    height: 45vh;
-    padding: 10vh;
-    position: absolute;
+    align-items: center;
+    width: max-content;
+    height: max-content;
+    position: relative;
     top: 30vh;
-    left: 30vw;
     z-index: 3;
     border-radius: 72% 28% 70% 50% / 57% 70% 50% 63% ;
     background-color: rgba(26, 0, 0, 0.8);
-
-
     border: #630000a6 solid;
     box-shadow: 0px 0px 50px 15px #630000a6;
+    margin-right: 6vw;
+    padding:1vw;
+            padding: 4vw;
+}
+
+.presentation{
+    color: #fff;
+    font-size: 0.6875rem;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+
+}
+
+@media screen and (min-width: 1400px) {
+    .presentation{
+        font-size: 0.9rem;
+    }
 }
 
 .perso {
     position: relative;
-    top: 27%;
-    left:80vw;
-    bottom: 0;
+    top: 37%;
     z-index: 1;
-    height: 70vh;
+    height: 60vh;
+}
+
+/* Deuxième slide avec batiments son et image */
+
+.slide-2{
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
 }
 
 .batiments {
     position: relative;
-    margin: 20px;
-    left: 90vw;
-    bottom: 20%;
-    z-index: 1;
-    height: 40vh;
+    /* margin: 20px; */
+    /* left: 90vw; */
+    /* bottom: 20%; */
+    /* z-index: 1; */
+    /* height: 40vh; */
     cursor: pointer;
 }
 
 .son {
-    bottom: 40%;
-    top: 30%;
-    height: 60vh;
+    top: 8%;
+    height: 87vh;
+    margin-left: 15%;
+    width: 31vw;
 }
 
 .image {
-    top: 60%;
-    bottom: 10%;
-    height: 30vh;
+    height: 48vh;
+    margin-left: 27%;
+    top: -1vh;
+    width: 20vw;
+}
+
+/* Troisième slide avec batiments décor, texte et direction */
+
+.slide-3{
+    position: relative;
+    right: 0;
+    width: 120vw;
+    height: 100vh;
+    z-index: 5;
 }
 
 .decor {
-    height: 35vh;
-    top: 57%;
+    height: 41vh;
+    top: 10%;
+}
+
+@media screen and (max-width:1400px) {
+    .decor{
+        top: 5%;
+    }
 }
 
 .texte {
-    top: 40%;
-    height: 50vh;
-    bottom: 10%;
+    top: 15%;
+    width: 30vw;
+    margin-left: 10%;
+}
+
+@media screen and (min-width:1400px) {
+    .texte{
+        top: 18%;
+    }
 }
 
 .direction {
-    top: 55%;
-    right: 50px;
-    height: 40vh;
+    top: 20%;
+    height: 61vh;
+    margin-left: 12vw;
 }
