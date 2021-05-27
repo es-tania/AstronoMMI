@@ -1,12 +1,7 @@
 /*Faire un scroll horizontal :*/
 
-body {
-    margin: 0;
-    padding: 0;
-}
-
 .slide {
-    width: 100vw;
+    /* width: 100vw; */
     height: 100vh;
 }
 
@@ -25,7 +20,8 @@ body {
 .blocHorizontal {
     display: flex;
     flex-direction: row;
-    width: 200vw;
+    width: 300vw;
+    /* Définir une certaine largeur au scroll */
     transform: rotate(90deg) translateY(-100vh);
     transform-origin: top left;
 }
@@ -33,4 +29,3 @@ body {
 ::-webkit-scrollbar {
     display: none;
 }
-

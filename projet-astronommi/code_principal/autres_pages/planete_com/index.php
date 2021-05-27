@@ -15,14 +15,66 @@
 
 <body>
     <?php include('../page_chargement/page_chargement.php')?>
+    <div class="overlay">
+        <img src="assets/img/tablette.png" alt="" class="tablette">
+        <div id="text">
+            <div>
+                <!--Div qui contient le bouton retour -->
+                <a href="#!" role="button" class="close close-tablet" aria-label="close this modal" onclick="off()"><img
+                        src="assets/img/precedent.png" alt="" class="precedent">
+                </a>
+                <!-- Div de class="fiches" avec le titre h2 et fiche métiers de chaque sous domaine-->
+                <?php include('carte.php') ?>
+            </div>
+        </div>
+    </div>
+
+    <?php include('metiers.php')?>
+
     <div class="container">
         <!--Ces deux premières div permettant de faire le scroll horizontal-->
         <div class="blocHorizontal">
             <!-- Elements sur la planètes (batiments, personnages etc) -->
-            <img src="assets/img/fusee.png" alt="" class="fusee">
-            <h1 class="destination">Destination :<br>Planète Communication</h1>
-            <p class="presentation">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt fuga labore temporibus, placeat impedit nemo voluptatem odio fugit mollitia nobis, doloremque harum ut error distinctio. Quia atque molestiae dolorem facilis? Sunt fuga labore temporibus, placeat impedit nemo voluptatem odio fugit mollitia nobis, doloremque harum ut error distinctio. Quia atque molestiae dolorem facilis? Sunt fuga labore temporibus, placeat impedit nemo voluptatem odio fugit mollitia nobis, doloremque harum ut error distinctio. Quia atque molestiae dolorem facilis?</p>
-            <div><img src="assets/img/Homer.png" alt="" class="perso"></div>
+            <div class="slide-1">
+                <img src="assets/img/fusee.png" alt="" class="fusee">
+                <h1 class="destination">Destination :<br>Planète Communication</h1>
+                <div class="cadre">
+                    <p class="presentation">
+                        - Bienvenue sur la planète communication !<br>
+                        <!-- Texte à changer -->
+                        Ici, vous pourrez découvrir différents métiers qui permettent d’exercer dans ce domaine.
+                        Mais au final, c’est quoi l’audiovisuel ?<br>
+                        L’audiovisuel est un domaine qui se réfère à tout travail qui utilise à la fois, du son et de
+                        l'image, et qui englobe donc les équipements et les procédés utilisés pour la télévision, le
+                        cinéma,ou encore la vidéo. Il peut aussi être utilisé pour le multimédia.<br>
+                        L’audiovisuel est constitué de différentes étapes qui sont l’écriture, le développement, la
+                        préproduction, la production et la postproduction. Ainsi, pour toutes ces étapes, il existe
+                        plusieurs métiers différents qui sont mis en jeu.<br>
+                        Pour faire bref, ce domaine en regroupe plusieurs autres tels que le cinéma, l’animation, les
+                        effets visuels, le son et l’image qui seront présentés.<br>
+                        En continuant votre aventure sur ma planète, vous verrez les différents métiers du domaine de
+                        l'audiovisuel.<br>
+                        Bonne découverte ! -
+                    </p>
+                </div>
+                <img src="assets/img/perso_audiovisuel.png" alt="" class="perso">
+                <div class="scroll">
+                    <div class="icon-scroll">
+                        <div class="mouse">
+                            <div class="wheel"></div>
+                        </div>
+                        <div class="icon-arrows">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide-2">
+                <a onclick="on()" id="multimedia"><img src="assets/img/decor.png" alt="" class="batiments decor"></a>
+                <a onclick="on()" id="presse"><img src="assets/img/texte.png" alt="" class="batiments texte"></a>
+                <a onclick="on()" id="management"><img src="assets/img/direction.png" alt="" class="batiments direction"></a>
+            </div>
 
             <div class="slide">
                 <div class="layer layer-0"></div>
@@ -36,8 +88,9 @@
         </div>
     </div>
 
+    <!-- Div pour le menu burger -->
     <div class="menu">
-        <!-- Div pour le menu burger -->
+
         <button class="click-bouton">
             <!-- Création de l'icon du menu -->
             <div id="icon-menu">
@@ -68,20 +121,9 @@
         </nav>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script type="text/javascript">
-        // Fonction qui permet de faire apparaître le menu de droite
-        $(document).ready(function () {
-            $('.click-bouton').click(function () {
-                $('.sidebar').toggleClass('active');
-                $('button').toggleClass('active-2');
-            });
 
-            $("#icon-menu").click(function () {
-                $(this).toggleClass("open");
-            });
-        });
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/app.js"></script>
     <script type="text/javascript" src="../page_chargement/app.js"></script>
 </body>
 
