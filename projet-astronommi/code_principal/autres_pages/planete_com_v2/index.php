@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="assets/menu.css">
     <link rel="stylesheet" href="../page_chargement/page_chargement.css">
     <link rel="icon" type="image/png" href="assets/img/logo_avec_nom.png">
-    <title>Planète Audiovisuel</title>
+    <title>Planète Communication</title>
 </head>
 
 <body>
@@ -37,10 +37,11 @@
             <!-- Elements sur la planètes (batiments, personnages etc) -->
             <div class="slide-1">
                 <img src="assets/img/fusee.png" alt="" class="fusee">
-                <h1 class="destination">Destination :<br>Planète Audiovisuel</h1>
+                <h1 class="destination">Destination :<br>Planète Communication</h1>
                 <div class="cadre">
                     <p class="presentation">
-                        - Bienvenue sur la planète audiovisuelle !<br>
+                        - Bienvenue sur la planète communication !<br>
+                        <!-- Texte à changer -->
                         Ici, vous pourrez découvrir différents métiers qui permettent d’exercer dans ce domaine.
                         Mais au final, c’est quoi l’audiovisuel ?<br>
                         L’audiovisuel est un domaine qui se réfère à tout travail qui utilise à la fois, du son et de
@@ -113,9 +114,9 @@
                 </a>
                 <h2>Planètes</h2>
                 <ul>
-                    <li class="nav-link planete_actuel">Audiovisuel</li>
+                    <li><a href="../planete_audio/index.php" class="nav-link">Audiovisuel</a></li>
                     <li><a href="../planete_dev/index.php" class="nav-link">Développement</a></li>
-                    <li><a href="../planete_com/index.php" class="nav-link">Communication</a></li>
+                    <li class="nav-link planete_actuel">Communication</li>
                     <li><a href="../planete_art/index.php" class="nav-link">Art&Design</a></li>
                 </ul>
                 <h2>Infos</h2>
