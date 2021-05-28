@@ -1,0 +1,155 @@
+@font-face {
+    font-family: "Robotesqa";
+    src: url('assets/fonts/robotesqa-4f-webfont.woff2') format('woff2'),
+         url('assets/fonts/robotesqa-4f-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: rgb(100, 100, 100);
+    padding: 1%;
+    font-family:"Robotesqa" ;
+    font-weight: normal;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Image */
+
+.image{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -5;
+}
+
+.ecran{
+    position: absolute;
+    top: 0;
+    width: 90vw;
+    height: 100vh;
+}
+
+.fleche{
+    width: max-content;
+}
+
+.fleche img{
+    width: 2vw;
+    margin-right: 20px;
+}
+
+/* Positionnement des éléments dans l'écran */
+
+main{
+    /* border: red solid; */
+    position: absolute;
+    top: 8vh;
+    width: 77vw;
+    height: 72vh;
+}
+
+.colonne{
+    position: absolute;
+    margin-left: 4vh;
+    margin-right: 4vh;
+    width: 60vw;
+    line-height: 25px;
+}
+
+#colonne1{
+    position: relative;
+}
+
+#caption{
+    z-index: 5;
+}
+
+.infos{
+    position: absolute;
+    bottom: 0;
+    margin: 4vh;
+}
+
+/* Bouton Passer et Clique*/
+
+#passer, .clique, #passer2{
+    font-family:"Robotesqa" ;
+    position: absolute;
+    right: 8vw;
+    bottom: 0;
+    height: max-content;
+    width: max-content;
+    border-radius: 10px;
+    border: chartreuse solid;
+    background-color: transparent;
+    color: chartreuse;
+    cursor: pointer;
+    z-index: 4;
+    margin-bottom: 4vh;
+}
+
+.fleche{
+    /* border: tan solid; */
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 4vh;
+    cursor: pointer;
+}
+
+/* Titre */
+
+.titre{
+    font-size: 2rem;
+    font-weight: normal;
+    color: #7fff00;
+    margin: 4vh;
+    margin-bottom: 0;
+}
+
+/* Texte */
+
+.colonne h2{
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #7fff00;
+    margin-bottom: 0;
+}
+
+.colonne p{
+    color: white;
+    margin: 0;
+    margin-top: 1vh;
+}
+
+@media screen and (max-width: 1400px) {
+    .colonne h2{
+        font-size: 1rem;
+    }
+
+    .colonne p{
+        font-size: 0.8rem;
+    }
+
+    .colonne{
+        line-height: normal;
+    }
+}
+
+.infos a{
+    color: chartreuse;
+    text-decoration: none;
+    /* position: relative; */
+    cursor: pointer;
+    /* top: 39vh; */
+    bottom: 0;
+    font-size: 1.2rem;
+    cursor: pointer;
+    /* padding-bottom: 60px; */
+}

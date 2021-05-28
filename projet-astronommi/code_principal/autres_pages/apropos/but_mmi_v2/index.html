@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="assets/style.css"> -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Text Typing</title>
+</head>
+
+<body>
+
+    <div class="image">
+        <img src="assets/img/ecran.png" alt="" class="ecran">
+    </div>
+
+    <main>
+        <h1 class="titre">TABLEAU DE BORD</h1>
+        <!--Div qui est cacher avec le texte qui sera transféré dans la balise avec la classe 'console'-->
+        <div class="texte console" id="texte">
+            <div id="1">
+                <div id="colonne1" class="colonne">
+                    <h2>LE DUT MMI, QU’EST-CE QUE C’EST ?</h2>
+                    <p>C’est une formation publique dont le diplôme est délivré par l’Université et qui se déroule en
+                        IUT
+                        (Institut Universitaire de Technologie) sur le campus de l’Université. Elle se veut sélective,
+                        au vu
+                        du
+                        nombre de places disponibles. Le DUT MMI (Métiers du Multimédia et de l’Internet) concerne les
+                        domaines
+                        liés au multimédia et au web : graphisme, développement, audiovisuel, webmarketing,
+                        communication…
+                        L’étudiant(e) en DUT MMI acquiert une polyvalence dans ces domaines.<br>
+                        Le DUT dure deux ans, mais attention : à partir de 2021, le DUT devient le BUT (Bachelor
+                        Universitaire
+                        de Technologie), une formation sur trois ans. Notons qu'il sera tout de même possible de valider
+                        un
+                        DUT
+                        au bout de deux années de cette nouvelle formation.</p>
+                </div>
+                <div id="colonne2" class="colonne">
+                    <h2>COMPOSITION DE LA FORMATION</h2>
+                    <p>Le DUT MMI est une formation axée sur la pratique et la professionnalisation. Ainsi, 50% du
+                        volume de
+                        la
+                        formation est consacré à des mises en pratique, et beaucoup de travaux sont des projets à faire
+                        en
+                        groupe. Les cours sont donc répartis entre :<br>
+                        - les Cours Magistraux (CM) ont lieu en promotion entière en amphithéâtre, <br>
+                        - les Travaux Dirigés (TD) en groupes de 26 étudiants,<br>
+                        - les Travaux Pratiques (TP) en groupes de 13 étudiants afin de garantir un suivi de qualité de
+                        la
+                        progression des étudiants et appliquer une pédagogie efficace,<br>
+                        - des heures consacrées aux projets tutorés.<br>
+                        Un stage de 10 semaines minimum doit être réalisé au semestre 4 pour permettre la connaissance
+                        active du
+                        monde professionnel et une mise en pratique contextualisée. Un éventuel stage au semestre 2 est
+                        également possible selon les IUT.<br>
+                        Pour le nouveau BUT, l’alternance est possible sur 1, 2 ou 3 ans dans certains départements.
+                    </p>
+                </div>
+            </div>
+
+            <div id="2">
+                <div id="colonne3" class="colonne">
+                    <h2>LA SPÉCIALISATION</h2>
+                    <p>En DUT MMI, les 3 premiers semestres sont généraux et suivis par toute la promotion. Au semestre
+                        4,
+                        il
+                        sera
+                        demandé à l’élève de choisir entre deux parcours :<br>
+                        - Parcours Développement Web et Mobile<br>
+                        - Parcours Communication<br>
+                        Pour le BUT qui se déroulera sur 6 semestres : Dès la rentrée 2021, les quatre premiers
+                        semestres
+                        sont
+                        suivis par l’intégralité de la promotion. Les semestres 5 et 6 proposent trois parcours :<br>
+                        - Parcours Stratégie de communication numérique et design d’expérience<br>
+                        - Parcours Création numérique (pour le web et le multimédia)<br>
+                        - Parcours Développement web et dispositifs interactifs<br>
+                        Attention : tous les IUT ne proposent pas les 3 parcours ! Se renseigner auprès de chaque
+                        département
+                        MMI.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Div dans laquel va apparaitre le texte au clique et disparaître si on clique sur "Passer" -->
+            <div id="caption">
+            </div>
+        </div>
+
+        <div class="infos">
+            <a href="#" id="">Infos sur nos commandants de bords --></a><br>
+            <a href="#">Infos sur le site --></a>
+        </div>
+
+        <button id="passer">Passer<br>l'animation</button>
+
+        <button id="passer2">Passer<br>l'animation</button>
+
+        <button class="clique" id="test-typing" onClick="this.disabled = true;">Cliquer !</button>
+
+        <div class="fleche">
+            <img src="assets/img/back.png" alt="" id="back">
+            <img src="assets/img/next.png" alt="" id="next">
+        </div>
+    </main>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+
+</html>

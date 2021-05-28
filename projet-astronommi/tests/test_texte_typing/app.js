@@ -14,10 +14,10 @@ $(document).ready(function() {
     $('#passer').css('display','none');
 
     
-    $('#passer').on('click',function(){
-        $('#texte').css('visibility','visible');
-        $('#caption').css('display','none');
-    });
+    // $('#passer').on('click',function(){
+    //     $('#texte').css('visibility','visible');
+    //     $('#caption').css('display','none');
+    // });
 
 });
 
