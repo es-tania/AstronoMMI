@@ -5,8 +5,18 @@ $(document).ready(function() {
     captionEl = $('#caption');
     
     $('#test-typing').on('click',function(){
+        $('#passer').css('display','block');
+        $('#test-typing').css('display','none');
         testTypingEffect();
         return;
+    });
+
+    $('#passer').css('display','none');
+
+    
+    $('#passer').on('click',function(){
+        $('#texte').css('visibility','visible');
+        $('#caption').css('display','none');
     });
 
 });

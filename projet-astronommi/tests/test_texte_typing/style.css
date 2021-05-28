@@ -36,16 +36,16 @@ body {
     position: absolute;
 }
 
-#caption{
+#caption, .caption{
     color: chartreuse;
 }
 
-#caption p{
+#caption p, .caption p{
     color: white;
     width: 80vw;
 }
 
-#caption a{
+#caption a, .caption a{
     color: chartreuse;
     text-decoration: none;
     position: relative;
@@ -63,4 +63,10 @@ body {
     top: 0;
     left: 0;
     z-index: -1;
+}
+
+#passer{
+    position: absolute;
+    right: 2vw;
+    bottom: 13vh; */
 }
