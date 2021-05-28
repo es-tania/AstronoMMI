@@ -1,0 +1,102 @@
+@font-face {
+    font-family: "Robotesqa";
+    src: url('fonts/robotesqa-4f-webfont.woff2') format('woff2'),
+         url('fonts/robotesqa-4f-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    background-color: rgb(100, 100, 100);
+    padding: 1%;
+    /* color: chartreuse; */
+    font-family:"Robotesqa" ;
+    font-size: 1em;
+    overflow: hidden;
+}
+
+/* Image */
+
+.image{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.ecran{
+    position: absolute;
+    top: 0;
+    width: 90vw;
+    height: 100vh;
+}
+
+/* Texte */
+
+.console h1{
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.console h2{
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.texte{
+    position: absolute;
+    top: 11vh;
+    left: 14vw;
+    height: 70vh;
+    width: 70vw;
+    z-index: 2;
+    /* padding: 5vw 7vw; */
+    /* border: springgreen solid; */
+}
+
+.texte{
+    color: chartreuse;
+}
+
+.texte p{
+    color: white;
+}
+
+.texte a{
+    color: chartreuse;
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+    top: 25vh;
+    font-size: 1.2rem;
+}
+
+/* Bouton Passer */
+
+#passer, .clique{
+    position: absolute;
+    top: 11vh;
+    left: 14vw;
+    height: 70vh;
+    width: 70vw;
+}
+
+#passer button, .clique button{
+    font-family:"Robotesqa" ;
+    position: absolute;
+    right: 0;
+    top: 44vh;
+    height: max-content;
+    width: max-content;
+    border-radius: 10px;
+    border: chartreuse solid;
+    background-color: transparent;
+    color: chartreuse;
+    cursor: pointer;
+    z-index: 4;
+}
