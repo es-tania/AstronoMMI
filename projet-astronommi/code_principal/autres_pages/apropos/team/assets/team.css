@@ -6,8 +6,8 @@
 
 @font-face {
     font-family: 'robotesqa';
-    src: url(/assets/fonts/robotesqa-4f-webfont.woff) format('woff'),
-    url(/assets/fonts/robotesqa-4f-webfont.woff2) format('woff2');
+    src: url(fonts/robotesqa-4f-webfont.woff) format('woff'),
+    url(fonts/robotesqa-4f-webfont.woff2) format('woff2');
   }
 
 /* GENERAL */
@@ -29,7 +29,7 @@ body{
     
 }
 .ecran{
-border: solid red;
+/* border: solid red; */
 height: 65vh;
 width: 110vh;
 position: absolute;
@@ -41,37 +41,55 @@ top:13vh;
     width: 50px;
 }
 
+.folders-flex{
+display: flex;
+
+}
+
 .photo{
     width: 45%;
+    margin: 15px;
 }
 
 h1{
     margin: auto;
     text-align: center;
+    color: chartreuse;
 }
 
 h2{
     margin: 0;
     font-size: 1.5rem;
+    color: chartreuse;
 }
 h3{
     margin: 0;
     font-size: 1rem;
 }
 p{
-    font-size: 1rem;
+    font-size: 0.875rem;
     margin: 0;
+}
+a{
+    text-decoration:none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 15px;
+
 }
 
 .carte{
     display: flex;
     align-items: center;
     margin: 15px auto;
-    /* justify-content:flex-start; */
 }
 
 .profils{
     display: flex;
+    justify-content: space-between;
 
 }
 
