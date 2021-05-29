@@ -59,7 +59,7 @@ main{
     margin-left: 4vh;
     margin-right: 4vh;
     width: 60vw;
-    line-height: 25px;
+    line-height: 20px;
 }
 
 #colonne1{
@@ -68,6 +68,12 @@ main{
 
 #caption{
     z-index: 5;
+}
+
+section{
+    height: 51vh;
+    overflow: auto;
+    position: relative;
 }
 
 .infos{
@@ -128,7 +134,7 @@ main{
     margin-top: 1vh;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1430px) {
     .colonne h2{
         font-size: 1rem;
     }
@@ -138,18 +144,16 @@ main{
     }
 
     .colonne{
-        line-height: normal;
+        line-height: 15px;
     }
 }
 
 .infos a{
     color: chartreuse;
     text-decoration: none;
-    /* position: relative; */
     cursor: pointer;
-    /* top: 39vh; */
     bottom: 0;
     font-size: 1.2rem;
     cursor: pointer;
-    /* padding-bottom: 60px; */
+    background-color: black;
 }
