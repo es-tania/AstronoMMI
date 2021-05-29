@@ -22,7 +22,7 @@ body {
 }
 
 body {
-    background-image: url(img/1.png);
+    background-color: rgb(253, 243, 243);
 }
 
 /* Parallax en continue sur les différents calques */
@@ -36,52 +36,71 @@ body {
 }
 
 .layer-0 {
-    background: url(img/8.png) 0 100% repeat-x;
-    background-size: auto 90vh;
+    -webkit-animation: parallax_fg linear 50s infinite both;
+    animation: parallax_fg linear 95s infinite both;
+    background: url(img/9.png) 0 100% repeat-x;
+    background-size: auto 100vh;
+    z-index: -7;
 }
 
 .layer-1 {
-    background: url(img/7.png) 0 100% repeat-x;
-    background-size: auto 90vh;
+    background: url(img/8.png) 0 100% repeat-x;
+    background-size: auto 140vh;
 }
 
 
 .layer-2 {
-    background: url(img/6.png) 0 100% repeat-x;
-    background-size: auto 90vh;
+    background: url(img/7.png) 0 100% repeat-x;
+    background-size: auto 140vh;
     z-index: -1;
 }
 
 .layer-3 {
     -webkit-animation: parallax_fg linear 75s infinite both;
     animation: parallax_fg linear 75s infinite both;
-    background: url(img/5.png) 0 100% repeat-x;
-    background-size: auto 90vh;
+    background: url(img/6.png) 0 100% repeat-x;
+    background-size: auto 135vh;
     z-index: -2;
 }
 
 .layer-4 {
     -webkit-animation: parallax_fg linear 95s infinite both;
     animation: parallax_fg linear 95s infinite both;
-    background: url(img/4.png) 0 100% repeat-x;
-    background-size: auto 90vh;
+    background: url(img/5.png) 0 100% repeat-x;
+    background-size: auto 130vh;
     z-index: -3;
 }
 
 .layer-5 {
     -webkit-animation: parallax_fg linear 120s infinite both;
     animation: parallax_fg linear 120s infinite both;
-    background: url(img/3.png) 0 100% repeat-x;
-    background-size: auto 90vh;
+    background: url(img/4.png) 0 100% repeat-x;
+    background-size: auto 125vh;
     z-index: -4;
 }
 
 .layer-6 {
-    -webkit-animation: parallax_fg linear 50s infinite both;
+    -webkit-animation: parallax_fg linear 130s infinite both;
+    animation: parallax_fg linear 50s infinite both;
+    background: url(img/3.png) 0 100% repeat-x;
+    background-size: auto 120vh;
+    z-index: -5;
+}
+
+.layer-7 {
+    -webkit-animation: parallax_fg linear 140s infinite both;
     animation: parallax_fg linear 50s infinite both;
     background: url(img/2.png) 0 100% repeat-x;
-    background-size: auto 90vh;
-    z-index: -5;
+    background-size: auto 115vh;
+    z-index: -6;
+}
+
+.layer-8 {
+    -webkit-animation: parallax_fg linear 150s infinite both;
+    animation: parallax_fg linear 50s infinite both;
+    background: url(img/1.png) 0 100% repeat-x;
+    background-size: auto 110vh;
+    z-index: -7;
 }
 
 @-webkit-keyframes parallax_fg {
@@ -524,15 +543,29 @@ body {
     }
 }
 
-
-
-
 /* Deuxième slide avec batiments son et image */
 
 .slide-2 {
-    width: 100vw;
+    width: 80vw;
     height: 100vh;
     z-index: 5;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.slide-2 a, .slide-3 a{
+    height: max-content;
+    position: relative;
+}
+
+.slide-3 {
+    width: 120vw;
+    height: 100vh;
+    z-index: 5;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
 }
 
 
@@ -542,46 +575,43 @@ body {
 }
 
 .son {
-    top: 8%;
     height: 87vh;
-    margin-left: 15%;
     width: 31vw;
+    margin-bottom: 4vh;
 }
 
-.image {
+.image{
     height: 48vh;
-    margin-left: 27%;
-    top: -1vh;
+    margin-left: 35%;
+    margin-bottom: 6vh;
     width: 20vw;
 }
 
 /* Troisième slide avec batiments décor, texte et direction */
 
 .decor {
-    height: 41vh;
-    top: 10%;
+    width: 30vw;
+    margin-bottom: 3vh;
 }
 
-@media screen and (max-width:1400px) {
+@media screen and (min-width:1400px) {
     .decor {
-        top: 5%;
+        margin-bottom: 0;
     }
 }
 
 .texte {
-    top: 15%;
-    width: 30vw;
-    margin-left: 10%;
+    width: 25vw;
+    margin-bottom: 5%;
 }
 
-@media screen and (min-width:1400px) {
+@media screen and (max-width:1400px) {
     .texte {
-        top: 18%;
+        margin-bottom: 3%;
     }
 }
 
 .direction {
-    top: 20%;
-    height: 61vh;
-    margin-left: 3vw;
+    width: 26vw;
+    margin-bottom: 4vh;
 }

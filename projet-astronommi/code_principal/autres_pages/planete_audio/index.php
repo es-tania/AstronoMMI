@@ -75,11 +75,10 @@
                         id="son"></a>
             </div>
 
-            <div class="slide-2">
-                <a onclick="on()" id="decor"><img src="assets/img/decor.png" alt="" class="batiments decor"></a>
+            <div class="slide-3">
                 <a onclick="on()" id="texte"><img src="assets/img/texte.png" alt="" class="batiments texte"></a>
-                <a onclick="on()" id="direction"><img src="assets/img/direction.png" alt=""
-                        class="batiments direction"></a>
+                <a onclick="on()" id="direction"><img src="assets/img/direction.png" alt="" class="batiments direction"></a>
+                <a onclick="on()" id="decor"><img src="assets/img/decor.png" alt="" class="batiments decor"></a>
             </div>
 
             <div class="slide">
@@ -90,6 +89,8 @@
                 <div class="layer layer-4"></div>
                 <div class="layer layer-5"></div>
                 <div class="layer layer-6"></div>
+                <div class="layer layer-7"></div>
+                <div class="layer layer-8"></div>
             </div>
         </div>
     </div>
