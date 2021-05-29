@@ -57,7 +57,7 @@
                         Bonne découverte ! -
                     </p>
                 </div>
-                <img src="assets/img/perso_audiovisuel.png" alt="" class="perso">
+                <img src="assets/img/perso_com.png" alt="" class="perso">
                 <div class="scroll">
                     <div class="icon-scroll">
                         <div class="mouse">

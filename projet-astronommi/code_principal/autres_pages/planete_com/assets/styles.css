@@ -427,6 +427,7 @@ body {
     position: relative;
     top: 37%;
     z-index: 2;
+    right:3vw;
     height: 60vh;
 }
 
