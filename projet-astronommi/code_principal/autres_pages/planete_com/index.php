@@ -41,19 +41,11 @@
                 <div class="cadre">
                     <p class="presentation">
                         - Bienvenue sur la planète communication !<br>
-                        <!-- Texte à changer -->
-                        Ici, vous pourrez découvrir différents métiers qui permettent d’exercer dans ce domaine.
-                        Mais au final, c’est quoi l’audiovisuel ?<br>
-                        L’audiovisuel est un domaine qui se réfère à tout travail qui utilise à la fois, du son et de
-                        l'image, et qui englobe donc les équipements et les procédés utilisés pour la télévision, le
-                        cinéma,ou encore la vidéo. Il peut aussi être utilisé pour le multimédia.<br>
-                        L’audiovisuel est constitué de différentes étapes qui sont l’écriture, le développement, la
-                        préproduction, la production et la postproduction. Ainsi, pour toutes ces étapes, il existe
-                        plusieurs métiers différents qui sont mis en jeu.<br>
-                        Pour faire bref, ce domaine en regroupe plusieurs autres tels que le cinéma, l’animation, les
-                        effets visuels, le son et l’image qui seront présentés.<br>
-                        En continuant votre aventure sur ma planète, vous verrez les différents métiers du domaine de
-                        l'audiovisuel.<br>
+                        Ici, vous pourrez découvrir différents métiers qui permettent d’exercer dans ce domaine. Mais au final, c’est quoi la communication ?<br>
+                        La communication est une des spécialités du DUT MMI. Elle relève du marketing et fait connaître, donne envie, rassure sur la qualité d’une marque, d’un produit ou d’un service. Elle joue donc un rôle clé pour faire progresser les ventes.<br>
+                        Les supports de communication sont l'édition, l’audiovisuel, les sites internet, l'événementiel, la publicité et beaucoup d’autres…<br>
+                        Pour accéder à un métier dans la communication on peut faire différentes études comme des licences ou encore des masters mais aussi avoir différentes compétences comme maîtriser des langues, des techniques professionnelles et avoir une culture du web.<br>
+                        En continuant votre aventure sur ma planète, vous verrez les différents métiers du domaine de la  communication .<br>
                         Bonne découverte ! -
                     </p>
                 </div>
@@ -71,9 +63,9 @@
             </div>
 
             <div class="slide-2">
-                <a onclick="on()" id="multimedia"><img src="assets/img/decor.png" alt="" class="batiments decor"></a>
-                <a onclick="on()" id="presse"><img src="assets/img/texte.png" alt="" class="batiments texte"></a>
-                <a onclick="on()" id="management"><img src="assets/img/direction.png" alt="" class="batiments direction"></a>
+                <a onclick="on()" id="management"><img src="assets/img/management.png" alt="" class="batiments management"></a>
+                <a onclick="on()" id="presse"><img src="assets/img/presse.png" alt="" class="batiments presse"></a>
+                <a onclick="on()" id="multimedia"><img src="assets/img/multimédia.png" alt="" class="batiments multimedia"></a>
             </div>
 
             <div class="slide">

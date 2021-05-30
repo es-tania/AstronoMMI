@@ -20,7 +20,7 @@
 .blocHorizontal {
     display: flex;
     flex-direction: row;
-    width: 300vw;
+    width: 230vw;
     /* Définir une certaine largeur au scroll */
     transform: rotate(90deg) translateY(-100vh);
     transform-origin: top left;
