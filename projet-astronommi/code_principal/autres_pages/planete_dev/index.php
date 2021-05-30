@@ -32,20 +32,11 @@
                 <h1 class="destination">Destination :<br>Planète Audiovisuel</h1>
                 <div class="cadre">
                     <p class="presentation">
-                        - Bienvenue sur la planète audiovisuelle !<br>
-                        Ici, vous pourrez découvrir différents métiers qui permettent d’exercer dans ce domaine.
-                        Mais au final, c’est quoi l’audiovisuel ?<br>
-                        L’audiovisuel est un domaine qui se réfère à tout travail qui utilise à la fois, du son et de
-                        l'image, et qui englobe donc les équipements et les procédés utilisés pour la télévision, le
-                        cinéma,ou encore la vidéo. Il peut aussi être utilisé pour le multimédia.<br>
-                        L’audiovisuel est constitué de différentes étapes qui sont l’écriture, le développement, la
-                        préproduction, la production et la postproduction. Ainsi, pour toutes ces étapes, il existe
-                        plusieurs métiers différents qui sont mis en jeu.<br>
-                        Pour faire bref, ce domaine en regroupe plusieurs autres tels que le cinéma, l’animation, les
-                        effets visuels, le son et l’image qui seront présentés.<br>
-                        En continuant votre aventure sur ma planète, vous verrez les différents métiers du domaine de
-                        l'audiovisuel.<br>
-                        Bonne découverte ! -
+                    - Tiens, nous avons un visiteur ! Bienvenue sur la planète Développement !<br><br>Les habitants de cette planète adorent passer leur temps au café Visual Studio Code. Ici, tu retrouveras des passionnés de la technique : si tel est ton cas, tu as atterri sur la bonne planète ! <br>
+Le développement web consiste à programmer des sites web ou applications web destinés à être publiés sur des serveurs. Pour cela, il faut d’abord maîtriser les langages de mise en forme HTML et CSS. L’usage d‘autres langages de programmation est aussi nécessaire tels que JavaScript, PHP, SQL... Enfin, des compétences en réseaux sont aussi utiles notamment pour la publication sur les serveurs du projet.<br>
+Sur cette planète, tu retrouveras d’anciens habitants de la planète DUT MMI qui ont particulièrement aimé l'algorithmique et la programmation, l’intégration web, le service sur réseaux. Si tu te reconnais dans cette description, je t’invite à poser tes bagages et découvrir la planète Dev’ en défilant !<br><br>
+Bonne visite ! -
+
                     </p>
                 </div>
                 <img src="assets/img/perso_dev.png" alt="" class="perso">
