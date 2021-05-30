@@ -33,10 +33,9 @@
                 <div class="cadre">
                     <p class="presentation">
                     - Tiens, nous avons un visiteur ! Bienvenue sur la planète Développement !<br><br>Les habitants de cette planète adorent passer leur temps au café Visual Studio Code. Ici, tu retrouveras des passionnés de la technique : si tel est ton cas, tu as atterri sur la bonne planète ! <br>
-Le développement web consiste à programmer des sites web ou applications web destinés à être publiés sur des serveurs. Pour cela, il faut d’abord maîtriser les langages de mise en forme HTML et CSS. L’usage d‘autres langages de programmation est aussi nécessaire tels que JavaScript, PHP, SQL... Enfin, des compétences en réseaux sont aussi utiles notamment pour la publication sur les serveurs du projet.<br>
-Sur cette planète, tu retrouveras d’anciens habitants de la planète DUT MMI qui ont particulièrement aimé l'algorithmique et la programmation, l’intégration web, le service sur réseaux. Si tu te reconnais dans cette description, je t’invite à poser tes bagages et découvrir la planète Dev’ en défilant !<br><br>
-Bonne visite ! -
-
+                    Le développement web consiste à programmer des sites web ou applications web destinés à être publiés sur des serveurs. Pour cela, il faut d’abord maîtriser les langages de mise en forme HTML et CSS. L’usage d‘autres langages de programmation est aussi nécessaire tels que JavaScript, PHP, SQL... Enfin, des compétences en réseaux sont aussi utiles notamment pour la publication sur les serveurs du projet.<br>
+                    Sur cette planète, tu retrouveras d’anciens habitants de la planète DUT MMI qui ont particulièrement aimé l'algorithmique et la programmation, l’intégration web, le service sur réseaux. Si tu te reconnais dans cette description, je t’invite à poser tes bagages et découvrir la planète Dev’ en défilant !<br><br>
+                    Bonne visite ! -
                     </p>
                 </div>
                 <img src="assets/img/perso_dev.png" alt="" class="perso">
@@ -97,8 +96,8 @@ Bonne visite ! -
                 </ul>
                 <h2>Infos</h2>
                 <ul>
-                    <li><a href="#" class="nav-link">Le BUT MMI</a></li>
-                    <li><a href="#" class="nav-link">A propos</a></li>
+                    <li><a href="../apropos/but_mmi/index.html" class="nav-link">Le BUT MMI</a></li>
+                    <li><a href="../apropos/a_propos/index.html" class="nav-link">A propos</a></li>
                 </ul>
             </div>
         </nav>

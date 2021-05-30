@@ -4,11 +4,6 @@ $(document).ready(function(){
         $(".check").trigger("click")
     }
 
-    $(".sousdom ").next().css({
-        "enabled": "false",
-        "opacity": "0.5"
-    })
-
     // Domaine :
 
     var critere = {
@@ -17,15 +12,6 @@ $(document).ready(function(){
         dev: "dom-2",
         art: "dom-3",
         com: "dom-4",
-        // Sous-domaine
-        decor: "sousdom-1",
-        image: "sousdom-2",
-        montage: "sousdom-3",
-        direction: "sousdom-4",
-        texte: "sousdom-5",
-        multimedia: "sousdom-6",
-        presse: "sousdom-7",
-        management: "sousdom-8",
         // Niveau d'accès
         bac2: "bac-1",
         bac3: "bac-2",

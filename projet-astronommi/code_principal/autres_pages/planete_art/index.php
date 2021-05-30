@@ -104,8 +104,8 @@
                 </ul>
                 <h2>Infos</h2>
                 <ul>
-                    <li><a href="#" class="nav-link">Le BUT MMI</a></li>
-                    <li><a href="#" class="nav-link">A propos</a></li>
+                    <li><a href="../apropos/but_mmi/index.html" class="nav-link">Le BUT MMI</a></li>
+                    <li><a href="../apropos/a_propos/index.html" class="nav-link">A propos</a></li>
                 </ul>
             </div>
         </nav>

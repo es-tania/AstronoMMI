@@ -1,7 +1,7 @@
 @font-face {
     font-family: "Robotesqa";
-    src: url('assets/fonts/robotesqa-4f-webfont.woff2') format('woff2'),
-         url('assets/fonts/robotesqa-4f-webfont.woff') format('woff');
+    src: url('fonts/robotesqa-4f-webfont.woff2') format('woff2'),
+         url('fonts/robotesqa-4f-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }

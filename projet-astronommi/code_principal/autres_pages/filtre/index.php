@@ -33,35 +33,6 @@
                 <input type="checkbox" name="développement" id="dev" class="check"><label
                     for="dev">Développement</label>
 
-
-                <h2>Sous-domaine</h2>
-                <input type="checkbox" name="sous-domaine" value="decor" id="decor" class="sousdom check"><label
-                    for="decor">Décor</label>
-
-                <input type="checkbox" name="sous-domaine" id="image" class="sousdom check"><label
-                    for="image">Image</label><br>
-
-                <input type="checkbox" name="sous-domaine" id="montage" class="sousdom check"><label
-                    for="montage">Montage/Son</label>
-
-                <input type="checkbox" name="sous-domaine" id="direction" class="sousdom check"><label
-                    for="direction">Direction</label><br>
-
-                <input type="checkbox" name="sous-domaine" id="texte" class="sousdom check"><label
-                    for="texte">Texte/écrit</label>
-
-
-                <!-- Sous-domaine pour communication -->
-                <input type="checkbox" name="sous-domaine" id="multimedia" class="sousdom check"><label
-                    for="multimedia">Multimédia</label><br>
-
-                <input type="checkbox" name="sous-domaine" id="presse" class="sousdom check"><label
-                    for="presse">Presse</label>
-
-                <input type="checkbox" name="sous-domaine" id="management" class="sousdom check"><label
-                    for="management">Management</label>
-
-
                 <h2>Niveau minimum d'accès</h2>
                 <input type="checkbox" name="bac2" id="bac2" class="check"><label for="bac2">Bac +2</label>
 
