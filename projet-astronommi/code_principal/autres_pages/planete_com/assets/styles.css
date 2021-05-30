@@ -13,7 +13,6 @@
 }
 
 body {
-    cursor: url(img/curseur.png), auto;
     font-style: normal;
     color: #fff;
     margin: 0;
@@ -22,10 +21,6 @@ body {
     background-size: contain;
     background-attachment:scroll;
 }
-
-/* body {
-    background-image: url(img/1.png);
-} */
 
 /* Parallax en continue sur les différents calques */
 
@@ -46,7 +41,7 @@ body {
 .layer-0{
     background: url(img/7.png) 0 100% repeat-x;
     z-index: 1;
-    background-size: auto 100vh;
+    background-size: auto 130vh;
 }
 
 .layer-1{
@@ -252,6 +247,7 @@ body {
     font-size: 0.75rem;
     padding-bottom: 10px;
     margin: 0;
+    line-height: 14px;
 }
 
 .button {
@@ -531,56 +527,54 @@ body {
     }
 }
 
-
-
-
 /* Deuxième slide avec batiments */
 
 .slide-2 {
-    width: 187vw;
+    width: 130vw;
     height: 100vh;
     z-index: 5;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
 }
 
-@media screen and (min-width:1400px) {
+/* @media screen and (min-width:1400px) {
     .slide-2{
         width: 233vw;
     }
-}
+} */
 
 .batiments {
     position: relative;
     cursor: pointer;
 }
 
-.decor {
-    height: 49vh;
-    top: 13%;
-    margin-left: 55vw;
+.management {
+    height: 80vh;
+    top: 8vh;
+    /* margin-left: 55vw; */
 }
 
 @media screen and (max-width:1400px) {
-    .decor {
-        top: 15%;
-        margin-left: 41vw;
+    .management {
+        /* top: 25%; */
+        /* margin-left: 41vw; */
     }
 }
 
 .texte {
-    top: -10%;
-    width: 16vw;
-    margin-left: 15%;
+    bottom: 27vh;
+    width: 21vw;
+    /* margin-left: 15%;*/
 }
 
 @media screen and (min-width:1400px) {
     .texte {
-        top: 3%;
+        /* top: 3%; */
     }
 }
 
 .direction {
-    top: 31%;
-    height: 74vh;
-    margin-left: 35vw;
+    height: 97vh;
 }
 
