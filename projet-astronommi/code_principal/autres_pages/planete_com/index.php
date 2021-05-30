@@ -64,8 +64,8 @@
 
             <div class="slide-2">
                 <a onclick="on()" id="management"><img src="assets/img/management.png" alt="" class="batiments management"></a>
-                <a onclick="on()" id="presse"><img src="assets/img/presse.png" alt="" class="batiments texte"></a>
-                <a onclick="on()" id="multimedia"><img src="assets/img/multimédia.png" alt="" class="batiments direction"></a>
+                <a onclick="on()" id="presse"><img src="assets/img/presse.png" alt="" class="batiments presse"></a>
+                <a onclick="on()" id="multimedia"><img src="assets/img/multimédia.png" alt="" class="batiments multimedia"></a>
             </div>
 
             <div class="slide">
