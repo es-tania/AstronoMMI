@@ -19,10 +19,8 @@ body {
     color: #fff;
     margin: 0;
     height: 100vh;
-}
-
-body {
-    background-color: rgb(253, 243, 243);
+    background-image: url(img/0.png);
+    background-size: contain;
 }
 
 /* Parallax en continue sur les différents calques */
@@ -33,6 +31,12 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.color{
+    background-color: rgba(240, 47, 47, 0.151);
+    z-index: -10;
+    filter: blur(10px);
 }
 
 .layer-0 {
@@ -51,7 +55,7 @@ body {
 
 .layer-2 {
     background: url(img/7.png) 0 100% repeat-x;
-    background-size: auto 140vh;
+    background-size: auto 100vh;
     z-index: -1;
 }
 
@@ -59,7 +63,7 @@ body {
     -webkit-animation: parallax_fg linear 75s infinite both;
     animation: parallax_fg linear 75s infinite both;
     background: url(img/6.png) 0 100% repeat-x;
-    background-size: auto 135vh;
+    background-size: auto 100vh;
     z-index: -2;
 }
 
@@ -67,7 +71,7 @@ body {
     -webkit-animation: parallax_fg linear 95s infinite both;
     animation: parallax_fg linear 95s infinite both;
     background: url(img/5.png) 0 100% repeat-x;
-    background-size: auto 130vh;
+    background-size: auto 100vh;
     z-index: -3;
 }
 
@@ -75,7 +79,7 @@ body {
     -webkit-animation: parallax_fg linear 120s infinite both;
     animation: parallax_fg linear 120s infinite both;
     background: url(img/4.png) 0 100% repeat-x;
-    background-size: auto 125vh;
+    background-size: auto 80vh;
     z-index: -4;
 }
 
@@ -83,7 +87,7 @@ body {
     -webkit-animation: parallax_fg linear 130s infinite both;
     animation: parallax_fg linear 50s infinite both;
     background: url(img/3.png) 0 100% repeat-x;
-    background-size: auto 120vh;
+    background-size: auto 100vh;
     z-index: -5;
 }
 
@@ -91,7 +95,7 @@ body {
     -webkit-animation: parallax_fg linear 140s infinite both;
     animation: parallax_fg linear 50s infinite both;
     background: url(img/2.png) 0 100% repeat-x;
-    background-size: auto 115vh;
+    background-size: auto 80vh;
     z-index: -6;
 }
 
@@ -99,7 +103,7 @@ body {
     -webkit-animation: parallax_fg linear 150s infinite both;
     animation: parallax_fg linear 50s infinite both;
     background: url(img/1.png) 0 100% repeat-x;
-    background-size: auto 110vh;
+    background-size: auto 80vh;
     z-index: -7;
 }
 

@@ -1,13 +1,13 @@
 /*Faire un scroll horizontal :*/
 
 body {
+    cursor: url("img/curseur.png"), auto;
     margin: 0;
     padding: 0;
-    cursor: url("img/curseur.png"), auto;
 }
 
 .slide {
-    width: 100vw;
+    /* width: 100vw; */
     height: 100vh;
 }
 
@@ -26,7 +26,8 @@ body {
 .blocHorizontal {
     display: flex;
     flex-direction: row;
-    width: 200vw;
+    width: 350vw;
+    /* Définir une certaine largeur au scroll */
     transform: rotate(90deg) translateY(-100vh);
     transform-origin: top left;
 }

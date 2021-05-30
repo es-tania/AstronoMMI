@@ -77,6 +77,7 @@
             </div>
 
             <div class="slide">
+                <div class="layer color"></div>
                 <div class="layer layer-0"></div>
                 <div class="layer layer-1"></div>
                 <div class="layer layer-2"></div>
