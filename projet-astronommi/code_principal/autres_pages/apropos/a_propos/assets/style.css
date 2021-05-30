@@ -15,7 +15,13 @@ body {
     font-size: 1em;
     overflow: hidden;
 }
-
+.logo{
+    width: 70px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    transition: .3s;
+}
 /* Image */
 
 .image{
