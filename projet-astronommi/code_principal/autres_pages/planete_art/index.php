@@ -32,20 +32,13 @@
                 <h1 class="destination">Destination :<br>Planète Audiovisuel</h1>
                 <div class="cadre">
                     <p class="presentation">
-                        - Bienvenue sur la planète audiovisuelle !<br>
-                        Ici, vous pourrez découvrir différents métiers qui permettent d’exercer dans ce domaine.
-                        Mais au final, c’est quoi l’audiovisuel ?<br>
-                        L’audiovisuel est un domaine qui se réfère à tout travail qui utilise à la fois, du son et de
-                        l'image, et qui englobe donc les équipements et les procédés utilisés pour la télévision, le
-                        cinéma,ou encore la vidéo. Il peut aussi être utilisé pour le multimédia.<br>
-                        L’audiovisuel est constitué de différentes étapes qui sont l’écriture, le développement, la
-                        préproduction, la production et la postproduction. Ainsi, pour toutes ces étapes, il existe
-                        plusieurs métiers différents qui sont mis en jeu.<br>
-                        Pour faire bref, ce domaine en regroupe plusieurs autres tels que le cinéma, l’animation, les
-                        effets visuels, le son et l’image qui seront présentés.<br>
-                        En continuant votre aventure sur ma planète, vous verrez les différents métiers du domaine de
-                        l'audiovisuel.<br>
-                        Bonne découverte ! -
+                    - Bienvenue à toi, étranger ! Ici, le visuel prime ! <br>
+                    La planète Art&Design offre à nos yeux de jolies pépites, si tu aimes le travail soigné et esthétique, tu tombes bien ! <br>
+                    Différentes possibilités s’ouvrent à toi ici sans pour autant contraindre ta créativité et ton engouement pour le Beau ! Ce qui plaît à l'œil, plaît au cœur après tout ! <br>
+                    Les habitants de cette planète sont tous passionné.e.s, l’air a un goût sucré et il fait bon vivre. Tous tes sens doivent être en éveil, parce que c’est surtout ta sensibilité artistique qui sera mise en avant dans notre monde. <br>
+                    Découvre toutes les possibilités qui s’offrent à toi, du game designer, au maquettiste en passant par l’infographie… J’espère qu’une de ces voies sera celle dans laquelle tu t’épanouiras !<br>
+                    Garde les yeux bien ouverts et laisse parler ta créativité ! - 
+
                     </p>
                 </div>
                 <img src="assets/img/perso_art.png" alt="" class="perso">
