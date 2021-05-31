@@ -1,33 +1,24 @@
 //Code Javascript pour faire le Parallax
-// var parallax = document.getElementById("parallax")
-
-// window.addEventListener("scroll", function () {
-//     let offset = window.pageYOffset;
-//     //console.log('Offset:'+offset)
-//     //console.log('offset * 0.7'+ offset * 0.7)
-//     parallax.style.backgroundPositionY = offset * 0.5 + "px";
-// })
 
 var parallax = $('#parallax');
 
 $(window).scroll(function(){
-    let offset = $(window).scrollTop();
-    $(parallax).css('background-position-y' , offset * 0.5 +'px');
+  let offset = $(window).scrollTop();
+  $(parallax).css('background-position-y' , offset * 0.5 +'px');
 })
 
 // Animation bouton du menu
-const menuBtn = document.querySelector('.menu-btn');
-let menuOpen = false;
-menuBtn.addEventListener('click', () => {
+var menuBtn = $('.menu-btn');
+var menuOpen = false;
+$(menuBtn).on('click', function(){
   if(!menuOpen) {
-    menuBtn.classList.add('open');
+    $(this).attr().addClass('open');
     menuOpen = true;
   } else {
-    menuBtn.classList.remove('open');
+    $(this).attr().removeClass('open');
     menuOpen = false;
   }
 });
-
 
 // Pour le formulaire essai 1
 $(document).ready(function(){
