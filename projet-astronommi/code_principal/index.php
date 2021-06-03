@@ -81,7 +81,7 @@
             </div>
             <div class="planeteTitre clickable">
                 <h2>Planète<br>Développement</h2><a title="Planète Développement"
-                    href="autres_pages/planete_dev/index.php" target="_blank"><img src="assets/image/planete_dev.png" alt="" class="planète2"></a>
+                    href="autres_pages/planete_dev/index.php" target="_blank"><img src="assets/image/planete_dev.png" alt=""></a>
             </div>
             <div class="planeteTitre clickable"><a title="Planète Communication"
                     href="autres_pages/planete_com/index.php" target="_blank"><img src="assets/image/planete_com.png" alt=""></a>
@@ -107,8 +107,8 @@
                 </fieldset>
             </form>
             <div class="reseaux">
-            <img src="assets/image/instagram.png" alt="Notre compte Instagram">
-            <img src="assets/image/linkedin.png" alt="Notre page LinkedIn">
+            <a href="https://www.instagram.com/astrono_mmi/" target="_blank"><img src="assets/image/instagram.png" alt="Notre compte Instagram"><p>astrono_mmi</p></a>
+            <a href="https://linkedin.com/company/astronommi" target="_blank"><img src="assets/image/linkedin.png" alt="Notre page LinkedIn"><p>AstronoMMI</p></a>
             </div>
         </div>
 
