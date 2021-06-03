@@ -7,14 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/styles.css">
     <link rel="stylesheet" href="assets/menu.css">
+    <link rel="stylesheet" href="autres_pages/page_chargement/page_chargement.css">
     <link rel="icon" type="image/png" href="assets/image/logo_avec_nom.png">
     <title>Accueil - Astronommi</title>
 </head>
 
 <body id="parallax">
-    <?php include('autres_pages/page_chargement/page_chargement.php')?>
-
-    </div>
+    <div class="fond"><img src="assets/image/logo_avec_nom.png" alt=""><span class="loader"></span></div>
     <!--ID qui permet de faire l'effet parallax-->
     <div class="layer1">
         <div class="first" id="accueil">

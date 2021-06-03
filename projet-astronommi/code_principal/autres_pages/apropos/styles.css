@@ -8,11 +8,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700&display=swap');
 
+
 * {
     box-sizing: border-box;
 }
 
 body {
+    cursor: url(img/curseur.png), auto;
+    font-family: "M PLUS Rounded 1c", sans-serif;
     font-style: normal;
     color: #fff;
     margin: 0;
@@ -20,12 +23,11 @@ body {
     background-image: url(img/0.png);
     background-size: contain;
     background-attachment:scroll;
-    cursor: url("img/curseur.png"), auto;
 }
 
 /* Parallax en continue sur les différents calques */
 
-.layer {
+.layer{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -34,25 +36,25 @@ body {
 }
 
 .color{
-    background-color: rgba(47, 147, 240, 0.288);
+    background-color: rgba(147, 47, 240, 0.151);
     z-index: -10;
     filter: blur(10px);
 }
 
-.layer-0{
+.layer-0 {
     background: url(img/7.png) 0 100% repeat-x;
-    z-index: 1;
     background-size: auto 130vh;
+    z-index: 0;
 }
 
-.layer-1{
+.layer-1 {
     background: url(img/6.png) 0 100% repeat-x;
-    background-size: auto 100vh;
+    background-size: auto 130vh;
+    z-index: -1;
 }
 
-.layer-2{
-    -webkit-animation: parallax_fg linear 50s infinite both;
-    animation: parallax_fg linear 75s infinite both;
+
+.layer-2 {
     background: url(img/5.png) 0 100% repeat-x;
     background-size: auto 100vh;
     z-index: -1;
@@ -65,14 +67,16 @@ body {
 }
 
 .layer-4 {
+    -webkit-animation: parallax_fg linear 50s infinite both;
+    animation: parallax_fg linear 50s infinite both;
     background: url(img/3.png) 0 100% repeat-x;
     background-size: auto 100vh;
     z-index: -3;
 }
 
 .layer-5 {
-    -webkit-animation: parallax_fg linear 130s infinite both;
-    animation: parallax_fg linear 130s infinite both;
+    -webkit-animation: parallax_fg linear 120s infinite both;
+    animation: parallax_fg linear 120s infinite both;
     background: url(img/2.png) 0 100% repeat-x;
     background-size: auto 100vh;
     z-index: -4;
@@ -80,7 +84,7 @@ body {
 
 .layer-6 {
     -webkit-animation: parallax_fg linear 130s infinite both;
-    animation: parallax_fg linear 130s infinite both;
+    animation: parallax_fg linear 50s infinite both;
     background: url(img/1.png) 0 100% repeat-x;
     background-size: auto 100vh;
     z-index: -5;
@@ -106,182 +110,9 @@ body {
     }
 }
 
-/* Pour l'effet d'OVERLAY donc affichage de la tablette*/
-.overlay {
-    position: fixed;
-    display: none;
-    width: 100vw;
-    height: 103vh;
-    top: 0;
-
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 2;
-    overflow: hidden;
-}
-
-.tablette {
-    position: absolute;
-    top: 5px;
-    z-index: 0;
-    width: 100%;
-    height: 103vh;
-}
-
-#text {
-    z-index: 1;
-    width: 100vw;
-    height: 103vh;
-    overflow: hidden;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-.precedent {
-    /*Bouton précedent*/
-    position: absolute;
-    width: 40px;
-    left: 24vw;
-    top: 15vh;
-    z-index: 20;
-}
-
-.titre-fiche-metier {
-    font-family: "SpaceAge";
-    z-index: 0;
-    color: #00f6e8;
-    font-size: 1.5rem;
-    text-align: center;
-
-    padding-top: 40px;
-    width: 30vw;
-
-    margin-top: 5vh;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-@media screen and (max-width:1400px) {
-    .titre-fiche-metier {
-        font-size: 1.3rem;
-        padding-top: 30px;
-    }
-}
-
-.fiches {
-    position: absolute;
-    top: 5vh;
-    height: 89vh;
-    width: 60vw;
-    overflow: auto;
-}
-
-.cartefiche {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    position: relative;
-    top: 4vh;
-    left: 1vw;
-    margin: auto;
-    z-index: 10;
-    width: 50vw;
-    height: 57vh;
-    padding: 10px;
-
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-
-    overflow: auto;
-    overflow-x: hidden;
-}
-
-.card {
-    position: relative;
-    border-radius: 15px;
-    padding: 17px 10px;
-    margin: 8px;
-    width: 15vw;
-    border: #00f6e8 solid;
-    overflow-wrap: break-word;
-    height: max-content;
-}
-
-@media screen and (max-width:1630px) {
-    .card {
-        width: 20vw;
-    }
-
-    .cartefiche {
-        justify-content: center;
-    }
-}
-
-.content-wrapper {
-    margin-bottom: 10px;
-}
-
-.content-wrapper .intro {
-    margin-bottom: 0;
-    height: 81px;
-    overflow: hidden;
-}
-
-.titre {
-    font-family: "SpaceAge";
-    font-weight: normal;
-    color: #00f6e8;
-    text-align: center;
-    font-size: 1.2rem;
-    margin-bottom: 13px;
-    margin-top: 0;
-}
-
-.card p {
-    font-family: "M PLUS Rounded 1c", sans-serif;
-    color: #00f6e8;
-    font-size: 0.75rem;
-    padding-bottom: 10px;
-    margin: 0;
-    line-height: 14px;
-}
-
-.button {
-    font-family: "M PLUS Rounded 1c", sans-serif;
-    font-weight: bold;
-    font-size: 1em;
-    color: black;
-    text-decoration: none;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    bottom: 0px;
-
-    background: #00f6e8;
-    border-radius: 4px;
-    height: 40px;
-    width: 100%;
-
-    cursor: pointer;
-}
-
-.button:hover {
-    background-color: transparent;
-    color: #00f6e8;
-    border: #00f6e8 solid 1px;
-}
-
-/* Modal (qui apparaît après clic) */
-
+/* FICHE METIER */
 .modal-wrapper {
-    background-color: rgba(0, 18, 26, 0.7);
+    background-color: rgba(13, 0, 26, 0.7);
     top: 0;
     bottom: 0;
     left: 0;
@@ -297,14 +128,15 @@ body {
 }
 
 .modal-body {
-    background-color: rgba(0, 18, 26, 0.8);
+    background-color: rgba(16, 0, 26, 0.8);
     border-radius: 16px;
     padding: 32px;
-    margin: 40px;
-    border: #00f6e8 solid;
-    box-shadow: 0px 0px 50px 15px #00f6eaa6;
+
+    border: #3f0063a6 solid;
+    box-shadow: 0px 0px 50px 15px #3f0063a6;
     position: absolute;
     top: 2vh;
+
 }
 
 @media screen and (max-width:1450px) {
@@ -320,20 +152,16 @@ body {
     }
 }
 
-.titre2 {
-    font-family: "SpaceAge";
-    font-weight: normal;
-    color: #00f6e8;
-    text-align: center;
-    font-size: 1.8rem;
-    margin-bottom: 13px;
-    margin-top: 0;
+.modal-body p{
+    margin: 0;
+    font-family: 'M PLUS Rounded 1c';
+    color: #eed1ffa6;
 }
 
-.modal-body p {
-    font-family: "M PLUS Rounded 1c", sans-serif;
-    color: #92fffa;
-    margin: 0;
+.modal-header h2{
+    font-family: 'SpaceAge';
+    color: #eed1ffa6;
+    font-size: 1.8rem;
 }
 
 .modal-header {
@@ -346,6 +174,7 @@ body {
     opacity: 0;
     transition: opacity 0.25s ease-in-out;
     visibility: hidden;
+    
 }
 
 .modal:target {
@@ -366,12 +195,9 @@ body {
 
 .close svg {
     width: 16px;
-    float: right;
 }
 
 /* Gérer le reste */
-
-/* Première slide avec fusée et perso */
 
 .slide-1 {
     width: 100vw;
@@ -389,7 +215,7 @@ body {
     position: absolute;
     font-family: "SpaceAge", sans-serif;
     color: white;
-    text-shadow: 3px 3px #6691a5;
+    text-shadow: 3px 3px #6d04aaa6;
     font-size: 2.5rem;
     top: 2vh;
     left: 30vw;
@@ -407,10 +233,10 @@ body {
     position: relative;
     top: 30vh;
     z-index: 3;
-    border-radius: 72% 28% 70% 50% / 57% 70% 50% 63% ;
-    background-color: rgba(0, 20, 26, 0.8);
-    border: #004f63a6 solid;
-    box-shadow: 0px 0px 50px 15px #004f63a6;
+    border-radius: 72% 28% 70% 50% / 57% 70% 50% 63%;
+    background-color: rgba(16, 0, 26, 0.623);
+    border: #3f0063a6 solid;
+    box-shadow: 0px 0px 50px 15px #3f0063a6;
     margin-right: 6vw;
     padding: 4vw;
     padding-left: 8vw;
@@ -432,10 +258,11 @@ body {
 .perso {
     position: relative;
     top: 37%;
-    z-index: 2;
-    right:3vw;
+    right: 3vw;
+    z-index: 1;
     height: 60vh;
 }
+
 
 /* Icon scroll */
 .scroll {
@@ -528,15 +355,20 @@ body {
     }
 }
 
-/* Deuxième slide avec batiments */
+/* Deuxième slide avec batiments son et image */
 
 .slide-2 {
-    width: 130vw;
+    width: 150vw;
     height: 100vh;
     z-index: 5;
     display: flex;
-    justify-content: space-around;
     align-items: flex-end;
+    justify-content: space-around;
+}
+
+.slide-2 a{
+    height: max-content;
+    position: relative;
 }
 
 .batiments {
@@ -544,21 +376,27 @@ body {
     cursor: pointer;
 }
 
-.management {
-    height: 80vh;
-}
-
-.presse {
-    bottom: 29vh;
-    width: 21vw;
+.front {
+    height: 20vh;
+    /* width: 31vw; */
+    margin-bottom: 40vh;
     animation: floating 3s ease-in-out 0s infinite;
-    -webkit-animation: floating 3s ease-in-out 0s infinite;
 }
 
-.multimedia {
-    height: 97vh;
+.back{
+    width: 30vw;
+    margin-bottom: 20vh;
+    animation: floating 3s ease-in-out 0s infinite;
 }
 
+.fullstack{
+    width: 20vw;
+}
+
+.reseau{
+    height: 48vh;
+    width: 20vw;
+}
 
 @keyframes floating {
     0%{
