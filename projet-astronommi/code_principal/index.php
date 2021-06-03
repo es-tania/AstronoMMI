@@ -42,11 +42,11 @@
             <!-- Div pour le menu burger -->
             <button class="click-bouton">
                 <!-- Création de l'icon du menu -->
-                <div id="icon-menu">
+                <span id="icon-menu">
                     <span></span>
                     <span></span>
                     <span></span>
-                </div>
+                </span>
             </button>
             <nav class="sidebar">
                 <h1>Menu</h1>
@@ -54,18 +54,20 @@
                     <h2>Planètes</h2>
                     <ul>
                         <li><a href="autres_pages/planete_audio/index.php" class="nav-link"
-                                target="_blank">Audiovisuel</a></li><br>
+                                target="_blank">Audiovisuel</a><br></li>
                         <li><a href="autres_pages/planete_dev/index.php" class="nav-link"
-                                target="_blank">Développement</a></li><br>
+                                target="_blank">Développement</a><br></li>
                         <li><a href="autres_pages/planete_com/index.php" class="nav-link"
-                                target="_blank">Communication</a></li><br>
+                                target="_blank">Communication</a><br></li>
                         <li><a href="autres_pages/planete_art/index.php" class="nav-link" target="_blank">Art&Design</a>
                         </li>
-                        <h2>Infos</h2>
+                    </ul>
+                    <h2>Infos</h2>
+                    <ul>
                         <li><a href="autres_pages/apropos/but_mmi/index.html" class="nav-link" target="_blank">Le BUT
-                                MMI</a></li><br>
+                                MMI</a><br></li>
                         <li><a href="autres_pages/apropos/a_propos/index.html" class="nav-link" target="_blank">A
-                                propos</a></li><br>
+                                propos</a><br></li>
                     </ul>
                 </div>
             </nav>
@@ -95,35 +97,38 @@
             <div id="contact" class="footer">
                 <img src="assets/image/planete_footer.png" alt="">
                 <form action="envoi.php" method="get">
-                    <legend>Pour nous contacter</legend>
-                    <input type="text" name="nom_utilisateur" id="nom_utilisateur" placeholder="Nom*" required
-                        data-validation-required-message="Merci d'entrer votre nom."><br>
-                    <input type="text" name="prenom_utilisateur" id="prenom_utilisateur" placeholder="Prénom*" required
-                        data-validation-required-message="Merci d'entrer votre prénom."><br>
-                    <input type="email" name="courriel" id="courriel" placeholder="Email*" required
-                        data-validation-required-message="Merci d'entrer votre adresse de courriel."><br>
-                    <textarea rows="5" cols="50" name="message" placeholder="Message"></textarea><br>
-                    <input type="submit" id="envoi" value="Envoyer">
+                    <fieldset>
+                        <legend>Pour nous contacter</legend>
+                        <input type="text" name="nom_utilisateur" id="nom_utilisateur" placeholder="Nom*" required
+                            data-validation-required-message="Merci d'entrer votre nom."><br>
+                        <input type="text" name="prenom_utilisateur" id="prenom_utilisateur" placeholder="Prénom*"
+                            required data-validation-required-message="Merci d'entrer votre prénom."><br>
+                        <input type="email" name="courriel" id="courriel" placeholder="Email*" required
+                            data-validation-required-message="Merci d'entrer votre adresse de courriel."><br>
+                        <textarea rows="5" cols="50" name="message" placeholder="Message"></textarea><br>
+                        <input type="submit" id="envoi" value="Envoyer">
+                    </fieldset>
                 </form>
             </div>
         </div>
+    </div>
 
-
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <script type="text/javascript" src="assets/app.js"></script>
-        <script type="text/javascript" src="autres_pages/page_chargement/app.js"></script>
-        <script type="text/javascript">
-            // Fonction qui permet de faire apparaître le menu de droite
-            $(document).ready(function () {
-                $('.click-bouton').click(function () {
-                    $('.sidebar').toggleClass('active');
-                    $('button').toggleClass('active-2');
-                });
-
-                $("#icon-menu").click(function () {
-                    $(this).toggleClass("open");
-                });
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="assets/app.js"></script>
+    <script src="autres_pages/page_chargement/app.js"></script>
+    <script>
+        // Fonction qui permet de faire apparaître le menu de droite
+        $(document).ready(function () {
+            $('.click-bouton').click(function () {
+                $('.sidebar').toggleClass('active');
+                $('button').toggleClass('active-2');
             });
-        </script>
+
+            $("#icon-menu").click(function () {
+                $(this).toggleClass("open");
+            });
+        });
+    </script>
 </body>
+
 </html>
