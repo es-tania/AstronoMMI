@@ -42,12 +42,11 @@ body {
 }
 
 .ecran {
-    /* border: solid red; */
+    /* border: solid pink; */
     height: 65vh;
-    width: 150vh;
+    width: 75vw;
     position: absolute;
     top: 11vh;
-
 }
 
 .retour{
@@ -67,6 +66,12 @@ body {
     width: 35%;
     margin: 15px;
     border-radius: 15%;
+}
+
+@media screen and (max-height:700px) {
+    .photo{
+        width: 27%;
+    }
 }
 
 h1 {
@@ -109,9 +114,9 @@ a {
 }
 
 .profils {
+    /* border: red solid; */
     display: flex;
     justify-content: space-between;
-
 }
 
 /* TANIA */
