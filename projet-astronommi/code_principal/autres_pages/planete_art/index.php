@@ -64,7 +64,7 @@
             <div class="slide-3">
                 <a role="button" href="#22"><img src="assets/img/designer.png" alt="" class="batiments designer"></a>
                 <a role="button" href="#19"><img src="assets/img/infographiste-v2.png" alt="" class="batiments infographiste"></a>
-                <a role="button" href="#20"><img src="assets/img/maquetiste.png" alt="" class="batiments maquettiste"></a>
+                <a role="button" href="#20"><img src="assets/img/maquettiste.png" alt="" class="batiments maquettiste"></a>
                 <a role="button" href="#23"><img src="assets/img/concepteur-media-v2.png" alt="" class="batiments concepteur"></a>
             </div>
 
