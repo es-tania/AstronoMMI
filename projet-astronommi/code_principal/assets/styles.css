@@ -171,7 +171,7 @@ svg{
 
 /* Positionnement des planètes */
 
-.planete-et-titre{
+.planeteTitre{
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -195,7 +195,7 @@ h2{
     margin-bottom: 100px;
 }
 
-.planete-et-titre img{
+.planeteTitre img{
     width: 25vw;
     /* z-index: 2; */
 }

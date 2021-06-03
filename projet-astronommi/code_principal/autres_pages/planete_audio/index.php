@@ -100,11 +100,11 @@
 
         <button class="click-bouton">
             <!-- Création de l'icon du menu -->
-            <span id="icon-menu">
+            <div id="icon-menu">
                 <span></span>
                 <span></span>
                 <span></span>
-            </span>
+            </div>
         </button>
         <nav class="sidebar">
             <h1>Menu</h1>

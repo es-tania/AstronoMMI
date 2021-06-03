@@ -144,7 +144,6 @@ button {
 /* Création de l'icone du bouton du menu */
 
 #icon-menu {
-    display: block;
     width: 60px;
     height: 45px;
     position: relative;
