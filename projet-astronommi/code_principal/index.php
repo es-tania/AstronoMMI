@@ -106,6 +106,10 @@
                     <input type="submit" id="envoi" value="Envoyer">
                 </fieldset>
             </form>
+            <div class="reseaux">
+            <img src="assets/image/instagram.png" alt="Notre compte Instagram">
+            <img src="assets/image/linkedin.png" alt="Notre page LinkedIn">
+            </div>
         </div>
 
     </div>
