@@ -44,6 +44,7 @@ body{
 
     font-family:'Arial Rounded MT', sans-serif;
     font-size: 1.125rem;
+    height: 100%;
 }
 
 /* Fond étoile */
@@ -114,7 +115,7 @@ svg{
     top: 50vh;
     left: 10vw;
     transform: rotate(12deg);
-    cursor: not-allowed;
+
 }
 
 .mmi{
@@ -176,6 +177,7 @@ svg{
     justify-content: space-around;
     width: 60vw;
     margin: 10vh auto;
+    cursor: pointer;
     /* border: red solid; */
 }
 
@@ -193,40 +195,10 @@ h2{
     margin-bottom: 100px;
 }
 
-/* .planète1{
-    border: red solid;
-    position: relative;
-    left: 20vw;
-    width: 25vw;
-    z-index: 2;
-} */
-
 .planete-et-titre img{
     width: 25vw;
     /* z-index: 2; */
 }
-
-/* .planète2{
-    position: relative;
-    left: 60vw;
-    width: 25vw;
-    display: block;
-} */
-
-/* .planète3{
-    position: relative;
-    left: 20vw;
-    width: 25vw;
-    display: block;
-}
-
-.planète4{
-    position: relative;
-    left: 60vw;
-    width: 25vw;
-    display: block;
-} */
-
 
 /* Effet zoom sur les planètes */
 
