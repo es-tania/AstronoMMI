@@ -377,16 +377,17 @@ body {
 }
 
 .front {
-    height: 20vh;
-    /* width: 31vw; */
-    margin-bottom: 40vh;
+    height: 25vh;
+    top: -30vh;
     animation: floating 3s ease-in-out 0s infinite;
+    -webkit-animation: floating 3s ease-in-out 0s infinite;
 }
 
 .back{
     width: 30vw;
-    margin-bottom: 20vh;
+    top: -35vh;
     animation: floating 3s ease-in-out 0s infinite;
+    -webkit-animation: floating 3s ease-in-out 0s infinite;
 }
 
 .fullstack{

@@ -43,6 +43,10 @@ body {
     height: 100vh;
 }
 
+.retour{
+    margin-left: 30px;
+}
+
 .fleche{
     width: max-content;
 }
@@ -120,6 +124,7 @@ section{
 /* Titre */
 
 .titre{
+    display: inline-block;
     font-size: 2rem;
     font-weight: normal;
     color: #7fff00;

@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="assets/style.css"> -->
     <link rel="stylesheet" href="assets/styles.css">
-    <title>Text Typing</title>
+    <link rel="icon" type="image/png" href="assets/img/logo_avec_nom.png">
+    <title>BUT MMI</title>
 </head>
 
 <body>
@@ -17,6 +17,7 @@
     </div>
 
     <main>
+        <a class="retour"><img src="assets/img/retour.png" alt="" class="retour"></a>
         <h1 class="titre">TABLEAU DE BORD</h1>
 
         <section>
@@ -125,5 +126,10 @@
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script type="text/javascript" src="assets/app.js"></script>
+<script>
+    ('.retour').on('click', function(){
+        window.history.go(-2);
+    })
+</script>
 
 </html>
