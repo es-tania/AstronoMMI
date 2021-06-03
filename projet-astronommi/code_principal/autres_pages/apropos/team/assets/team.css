@@ -1,17 +1,17 @@
 *,
 *::after,
 *::before {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 @font-face {
     font-family: 'robotesqa';
     src: url(fonts/robotesqa-4f-webfont.woff) format('woff'),
-    url(fonts/robotesqa-4f-webfont.woff2) format('woff2');
-  }
+        url(fonts/robotesqa-4f-webfont.woff2) format('woff2');
+}
 
 /* GENERAL */
-body{
+body {
     font-family: 'robotesqa', Arial, Helvetica, sans-serif;
     margin: 0;
     width: 100vw;
@@ -24,66 +24,75 @@ body{
     color: #fff;
 }
 
-.logo{
+.logo {
     width: 70px;
     position: fixed;
     top: 20px;
     left: 20px;
     transition: .3s;
 }
-.pc{
+
+.pc {
     /* height: 95vh; */
     position: absolute;
     top: 0;
     width: 90vw;
     height: 100vh;
-    
-}
-.ecran{
-/* border: solid red; */
-height: 65vh;
-width: 150vh;
-position: absolute;
-top:11vh;
 
 }
 
-.folder{
+.ecran {
+    /* border: solid red; */
+    height: 65vh;
+    width: 150vh;
+    position: absolute;
+    top: 11vh;
+
+}
+
+.retour{
+    position: absolute;
+}
+
+.folder {
     width: 50px;
 }
 
-.folders-flex{
-display: flex;
+.folders-flex {
+    display: flex;
 
 }
 
-.photo{
+.photo {
     width: 35%;
     margin: 15px;
     border-radius: 15%;
 }
 
-h1{
+h1 {
     margin: auto;
     text-align: center;
     color: chartreuse;
 }
 
-h2{
+h2 {
     margin: 0;
     font-size: 1.5rem;
     color: chartreuse;
 }
-h3{
+
+h3 {
     margin: 0;
     font-size: 1rem;
 }
-p{
+
+p {
     font-size: 0.875rem;
     margin: 0;
 }
-a{
-    text-decoration:none;
+
+a {
+    text-decoration: none;
     color: #fff;
     display: flex;
     align-items: center;
@@ -93,17 +102,16 @@ a{
 
 }
 
-.carte{
+.carte {
     display: flex;
     align-items: center;
     margin: 15px auto;
 }
 
-.profils{
+.profils {
     display: flex;
     justify-content: space-between;
 
 }
 
 /* TANIA */
-

@@ -54,8 +54,9 @@
             <div class="slide-2">
                 <a role="button" href="#18"><img src="assets/img/admin-reseau.png" alt="" class="batiments reseau"></a>
                 <a role="button" href="#16"><img src="assets/img/develop-back.png" alt="" class="batiments back"></a>
-                <a role="button" href="#15"><img src="assets/img/develop-front-v2.png" alt="" class="batiments front"></a>
                 <a role="button" href="#17"><img src="assets/img/develop-full-stack.png" alt="" class="batiments fullstack"></a>
+                <a role="button" href="#15"><img src="assets/img/develop-front-v2.png" alt="" class="batiments front"></a>
+
             </div>
 
             <div class="slide">
