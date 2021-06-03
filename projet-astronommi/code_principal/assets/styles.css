@@ -22,13 +22,17 @@
     font-style: normal;
 }
 
+
+html{
+    scroll-behavior:smooth;
+}
+
 /*Parallax étoile*/
 *{
     border: 0;
     padding: 0;
     margin: 0;
     font-weight: normal;
-    scroll-behavior:smooth;
 }
 
 body{
@@ -188,6 +192,7 @@ h2{
 
 .planete{
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .planete-et-titre img{
