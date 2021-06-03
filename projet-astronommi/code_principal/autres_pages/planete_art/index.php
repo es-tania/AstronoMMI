@@ -113,7 +113,7 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script type="text/javascript">
+    <script>
         // Fonction qui permet de faire apparaître le menu de droite
         $(document).ready(function () {
             $('.click-bouton').click(function () {
@@ -126,7 +126,7 @@
             });
         });
     </script>
-    <script type="text/javascript" src="../page_chargement/app.js"></script>
+    <script src="../page_chargement/app.js"></script>
 </body>
 
 </html>
