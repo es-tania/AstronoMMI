@@ -72,7 +72,8 @@
         <div class="planete">
             <!--Planètes-->
             <div class="planeteTitre clickable">
-                <a title="Planète Audiovisuel" href="autres_pages/planete_audio/index.php"><img src="assets/image/planetes_audio.png" alt=""></a>
+                <a title="Planète Audiovisuel" href="autres_pages/planete_audio/index.php"><img
+                        src="assets/image/planetes_audio.png" alt=""></a>
                 <h2>Planète<br>Audiovisuel</h2>
             </div>
             <div class="planeteTitre clickable">
@@ -84,7 +85,8 @@
                 <h2>Planète<br>Communication</h2>
             </div>
             <div class="planeteTitre clickable">
-                <h2>Planète<br>Art et Design</h2><a title="Planète Art&Design" href="autres_pages/planete_art/index.php"><img src="assets/image/planetes_art.png" alt=""></a>
+                <h2>Planète<br>Art et Design</h2><a title="Planète Art&Design"
+                    href="autres_pages/planete_art/index.php"><img src="assets/image/planetes_art.png" alt=""></a>
             </div>
         </div>
         <div id="contact" class="footer">
@@ -103,8 +105,14 @@
                 </fieldset>
             </form>
             <div class="reseaux">
-            <a href="https://www.instagram.com/astrono_mmi/" target="_blank"><img src="assets/image/instagram.png" alt="Notre compte Instagram"><p>astrono_mmi</p></a>
-            <a href="https://linkedin.com/company/astronommi" target="_blank"><img src="assets/image/linkedin.png" alt="Notre page LinkedIn"><p>AstronoMMI</p></a>
+                <a href="https://www.instagram.com/astrono_mmi/" target="_blank"><img src="assets/image/instagram.png"
+                        alt="Notre compte Instagram">
+                    <p>astrono_mmi</p>
+                </a>
+                <a href="https://linkedin.com/company/astronommi" target="_blank"><img src="assets/image/linkedin.png"
+                        alt="Notre page LinkedIn">
+                    <p>AstronoMMI</p>
+                </a>
             </div>
         </div>
 
