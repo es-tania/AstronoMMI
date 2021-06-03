@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/styles.css">
     <link rel="stylesheet" href="assets/menu.css">
-    <link rel="stylesheet" href="autres_pages/page_chargement/page_chargement.css">
     <link rel="icon" type="image/png" href="assets/image/logo_avec_nom.png">
     <title>Accueil - Astronommi</title>
 </head>
 
 <body id="parallax">
-    <div class="fond"><img src="autres_pages/page_chargement/logo_avec_nom.png" alt=""><span class="loader"></span>
+    <?php include('autres_pages/page_chargement/page_chargement.php')?>
+
     </div>
     <!--ID qui permet de faire l'effet parallax-->
     <div class="layer1">
@@ -42,11 +42,11 @@
             <!-- Div pour le menu burger -->
             <button class="click-bouton">
                 <!-- Création de l'icon du menu -->
-                <span id="icon-menu">
+                <div id="icon-menu">
                     <span></span>
                     <span></span>
                     <span></span>
-                </span>
+                </div>
             </button>
             <nav class="sidebar">
                 <h1>Menu</h1>
@@ -75,19 +75,19 @@
 
         <div class="planete">
             <!--Planètes-->
-            <div class="planete-et-titre clickable"><a title="Planète Audiovisuel"
-                    href="autres_pages/planete_audio/index.php" target="_blank"><img src="assets/image/planetes_audio.png" alt=""></a>
+            <div class="planeteTitre clickable">
+                <a title="Planète Audiovisuel" href="autres_pages/planete_audio/index.php" target="_blank"><img src="assets/image/planetes_audio.png" alt=""></a>
                 <h2>Planète<br>Audiovisuel</h2>
             </div>
-            <div class="planete-et-titre clickable">
+            <div class="planeteTitre clickable">
                 <h2>Planète<br>Développement</h2><a title="Planète Développement"
                     href="autres_pages/planete_dev/index.php" target="_blank"><img src="assets/image/planete_dev.png" alt="" class="planète2"></a>
             </div>
-            <div class="planete-et-titre clickable"><a title="Planète Communication"
+            <div class="planeteTitre clickable"><a title="Planète Communication"
                     href="autres_pages/planete_com/index.php" target="_blank"><img src="assets/image/planete_com.png" alt=""></a>
                 <h2>Planète<br>Communication</h2>
             </div>
-            <div class="planete-et-titre clickable">
+            <div class="planeteTitre clickable">
                 <h2>Planète<br>Art et Design</h2><a title="Planète Art&Design" href="autres_pages/planete_art/index.php" target="_blank"><img src="assets/image/planetes_art.png" alt=""></a>
             </div>
         </div>
