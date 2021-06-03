@@ -1,0 +1,411 @@
+@font-face {
+    font-family: "SpaceAge";
+    src: url('fonts/space_age-webfont.woff2') format('woff2'),
+        url('fonts/space_age-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    cursor: url(img/curseur.png), auto;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-style: normal;
+    color: #fff;
+    margin: 0;
+    height: 100vh;
+    background-image: url(img/0.png);
+    background-size: contain;
+    background-attachment:scroll;
+}
+
+/* Parallax en continue sur les différents calques */
+
+.layer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.color{
+    background-color: rgba(147, 47, 240, 0.151);
+    z-index: -10;
+    filter: blur(10px);
+}
+
+.layer-0 {
+    background: url(img/7.png) 0 100% repeat-x;
+    background-size: auto 130vh;
+    z-index: 0;
+}
+
+.layer-1 {
+    background: url(img/6.png) 0 100% repeat-x;
+    background-size: auto 130vh;
+    z-index: -1;
+}
+
+
+.layer-2 {
+    background: url(img/5.png) 0 100% repeat-x;
+    background-size: auto 100vh;
+    z-index: -1;
+}
+
+.layer-3 {
+    background: url(img/4.png) 0 100% repeat-x;
+    background-size: auto 100vh;
+    z-index: -2;
+}
+
+.layer-4 {
+    -webkit-animation: parallax_fg linear 50s infinite both;
+    animation: parallax_fg linear 50s infinite both;
+    background: url(img/3.png) 0 100% repeat-x;
+    background-size: auto 100vh;
+    z-index: -3;
+}
+
+.layer-5 {
+    -webkit-animation: parallax_fg linear 120s infinite both;
+    animation: parallax_fg linear 120s infinite both;
+    background: url(img/2.png) 0 100% repeat-x;
+    background-size: auto 100vh;
+    z-index: -4;
+}
+
+.layer-6 {
+    -webkit-animation: parallax_fg linear 130s infinite both;
+    animation: parallax_fg linear 50s infinite both;
+    background: url(img/1.png) 0 100% repeat-x;
+    background-size: auto 100vh;
+    z-index: -5;
+}
+
+@-webkit-keyframes parallax_fg {
+    0% {
+        background-position: 2765px 100%;
+    }
+
+    100% {
+        background-position: 550px 100%;
+    }
+}
+
+@keyframes parallax_fg {
+    0% {
+        background-position: 2765px 100%;
+    }
+
+    100% {
+        background-position: 550px 100%;
+    }
+}
+
+/* FICHE METIER */
+.modal-wrapper {
+    background-color: rgba(13, 0, 26, 0.7);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    overflow: auto;
+}
+
+.modal-body {
+    background-color: rgba(16, 0, 26, 0.8);
+    border-radius: 16px;
+    padding: 32px;
+
+    border: #3f0063a6 solid;
+    box-shadow: 0px 0px 50px 15px #3f0063a6;
+    position: absolute;
+    top: 2vh;
+
+}
+
+@media screen and (max-width:1450px) {
+    .modal-body {
+        top: 0;
+        max-width: 80vw;
+    }
+}
+
+@media screen and (min-width:1300px) {
+    .modal-body {
+        width: 55vw;
+    }
+}
+
+.modal-body p{
+    margin: 0;
+    font-family: 'M PLUS Rounded 1c';
+    color: #eed1ffa6;
+}
+
+.modal-header h2{
+    font-family: 'SpaceAge';
+    color: #eed1ffa6;
+    font-size: 1.8rem;
+}
+
+.modal-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.modal {
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+    visibility: hidden;
+    
+}
+
+.modal:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal:target .modal-body {
+    opacity: 1;
+    transform: translateY(1);
+}
+
+.modal .modal-body {
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+    z-index: 1;
+}
+
+.close svg {
+    width: 16px;
+}
+
+/* Gérer le reste */
+
+.slide-1 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.fusee {
+    bottom: 25px;
+    z-index: 3;
+}
+
+.destination {
+    position: absolute;
+    font-family: "SpaceAge", sans-serif;
+    color: white;
+    text-shadow: 3px 3px #6d04aaa6;
+    font-size: 2.5rem;
+    top: 2vh;
+    left: 30vw;
+    z-index: 3;
+    height: 200px;
+}
+
+.cadre {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    height: max-content;
+    position: relative;
+    top: 30vh;
+    z-index: 3;
+    border-radius: 72% 28% 70% 50% / 57% 70% 50% 63%;
+    background-color: rgba(16, 0, 26, 0.623);
+    border: #3f0063a6 solid;
+    box-shadow: 0px 0px 50px 15px #3f0063a6;
+    margin-right: 6vw;
+    padding: 4vw;
+    padding-left: 8vw;
+}
+
+.presentation {
+    color: #fff;
+    font-size: 0.6875rem;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    text-align: left;
+}
+
+@media screen and (min-width: 1400px) {
+    .presentation {
+        font-size: 0.9rem;
+    }
+}
+
+.perso {
+    position: relative;
+    top: 37%;
+    right: 3vw;
+    z-index: 1;
+    height: 60vh;
+}
+
+
+/* Icon scroll */
+.scroll {
+    position: fixed;
+    left: 30vw;
+    z-index: 100;
+    top: 90vh;
+    transform: rotate(-90deg);
+}
+
+.icon-scroll {
+    width: 1em;
+    height: 3.125em;
+    transform: translateX(-50%) scale(2);
+}
+
+.icon-arrows::after,
+.icon-arrows::before {
+    content: '';
+}
+
+.icon-arrows span,
+.icon-arrows::after,
+.icon-arrows::before {
+    display: block;
+    width: 0.315em;
+    height: 0.315em;
+    border-right: 1px solid rgba(255, 255, 255, .8);
+    border-bottom: 1px solid rgba(255, 255, 255, .8);
+    margin: 0 0 0.125em 0.315em;
+    transform: rotate(45deg);
+    animation: mouse-scroll 1s infinite;
+    animation-direction: alternate;
+}
+
+.icon-arrows::before {
+    margin-top: 0.315em;
+    animation-delay: .1s;
+}
+
+.icon-scroll span {
+    animation-delay: .2s;
+}
+
+.icon-arrows::after {
+    animation-delay: .3s;
+}
+
+.icon-scroll .mouse {
+    height: 1.375em;
+    width: .875em;
+    border: 1px solid rgba(255, 255, 255, .8);
+    border-radius: 2em;
+}
+
+.icon-scroll .wheel {
+    position: relative;
+    display: block;
+    height: 0.1875em;
+    width: 0.1875em;
+    margin: 0.1875em auto 0;
+    background: rgba(255, 255, 255, .8);
+    animation: mouse-wheel 1.2s ease infinite;
+    border-radius: 50%;
+}
+
+@keyframes mouse-wheel {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(.375em);
+    }
+}
+
+@keyframes mouse-scroll {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Deuxième slide avec batiments son et image */
+
+.slide-2 {
+    width: 150vw;
+    height: 100vh;
+    z-index: 5;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.slide-2 a{
+    height: max-content;
+    position: relative;
+}
+
+.batiments {
+    position: relative;
+    cursor: pointer;
+}
+
+.front {
+    height: 20vh;
+    /* width: 31vw; */
+    margin-bottom: 40vh;
+    animation: floating 3s ease-in-out 0s infinite;
+}
+
+.back{
+    width: 30vw;
+    margin-bottom: 20vh;
+    animation: floating 3s ease-in-out 0s infinite;
+}
+
+.fullstack{
+    width: 20vw;
+}
+
+.reseau{
+    height: 48vh;
+    width: 20vw;
+}
+
+@keyframes floating {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}

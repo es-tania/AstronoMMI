@@ -1,0 +1,305 @@
+@font-face {
+    font-family: 'SpaceAge';
+    src: url('fonts/space_age-webfont.woff2') format('woff2'),
+         url('fonts/space_age-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Arial Rounded MT Bold';
+    src: url('fonts/ArialRoundedMTBold.woff') format('woff'),
+    url('fonts/ArialRoundedMTBold.woff2') format('woff2');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Arial Rounded MT';
+    src: url('fonts/arial-rounded-mt-webfont.woff2') format('woff2'),
+         url('fonts/arial-rounded-mt-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+html{
+    scroll-behavior:smooth;
+}
+
+/*Parallax étoile*/
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+}
+
+body{
+    cursor: url("image/curseur.png"), auto;
+    background-image: url("image/galaxie.jpg");
+    background-size: 450px;
+    background-repeat: repeat;
+    overflow-x: hidden;
+
+    font-family:'Arial Rounded MT', sans-serif;
+    font-size: 1.125rem;
+    height: 100%;
+}
+
+/* Fond étoile */
+
+.layer1{
+    background-image: url("image/etoile.png");
+    background-size: 600px;
+    background-repeat: repeat;
+}
+
+/* Haut de la page Accueil */
+
+.first{
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    position: relative;
+}
+
+.middle{
+    margin: auto;
+}
+
+.FiltersOrScroll{
+    position: absolute;
+    bottom: 7vh;
+}
+
+h1{
+    font-family: 'SpaceAge', sans-serif ;
+    font-size: 6vw;
+    color: white;
+    text-align: center;
+}
+
+p{
+    font-family:'Arial Rounded MT', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 5px;
+    position: relative;
+}
+
+.logo{
+    width: 70px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    transition: .3s;
+}
+
+svg{
+    width: 60px;
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    fill: white;
+}
+
+.rocket{
+    width: 10%;
+    position: absolute;
+    top: 50vh;
+    left: 10vw;
+    transform: rotate(12deg);
+
+}
+
+.mmi{
+    width: 15%;
+    position: absolute;
+    top: 15vh;
+    left: 20vw;
+    transform: rotate(-100deg);
+    transition: 1s;
+}
+
+.apropos{
+    width: 15%;
+    position: absolute;
+    top: 10vh;
+    right: 35vw;
+    transform: rotate(-80deg);
+    transition: 1s;
+}
+
+.contact{
+    width: 15%;
+    position: absolute;
+    top: 20vh;
+    right: 10vw;
+    transition: 1s;
+}
+
+.satellite:hover{
+    width: 20%;
+    transition: 1s;
+}
+
+.FiltersButton{
+    display: block;
+    text-decoration: none;
+    background-color: #314489;
+    font-family:'Arial Rounded MT', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    width: 30vw;
+    margin: 5px;
+    margin-top: 100px;
+    padding: 12px;
+    border-radius: 16px;
+    transition: background-color 0.8s ease;
+}
+
+.FiltersButton:hover{
+    background-color: #758ace;
+}
+
+/* Positionnement des planètes */
+
+.planeteTitre{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 60vw;
+    margin: 10vh auto;
+    cursor: pointer;
+    /* border: red solid; */
+}
+
+h2{
+    font-family: 'SpaceAge', sans-serif;
+    font-size: 3vw;
+    color: white;
+    text-align: center;
+    word-wrap: break-word;
+    text-decoration: none;
+}
+
+.planete{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.planeteTitre img{
+    width: 25vw;
+    /* z-index: 2; */
+}
+
+/* Effet zoom sur les planètes */
+
+.clickable{
+    transition: 0.5s;
+}
+
+.clickable:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+/* Bas de page */
+
+.footer{
+    position: relative;
+    bottom: 0;
+    height: 110vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.footer img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Formulaire */
+
+form{
+    position: absolute;
+    margin: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+    bottom: 10vh;
+}
+
+input, textarea{
+    margin: 5px;
+    padding: 10px;
+    width: 30vw;
+    border-radius: 10px;
+    background-color: rgba(184, 147, 68, 0.527);
+    border: rgba(128, 90, 9, 0.822) 2px solid;
+}
+
+input[type="submit"] {
+    color: white;
+    background-color: rgb(128, 90, 9);
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 15vw;
+    margin-top: 20px;
+    font-family: 'SpaceAge', sans-serif;
+    font-size: 1rem;
+    transition: background-color 0.8s ease;
+    border: none;
+}
+
+input[type="submit"]:hover{
+    background-color:rgba(128, 90, 9, 0.514);
+    border: none;
+}
+
+legend{
+    font-family: 'SpaceAge', sans-serif;
+    color: rgb(97, 69, 8);
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 15px;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width:1430px) {
+    form{
+        bottom: 0vh;
+    }
+
+    legend{
+        font-size: 1.8rem;
+    }
+}
+
+::placeholder{
+    font-family:'Arial Rounded MT Bold', sans-serif;
+    color: rgba(255, 255, 255, 0.719);
+    font-size: 1rem;
+}
+
+input:focus, textarea:focus{
+    outline: 1px solid #70b68100;
+    background-color: #adadad4d;
+}
+
+input:focus::placeholder, textarea:focus::placeholder{
+    color: transparent;
+}
