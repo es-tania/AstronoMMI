@@ -20,9 +20,9 @@
             <!-- Div pour placer tous les élements au haut de la page -->
             <a href="#accueil"><img src="assets/image/logo_avec_nom.png" alt="Logo en haut à gauche" class="logo"></a>
             <img src="assets/image/fusee.png" alt="" class="rocket">
-            <a title="Le BUT MMI" href="autres_pages/apropos/but_mmi/index.html" target="_blank"><img
+            <a title="Le BUT MMI" href="autres_pages/apropos/but_mmi/index.html"><img
                     src="assets/image/satelite-mmi-v2.png" alt="Satellite page MMI" class="mmi satellite"></a>
-            <a title="A propos" href="autres_pages/apropos/a_propos/index.html" target="_blank"><img
+            <a title="A propos" href="autres_pages/apropos/a_propos/index.html"><img
                     src="assets/image/satelite-a-propos.png" alt="Satellite page A propos"
                     class="apropos satellite"></a>
             <a title="Contact" href="#contact"><img src="assets/image/satelite-contact-v2.png" alt="Satellite Contact"
@@ -52,20 +52,17 @@
                 <div class="menu-link">
                     <h2>Planètes</h2>
                     <ul>
-                        <li><a href="autres_pages/planete_audio/index.php" class="nav-link"
-                                target="_blank">Audiovisuel</a><br></li>
-                        <li><a href="autres_pages/planete_dev/index.php" class="nav-link"
-                                target="_blank">Développement</a><br></li>
-                        <li><a href="autres_pages/planete_com/index.php" class="nav-link"
-                                target="_blank">Communication</a><br></li>
-                        <li><a href="autres_pages/planete_art/index.php" class="nav-link" target="_blank">Art&Design</a>
+                        <li><a href="autres_pages/planete_audio/index.php" class="nav-link">Audiovisuel</a><br></li>
+                        <li><a href="autres_pages/planete_dev/index.php" class="nav-link">Développement</a><br></li>
+                        <li><a href="autres_pages/planete_com/index.php" class="nav-link">Communication</a><br></li>
+                        <li><a href="autres_pages/planete_art/index.php" class="nav-link">Art&Design</a>
                         </li>
                     </ul>
                     <h2>Infos</h2>
                     <ul>
-                        <li><a href="autres_pages/apropos/but_mmi/index.html" class="nav-link" target="_blank">Le BUT
+                        <li><a href="autres_pages/apropos/but_mmi/index.html" class="nav-link">Le BUT
                                 MMI</a><br></li>
-                        <li><a href="autres_pages/apropos/a_propos/index.html" class="nav-link" target="_blank">A
+                        <li><a href="autres_pages/apropos/a_propos/index.html" class="nav-link">A
                                 propos</a><br></li>
                     </ul>
                 </div>
@@ -75,19 +72,19 @@
         <div class="planete">
             <!--Planètes-->
             <div class="planeteTitre clickable">
-                <a title="Planète Audiovisuel" href="autres_pages/planete_audio/index.php" target="_blank"><img src="assets/image/planetes_audio.png" alt=""></a>
+                <a title="Planète Audiovisuel" href="autres_pages/planete_audio/index.php"><img src="assets/image/planetes_audio.png" alt=""></a>
                 <h2>Planète<br>Audiovisuel</h2>
             </div>
             <div class="planeteTitre clickable">
                 <h2>Planète<br>Développement</h2><a title="Planète Développement"
-                    href="autres_pages/planete_dev/index.php" target="_blank"><img src="assets/image/planete_dev.png" alt=""></a>
+                    href="autres_pages/planete_dev/index.php"><img src="assets/image/planete_dev.png" alt=""></a>
             </div>
             <div class="planeteTitre clickable"><a title="Planète Communication"
-                    href="autres_pages/planete_com/index.php" target="_blank"><img src="assets/image/planete_com.png" alt=""></a>
+                    href="autres_pages/planete_com/index.php"><img src="assets/image/planete_com.png" alt=""></a>
                 <h2>Planète<br>Communication</h2>
             </div>
             <div class="planeteTitre clickable">
-                <h2>Planète<br>Art et Design</h2><a title="Planète Art&Design" href="autres_pages/planete_art/index.php" target="_blank"><img src="assets/image/planetes_art.png" alt=""></a>
+                <h2>Planète<br>Art et Design</h2><a title="Planète Art&Design" href="autres_pages/planete_art/index.php"><img src="assets/image/planetes_art.png" alt=""></a>
             </div>
         </div>
         <div id="contact" class="footer">
