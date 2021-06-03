@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -71,8 +71,7 @@
 
             <div class="slide-2">
                 <a onclick="on()" id="image"><img src="assets/img/image.png" alt="" class="batiments image"></a>
-                <a onclick="on()" id="son"><img src="assets/img/batiment-son.png" alt="" class="batiments son"
-                        id="son"></a>
+                <a onclick="on()" id="son"><img src="assets/img/batiment-son.png" alt="" class="batiments son"></a>
             </div>
 
             <div class="slide-3">
@@ -131,8 +130,8 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/app.js"></script>
-    <script type="text/javascript" src="../page_chargement/app.js"></script>
+    <script src="assets/app.js"></script>
+    <script src="../page_chargement/app.js"></script>
 </body>
 
 </html>

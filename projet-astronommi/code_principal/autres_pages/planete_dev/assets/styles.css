@@ -154,7 +154,7 @@ body {
 
 .modal-body p{
     margin: 0;
-    font-family: 'Arial Rounded MT';
+    font-family: 'M PLUS Rounded 1c';
     color: #eed1ffa6;
 }
 
@@ -377,12 +377,17 @@ body {
 }
 
 .front {
-    height: 87vh;
-    width: 31vw;
+    height: 25vh;
+    top: -30vh;
+    animation: floating 3s ease-in-out 0s infinite;
+    -webkit-animation: floating 3s ease-in-out 0s infinite;
 }
 
 .back{
-    width: 20vw;
+    width: 30vw;
+    top: -35vh;
+    animation: floating 3s ease-in-out 0s infinite;
+    -webkit-animation: floating 3s ease-in-out 0s infinite;
 }
 
 .fullstack{
@@ -392,4 +397,16 @@ body {
 .reseau{
     height: 48vh;
     width: 20vw;
+}
+
+@keyframes floating {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
 }

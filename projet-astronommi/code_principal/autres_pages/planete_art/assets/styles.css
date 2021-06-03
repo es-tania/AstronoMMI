@@ -360,7 +360,7 @@ body {
 /* Deuxième slide avec batiments son et image */
 
 .slide-2 {
-    width: 150vw;
+    width: 125vw;
     height: 100vh;
     z-index: 5;
     display: flex;
@@ -374,7 +374,7 @@ body {
 }
 
 .slide-3 {
-    width: 100vw;
+    width: 125vw;
     height: 100vh;
     z-index: 5;
     display: flex;
@@ -388,47 +388,57 @@ body {
     cursor: pointer;
 }
 
-.infographiste {
-    height: 87vh;
-    width: 31vw;
-}
-
-.maquettiste{
-    width: 20vw;
-}
 
 .webdesigner{
-    width: 20vw;
-}
-
-.designer{
-    height: 48vh;
-    width: 20vw;
-}
-
-/* Troisième slide avec batiments décor, texte et direction */
-
-.concepteur{
-    width: 30vw;
-}
-
-/* @media screen and (min-width:1400px) {
-    .decor {
-        margin-bottom: 0;
-    }
-} */
-
-.game {
     width: 25vw;
 }
 
-/* @media screen and (max-width:1400px) {
-    .texte {
-        margin-bottom: 3%;
-    }
-} */
-
+.directeur{
+    width: 25vw;
+    bottom: 35vh;
+    animation: floating 3s ease-in-out 0s infinite;
+}
 .motion {
-    width: 26vw;
+    width: 30vw;
+    bottom: 30px;
+}
+.game {
+    width: 20vw;
+    animation: floating 3s ease-in-out 0s infinite;
+    top: -40vh;
 }
 
+
+/* Troisième slide avec batiments décor, texte et direction */
+
+.designer{
+    width: 30vw;
+}
+
+.infographiste {
+    top: -50vh;
+    width: 30vw;
+    animation: floating 3s ease-in-out 0s infinite;
+}
+
+.maquettiste{
+    width: 25vw;
+    top: -50px;
+}
+
+.concepteur{
+    width: 25vw;
+    animation: floating 3s ease-in-out 0s infinite;
+    top: -40vh;
+}
+@keyframes floating {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}

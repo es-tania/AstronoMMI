@@ -44,6 +44,7 @@ body{
 
     font-family:'Arial Rounded MT', sans-serif;
     font-size: 1.125rem;
+    height: 100%;
 }
 
 /* Fond étoile */
@@ -93,7 +94,7 @@ p{
 }
 
 .logo{
-    /* width: 10px; */
+    width: 70px;
     position: fixed;
     top: 20px;
     left: 20px;
@@ -114,7 +115,7 @@ svg{
     top: 50vh;
     left: 10vw;
     transform: rotate(12deg);
-    cursor: not-allowed;
+
 }
 
 .mmi{
@@ -170,56 +171,51 @@ svg{
 
 /* Positionnement des planètes */
 
+.planeteTitre{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 60vw;
+    margin: 10vh auto;
+    cursor: pointer;
+    /* border: red solid; */
+}
+
+h2{
+    font-family: 'SpaceAge', sans-serif;
+    font-size: 3vw;
+    color: white;
+    text-align: center;
+    word-wrap: break-word;
+    text-decoration: none;
+}
+
 .planete{
     margin-top: 100px;
     margin-bottom: 100px;
 }
 
-.planète1{
-    position: relative;
-    left: 20vw;
+.planeteTitre img{
     width: 25vw;
-    display: block;
-    z-index: 2;
+    /* z-index: 2; */
 }
-
-.planète2{
-    position: relative;
-    left: 60vw;
-    width: 25vw;
-    display: block;
-}
-
-.planète3{
-    position: relative;
-    left: 20vw;
-    width: 25vw;
-    display: block;
-}
-
-.planète4{
-    position: relative;
-    left: 60vw;
-    width: 25vw;
-    display: block;
-}
-
 
 /* Effet zoom sur les planètes */
 
 .clickable{
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .clickable:hover{
-    transform: scale(1.25);
-    transition: 1s;
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 /* Bas de page */
 
 .footer{
     position: relative;
+    bottom: 0;
     height: 110vh;
     width: 100vw;
     padding: 0;

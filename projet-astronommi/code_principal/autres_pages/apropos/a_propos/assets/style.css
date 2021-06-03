@@ -22,6 +22,7 @@ body {
     left: 20px;
     transition: .3s;
 }
+
 /* Image */
 
 .image{
@@ -42,9 +43,14 @@ body {
     height: 100vh;
 }
 
+.retour{
+    margin-right: 30px;
+}
+
 /* Texte */
 
 .console h1{
+    display: inline-block;
     font-size: 2rem;
     font-weight: normal;
 }
@@ -66,11 +72,10 @@ body {
     width: 70vw;
     z-index: 2;
     /* padding: 5vw 7vw; */
-    /* border: springgreen solid; */
 }
 
 .texte{
-    color: chartreuse;
+    color: #7fff00;
 }
 
 .texte p{
@@ -80,7 +85,6 @@ body {
 .texte a{
     color: chartreuse;
     text-decoration: none;
-    position: relative;
     cursor: pointer;
     font-size: 1.2rem;
     cursor: pointer;
