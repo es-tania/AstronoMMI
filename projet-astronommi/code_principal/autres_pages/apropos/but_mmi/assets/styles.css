@@ -88,12 +88,6 @@ section{
     position: relative;
 }
 
-.infos{
-    position: absolute;
-    bottom: 0;
-    margin: 4vh;
-}
-
 /* Bouton Passer et Clique*/
 
 #passer, .clique, #passer2{
