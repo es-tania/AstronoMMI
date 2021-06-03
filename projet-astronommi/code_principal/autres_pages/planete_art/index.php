@@ -55,9 +55,9 @@
             </div>
 
             <div class="slide-2">
-                <a role="button" href="#19"><img src="assets/img/batiment-son.png" alt="" class="batiments infographiste"></a>
+                <a role="button" href="#21"><img src="assets/img/web-designer.png" alt="" class="batiments webdesigner"></a>
                 <a role="button" href="#20"><img src="assets/img/image.png" alt="" class="batiments maquettiste"></a>
-                <a role="button" href="#21"><img src="assets/img/Decor.png" alt="" class="batiments webdesigner"></a>
+                <a role="button" href="#19"><img src="assets/img/batiment-son.png" alt="" class="batiments infographiste"></a>
                 <a role="button" href="#22"><img src="assets/img/texte.png" alt="" class="batiments designer"></a>
             </div>
 
