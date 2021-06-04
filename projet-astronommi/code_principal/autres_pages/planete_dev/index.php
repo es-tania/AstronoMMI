@@ -28,7 +28,7 @@
         <div class="blocHorizontal">
             <!-- Elements sur la planètes (batiments, personnages etc) -->
             <div class="slide-1">
-                <img src="assets/img/fusee.png" alt="" class="fusee">
+                <img src="assets/img/fusee.png" alt="Fusée de décoration" class="fusee">
                 <h1 class="destination">Destination :<br>Planète Audiovisuel</h1>
                 <div class="cadre">
                     <p class="presentation">
@@ -38,7 +38,7 @@
                     Bonne visite ! -
                     </p>
                 </div>
-                <img src="assets/img/perso_dev.png" alt="" class="perso">
+                <img src="assets/img/perso_dev.png" alt="Personnage principal de la planète" class="perso">
                 <div class="scroll">
                     <div class="icon-scroll">
                         <div class="mouse">
@@ -52,10 +52,10 @@
             </div>
 
             <div class="slide-2">
-                <a role="button" href="#18"><img src="assets/img/admin-reseau.png" alt="" class="batiments reseau"></a>
-                <a role="button" href="#16"><img src="assets/img/develop-back.png" alt="" class="batiments back"></a>
-                <a role="button" href="#17"><img src="assets/img/develop-full-stack.png" alt="" class="batiments fullstack"></a>
-                <a role="button" href="#15"><img src="assets/img/develop-front-v2.png" alt="" class="batiments front"></a>
+                <a role="button" href="#18"><img src="assets/img/admin-reseau.png" alt="Borne réseau pour le métiers Administrateur Réseau" class="batiments reseau"></a>
+                <a role="button" href="#16"><img src="assets/img/develop-back.png" alt="Ordinateur pour le métier de Développeur-Back" class="batiments back"></a>
+                <a role="button" href="#17"><img src="assets/img/develop-full-stack.png" alt="Ordinateur pour le métier de Développeur-Fullstack" class="batiments fullstack"></a>
+                <a role="button" href="#15"><img src="assets/img/develop-front-v2.png" alt="Balise pour le métier de Développeur-Front" class="batiments front"></a>
 
             </div>
 
