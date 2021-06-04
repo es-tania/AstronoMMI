@@ -29,7 +29,7 @@
             <!-- Elements sur la planètes (batiments, personnages etc) -->
             <div class="slide-1">
                 <img src="assets/img/fusee.png" alt="Fusée de décoration" class="fusee">
-                <h1 class="destination">Destination :<br>Planète Audiovisuel</h1>
+                <h1 class="destination">Destination :<br>Planète Développement</h1>
                 <div class="cadre">
                     <p class="presentation">
                     - Tiens, nous avons un visiteur ! Bienvenue sur la planète Développement !<br><br>Les habitants de cette planète adorent passer leur temps au café Visual Studio Code. Ici, tu retrouveras des passionnés de la technique : si tel est ton cas, tu as atterri sur la bonne planète ! <br>

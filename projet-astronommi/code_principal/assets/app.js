@@ -1,4 +1,6 @@
-//Code Javascript pour faire le Parallax
+$(document).ready(function(){
+  
+  //Code Javascript pour faire le Parallax
 
 var parallax = $('#parallax');
 
@@ -21,7 +23,7 @@ $(menuBtn).on('click', function(){
 });
 
 // Pour le formulaire essai 1
-$(document).ready(function(){
+
   var nom = null;
   var prenom = null;
   var courriel = null;
@@ -30,21 +32,21 @@ $("#nom_utilisateur, #prenom_utilisateur, #courriel").on('keyup',function(){
   nom=$("#nom_utilisateur").val().length;
   console.log(nom)
   if(nom==0){
-      $('#nom_utilisateur').css({"background-color":"#FFC0CB"});
+      $('#nom_utilisateur').css({"color":"rgba(187, 130, 130, 0.5)"});
   }else{
-      $("#nom_utilisateur").css({"background-color":"#B0F2B6"});
+      $("#nom_utilisateur").css({"color":"rgba(148, 189, 123, 0.5)"});
   }
   prenom=$("#prenom_utilisateur").val().length;
   if(prenom==0){
-      $('#prenom_utilisateur').css({"background-color":"#FFC0CB"});
+      $('#prenom_utilisateur').css({"color":"rgba(187, 130, 130, 0.5)"});
   }else{
-      $("#prenom_utilisateur").css({"background-color":"#B0F2B6"});
+      $("#prenom_utilisateur").css({"color":"rgba(148, 189, 123, 0.5)"});
   }
   courriel=$("#courriel").val().length;
   if(courriel==0){
-      $('#courriel').css({"background-color":"#FFC0CB"});
+      $('#courriel').css({"color":"rgba(187, 130, 130, 0.5)"});
   }else{
-      $("#courriel").css({"background-color":"#B0F2B6"});
+      $("#courriel").css({"color":"rgba(148, 189, 123, 0.5)"});
   }
 })
 })

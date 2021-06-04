@@ -29,14 +29,14 @@
             <!-- Elements sur la planètes (batiments, personnages etc) -->
             <div class="slide-1">
                 <img src="assets/img/fusee.png" alt="Fusée de décoration" class="fusee">
-                <h1 class="destination">Destination :<br>Planète Audiovisuel</h1>
+                <h1 class="destination">Destination :<br>Planète Art et Design</h1>
                 <div class="cadre">
                     <p class="presentation">
                     - Bienvenue à toi, étranger ! Ici, le visuel prime ! <br>
                     La planète Art&Design offre à nos yeux de jolies pépites, si tu aimes le travail soigné et esthétique, tu tombes bien ! <br>
                     Différentes possibilités s’ouvrent à toi ici sans pour autant contraindre ta créativité et ton engouement pour le Beau ! Ce qui plaît à l'œil, plaît au cœur après tout ! <br>
                     Les habitants de cette planète sont tous passionné.e.s, l’air a un goût sucré et il fait bon vivre. Tous tes sens doivent être en éveil, parce que c’est surtout ta sensibilité artistique qui sera mise en avant dans notre monde. <br>
-                    Découvre toutes les possibilités qui s’offrent à toi, du game designer, au maquettiste en passant par l’infographie… J’espère qu’une de ces voies sera celle dans laquelle tu t’épanouiras !<br>
+                    Découvre toutes les possibilités qui s’offrent à toi, du game designer, au maquettiste en passant par l’infographie... J’espère qu’une de ces voies sera celle dans laquelle tu t’épanouiras !<br>
                     Garde les yeux bien ouverts et laisse parler ta créativité ! - 
 
                     </p>

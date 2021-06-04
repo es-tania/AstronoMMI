@@ -13,27 +13,27 @@
 </head>
 
 <body id="parallax">
-    <div class="fond"><img src="assets/image/logo_avec_nom.png" alt=""><span class="loader"></span></div>
+    <div class="fond"><img src="assets/image/logo_avec_nom.png" alt="Logo de notre site Astronommi"><span class="loader"></span></div>
     <!--ID qui permet de faire l'effet parallax-->
     <div class="layer1">
         <div class="first" id="accueil">
             <!-- Div pour placer tous les élements au haut de la page -->
-            <a href="#accueil"><img src="assets/image/logo_avec_nom.png" alt="Logo en haut à gauche" class="logo"></a>
+            <a href="#accueil"><img src="assets/image/logo_avec_nom.png" alt="Logo de notre site Astronommi" class="logo"></a>
             <img src="assets/image/fusee.png" alt="" class="rocket">
             <a title="Le BUT MMI" href="autres_pages/apropos/but_mmi/index.html"><img
-                    src="assets/image/satelite-mmi-v2.png" alt="Satellite page MMI" class="mmi satellite"></a>
+                    src="assets/image/satelite-mmi-v2.png" alt="Satellite qui mène à la page MMI" class="mmi satellite"></a>
             <a title="A propos" href="autres_pages/apropos/a_propos/index.html"><img
-                    src="assets/image/satelite-a-propos.png" alt="Satellite page A propos"
+                    src="assets/image/satelite-a-propos.png" alt="Satellite qui mène à la page A propos"
                     class="apropos satellite"></a>
-            <a title="Contact" href="#contact"><img src="assets/image/satelite-contact-v2.png" alt="Satellite Contact"
+            <a title="Contact" href="#contact"><img src="assets/image/satelite-contact-v2.png" alt="Satellite qui mène à la page Contact"
                     class="contact satellite"></a>
             <h1>Astronommi</h1>
-            <p>Découvre les métiers possibles après le DUT MMI</p>
+            <p>Découvrez les métiers possibles après le DUT MMI</p>
             <div class="FiltersOrScroll">
-                <a href="autres_pages/filtre/index.php" class="FiltersButton">Utilise les filtres de recherche pour
+                <a href="autres_pages/filtre/index.php" class="FiltersButton">Utilisez les filtres de recherche pour
                     trouver un métier</a>
                 <p>OU</p>
-                <p>↓ Balade toi dans la galaxie ! ↓</p>
+                <p>↓ Baladez-vous dans la galaxie ! ↓</p>
             </div>
         </div>
 
@@ -73,20 +73,20 @@
             <!--Planètes-->
             <div class="planeteTitre clickable">
                 <a title="Planète Audiovisuel" href="autres_pages/planete_audio/index.php"><img
-                        src="assets/image/planetes_audio.png" alt=""></a>
+                        src="assets/image/planetes_audio.png" alt="Image de la planète Audiovisuel"></a>
                 <h2>Planète<br>Audiovisuel</h2>
             </div>
             <div class="planeteTitre clickable">
                 <h2>Planète<br>Développement</h2><a title="Planète Développement"
-                    href="autres_pages/planete_dev/index.php"><img src="assets/image/planete_dev.png" alt=""></a>
+                    href="autres_pages/planete_dev/index.php"><img src="assets/image/planete_dev.png" alt="Image de la planète Développement"></a>
             </div>
             <div class="planeteTitre clickable"><a title="Planète Communication"
-                    href="autres_pages/planete_com/index.php"><img src="assets/image/planete_com.png" alt=""></a>
+                    href="autres_pages/planete_com/index.php"><img src="assets/image/planete_com.png" alt="Image de la planète Communication"></a>
                 <h2>Planète<br>Communication</h2>
             </div>
             <div class="planeteTitre clickable">
                 <h2>Planète<br>Art et Design</h2><a title="Planète Art&Design"
-                    href="autres_pages/planete_art/index.php"><img src="assets/image/planetes_art.png" alt=""></a>
+                    href="autres_pages/planete_art/index.php"><img src="assets/image/planetes_art.png" alt="Image de la planète Art&Design"></a>
             </div>
         </div>
         <div id="contact" class="footer">

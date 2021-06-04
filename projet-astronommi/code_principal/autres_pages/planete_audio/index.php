@@ -43,9 +43,9 @@
                         - Bienvenue sur la planète Audiovisuel !<br>
                         Ici, vous pourrez découvrir différents métiers qui permettent d’exercer dans ce domaine.
                         Mais au final, c’est quoi l’audiovisuel ?<br>
-                        L’audiovisuel est un domaine qui se réfère à tout travail qui utilise à la fois, du son et de
+                        L’audiovisuel est un domaine qui se réfère à tout travail qui utilise à la fois du son et de
                         l'image, et qui englobe donc les équipements et les procédés utilisés pour la télévision, le
-                        cinéma,ou encore la vidéo. Il peut aussi être utilisé pour le multimédia.<br>
+                        cinéma, ou encore la vidéo. Il peut aussi être utilisé pour le multimédia.<br>
                         L’audiovisuel est constitué de différentes étapes qui sont l’écriture, le développement, la
                         préproduction, la production et la postproduction. Ainsi, pour toutes ces étapes, il existe
                         plusieurs métiers différents qui sont mis en jeu.<br>

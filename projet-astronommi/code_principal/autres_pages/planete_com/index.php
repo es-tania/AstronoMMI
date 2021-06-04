@@ -40,12 +40,12 @@
                 <h1 class="destination">Destination :<br>Planète Communication</h1>
                 <div class="cadre">
                     <p class="presentation">
-                        - Bienvenue sur la planète communication !<br>
+                        - Bienvenue sur la planète Communication !<br>
                         Ici, vous pourrez découvrir différents métiers qui permettent d’exercer dans ce domaine. Mais au final, c’est quoi la communication ?<br>
                         La communication est une des spécialités du DUT MMI. Elle relève du marketing et fait connaître, donne envie, rassure sur la qualité d’une marque, d’un produit ou d’un service. Elle joue donc un rôle clé pour faire progresser les ventes.<br>
-                        Les supports de communication sont l'édition, l’audiovisuel, les sites internet, l'événementiel, la publicité et beaucoup d’autres…<br>
-                        Pour accéder à un métier dans la communication on peut faire différentes études comme des licences ou encore des masters mais aussi avoir différentes compétences comme maîtriser des langues, des techniques professionnelles et avoir une culture du web.<br>
-                        En continuant votre aventure sur ma planète, vous verrez les différents métiers du domaine de la  communication .<br>
+                        Les supports de communication sont l'édition, l’audiovisuel, les sites internet, l'événementiel, la publicité et beaucoup d’autres...<br>
+                        Pour accéder à un métier dans la communication on peut faire différentes études comme des licences ou encore des masters, mais aussi avoir différentes compétences comme maîtriser des langues, des techniques professionnelles et avoir une culture du web.<br>
+                        En continuant votre aventure sur ma planète, vous verrez les différents métiers du domaine de la communication .<br>
                         Bonne découverte ! -
                     </p>
                 </div>

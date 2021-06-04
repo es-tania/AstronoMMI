@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'SpaceAge';
     src: url('fonts/space_age-webfont.woff2') format('woff2'),
-         url('fonts/space_age-webfont.woff') format('woff');
+        url('fonts/space_age-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -10,46 +10,46 @@
 @font-face {
     font-family: 'Arial Rounded MT Bold';
     src: url('fonts/ArialRoundedMTBold.woff') format('woff'),
-    url('fonts/ArialRoundedMTBold.woff2') format('woff2');
+        url('fonts/ArialRoundedMTBold.woff2') format('woff2');
     font-weight: bold;
 }
 
 @font-face {
     font-family: 'Arial Rounded MT';
     src: url('fonts/arial-rounded-mt-webfont.woff2') format('woff2'),
-         url('fonts/arial-rounded-mt-webfont.woff') format('woff');
+        url('fonts/arial-rounded-mt-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 
-html{
-    scroll-behavior:smooth;
+html {
+    scroll-behavior: smooth;
 }
 
 /*Parallax étoile*/
-*{
+* {
     border: 0;
     padding: 0;
     margin: 0;
     font-weight: normal;
 }
 
-body{
+body {
     cursor: url("image/curseur.png"), auto;
     background-image: url("image/galaxie.jpg");
     background-size: 450px;
     background-repeat: repeat;
     overflow-x: hidden;
 
-    font-family:'Arial Rounded MT', sans-serif;
+    font-family: 'Arial Rounded MT', sans-serif;
     font-size: 1.125rem;
     height: 100%;
 }
 
 /* Fond étoile */
 
-.layer1{
+.layer1 {
     background-image: url("image/etoile.png");
     background-size: 600px;
     background-repeat: repeat;
@@ -57,35 +57,35 @@ body{
 
 /* Haut de la page Accueil */
 
-.first{
+.first {
     margin: auto;
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; 
+    flex-direction: column;
     position: relative;
 }
 
-.middle{
+.middle {
     margin: auto;
 }
 
-.FiltersOrScroll{
+.FiltersOrScroll {
     position: absolute;
     bottom: 7vh;
 }
 
-h1{
-    font-family: 'SpaceAge', sans-serif ;
+h1 {
+    font-family: 'SpaceAge', sans-serif;
     font-size: 6vw;
     color: white;
     text-align: center;
 }
 
-p{
-    font-family:'Arial Rounded MT', sans-serif;
+p {
+    font-family: 'Arial Rounded MT', sans-serif;
     color: white;
     text-align: center;
     font-size: 1.2rem;
@@ -93,7 +93,7 @@ p{
     position: relative;
 }
 
-.logo{
+.logo {
     width: 70px;
     position: fixed;
     top: 20px;
@@ -101,7 +101,7 @@ p{
     transition: .3s;
 }
 
-svg{
+svg {
     width: 60px;
     position: absolute;
     top: 20px;
@@ -109,7 +109,7 @@ svg{
     fill: white;
 }
 
-.rocket{
+.rocket {
     width: 10%;
     position: absolute;
     top: 50vh;
@@ -118,42 +118,76 @@ svg{
 
 }
 
-.mmi{
+.mmi {
     width: 15%;
     position: absolute;
     top: 15vh;
     left: 20vw;
     transform: rotate(-100deg);
     transition: 1s;
+    animation: floating 3s ease-in-out 0s infinite;
+    -webkit-animation: floating 4s ease-in-out 0s infinite;
 }
 
-.apropos{
+.apropos {
     width: 15%;
     position: absolute;
     top: 10vh;
     right: 35vw;
     transform: rotate(-80deg);
     transition: 1s;
+    animation: floating 3s ease-in-out 0s infinite;
+    -webkit-animation: floating-reverse 5s ease-in-out 0s infinite;
 }
 
-.contact{
+.contact {
     width: 15%;
     position: absolute;
     top: 20vh;
     right: 10vw;
     transition: 1s;
+    animation: floating 3s ease-in-out 0s infinite;
+    -webkit-animation: floating 4s ease-in-out 0s infinite;
 }
 
-.satellite:hover{
+.satellite:hover {
     width: 20%;
     transition: 1s;
 }
 
-.FiltersButton{
+@keyframes floating {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes floating-reverse {
+    0% {
+        transform: translateY(-20px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+.FiltersButton {
     display: block;
     text-decoration: none;
     background-color: #314489;
-    font-family:'Arial Rounded MT', sans-serif;
+    font-family: 'Arial Rounded MT', sans-serif;
     color: white;
     text-align: center;
     font-size: 1rem;
@@ -165,18 +199,50 @@ svg{
     transition: background-color 0.8s ease;
 }
 
-.FiltersButton:hover{
+.FiltersButton:hover {
     background-color: #758ace;
 }
 
 /* Positionnement des planètes */
 
-.planete{
+@keyframes rotating {
+    from {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    to {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes rotating {
+    from {
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.planete {
     margin-top: 100px;
     margin-bottom: 100px;
 }
 
-.planeteTitre{
+.planeteTitre {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -185,7 +251,15 @@ svg{
     cursor: pointer;
 }
 
-h2{
+.planeteTitre img{
+    -webkit-animation: rotating 75s linear infinite;
+    -moz-animation: rotating 75s linear infinite;
+    -ms-animation: rotating 75s linear infinite;
+    -o-animation: rotating 75s linear infinite;
+    animation: rotating 75s linear infinite;
+}
+
+h2 {
     font-family: 'SpaceAge', sans-serif;
     font-size: 3vw;
     color: white;
@@ -194,24 +268,24 @@ h2{
     text-decoration: none;
 }
 
-.planeteTitre img{
+.planeteTitre img {
     width: 25vw;
 }
 
 /* Effet zoom sur les planètes */
 
-.clickable{
+.clickable {
     transition: 0.5s;
 }
 
-.clickable:hover{
+.clickable:hover {
     transform: scale(1.1);
-    transition: 0.5s;
+    /* transition: 0.5s; */
 }
 
 /* Bas de page */
 
-.footer{
+.footer {
     position: relative;
     height: 110vh;
     width: 100vw;
@@ -224,43 +298,46 @@ h2{
     overflow: hidden;
 }
 
-.footer>img{
+.footer>img {
     position: absolute;
     width: 100%;
     height: 100%;
 }
-.reseaux{
+
+.reseaux {
     margin-top: 4vh;
     width: 400px;
     display: flex;
     z-index: 100;
 }
-.reseaux img{
+
+.reseaux img {
     width: 50px;
     margin-right: 5px;
 }
 
-.reseaux a{
+.reseaux a {
     display: flex;
     align-items: center;
     text-decoration: none;
     text-align: center;
     margin: auto;
     color: #805a09;
-    font-family: 'ArialRoundedMTBold',Arial, Helvetica, sans-serif;
+    font-family: 'ArialRoundedMTBold', Arial, Helvetica, sans-serif;
 }
 
 
 /* Formulaire */
 
-form{
+form {
     position: relative;
     margin: 15vh 50px 0px 50px;
     text-align: center;
     bottom: 10vh;
 }
 
-input, textarea{
+input,
+textarea {
     margin: 5px;
     padding: 10px;
     width: 30vw;
@@ -283,12 +360,12 @@ input[type="submit"] {
     border: none;
 }
 
-input[type="submit"]:hover{
-    background-color:rgba(128, 90, 9, 0.514);
+input[type="submit"]:hover {
+    background-color: rgba(128, 90, 9, 0.514);
     border: none;
 }
 
-legend{
+legend {
     font-family: 'SpaceAge', sans-serif;
     color: rgb(97, 69, 8);
     text-align: center;
@@ -298,27 +375,28 @@ legend{
 }
 
 @media screen and (max-width:1430px) {
-    form{
+    form {
         bottom: 0vh;
     }
 
-    legend{
+    legend {
         font-size: 1.8rem;
     }
 }
 
-::placeholder{
-    font-family:'Arial Rounded MT Bold', sans-serif;
+::placeholder {
+    font-family: 'Arial Rounded MT Bold', sans-serif;
     color: rgba(255, 255, 255, 0.719);
     font-size: 1rem;
 }
 
-input:focus, textarea:focus{
+input:focus,
+textarea:focus {
     outline: 1px solid #70b68100;
     background-color: #adadad4d;
 }
 
-input:focus::placeholder, textarea:focus::placeholder{
+input:focus::placeholder,
+textarea:focus::placeholder {
     color: transparent;
 }
-
