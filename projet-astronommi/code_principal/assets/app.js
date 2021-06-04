@@ -32,21 +32,21 @@ $("#nom_utilisateur, #prenom_utilisateur, #courriel").on('keyup',function(){
   nom=$("#nom_utilisateur").val().length;
   console.log(nom)
   if(nom==0){
-      $('#nom_utilisateur').css({"color":"rgba(187, 130, 130, 0.5)"});
+      $('#nom_utilisateur').css({"background-color":"rgba(187, 130, 130, 0.65)"});
   }else{
-      $("#nom_utilisateur").css({"color":"rgba(148, 189, 123, 0.5)"});
+      $("#nom_utilisateur").css({"background-color":"rgba(148, 189, 123, 0.65)"});
   }
   prenom=$("#prenom_utilisateur").val().length;
   if(prenom==0){
-      $('#prenom_utilisateur').css({"color":"rgba(187, 130, 130, 0.5)"});
+      $('#prenom_utilisateur').css({"background-color":"rgba(187, 130, 130, 0.65)"});
   }else{
-      $("#prenom_utilisateur").css({"color":"rgba(148, 189, 123, 0.5)"});
+      $("#prenom_utilisateur").css({"background-color":"rgba(148, 189, 123, 0.65)"});
   }
   courriel=$("#courriel").val().length;
   if(courriel==0){
-      $('#courriel').css({"color":"rgba(187, 130, 130, 0.5)"});
+      $('#courriel').css({"background-color":"rgba(187, 130, 130, 0.65)"});
   }else{
-      $("#courriel").css({"color":"rgba(148, 189, 123, 0.5)"});
+      $("#courriel").css({"background-color":"rgba(148, 189, 123, 0.65)"});
   }
 })
 })
