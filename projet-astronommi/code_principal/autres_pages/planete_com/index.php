@@ -36,7 +36,7 @@
         <div class="blocHorizontal">
             <!-- Elements sur la planètes (batiments, personnages etc) -->
             <div class="slide-1">
-                <img src="assets/img/fusee.png" alt="" class="fusee">
+                <img src="assets/img/fusee.png" alt="Fusée de décoration" class="fusee">
                 <h1 class="destination">Destination :<br>Planète Communication</h1>
                 <div class="cadre">
                     <p class="presentation">
@@ -49,7 +49,7 @@
                         Bonne découverte ! -
                     </p>
                 </div>
-                <img src="assets/img/perso_com.png" alt="" class="perso">
+                <img src="assets/img/perso_com.png" alt="Personnage principal de la planète" class="perso">
                 <div class="scroll">
                     <div class="icon-scroll">
                         <div class="mouse">
@@ -63,9 +63,9 @@
             </div>
 
             <div class="slide-2">
-                <a onclick="on()" id="management"><img src="assets/img/management.png" alt="" class="batiments management"></a>
-                <a onclick="on()" id="presse"><img src="assets/img/presse.png" alt="" class="batiments presse"></a>
-                <a onclick="on()" id="multimedia"><img src="assets/img/multimédia.png" alt="" class="batiments multimedia"></a>
+                <a onclick="on()" id="management"><img src="assets/img/management.png" alt="Batiment pour le sous-domaine Management" class="batiments management"></a>
+                <a onclick="on()" id="presse"><img src="assets/img/presse.png" alt="Batiment pour le sous-domaine Presse" class="batiments presse"></a>
+                <a onclick="on()" id="multimedia"><img src="assets/img/multimédia.png" alt="Batiment pour le sous-domaine Multimédia" class="batiments multimedia"></a>
             </div>
 
             <div class="slide">
