@@ -40,7 +40,7 @@
                 <h1 class="destination">Destination :<br>Planète Audiovisuel</h1>
                 <div class="cadre">
                     <p class="presentation">
-                        - Bienvenue sur la planète audiovisuelle !<br>
+                        - Bienvenue sur la planète Audiovisuel !<br>
                         Ici, vous pourrez découvrir différents métiers qui permettent d’exercer dans ce domaine.
                         Mais au final, c’est quoi l’audiovisuel ?<br>
                         L’audiovisuel est un domaine qui se réfère à tout travail qui utilise à la fois, du son et de
@@ -56,7 +56,7 @@
                         Bonne découverte ! -
                     </p>
                 </div>
-                <img src="assets/img/perso_audiovisuel.png" alt="" class="perso">
+                <img src="assets/img/perso_audiovisuel.png" alt="Personnage principal de la planète" class="perso">
                 <div class="scroll">
                     <div class="icon-scroll">
                         <div class="mouse">
@@ -70,14 +70,14 @@
             </div>
 
             <div class="slide-2">
-                <a onclick="on()" id="image"><img src="assets/img/image.png" alt="" class="batiments image"></a>
-                <a onclick="on()" id="son"><img src="assets/img/batiment-son.png" alt="" class="batiments son"></a>
+                <a onclick="on()" id="image"><img src="assets/img/image.png" alt="Batiment pour le sous-domaine Image" class="batiments image"></a>
+                <a onclick="on()" id="son"><img src="assets/img/batiment-son.png" alt="Batiment pour le sous-domaine Son" class="batiments son"></a>
             </div>
 
             <div class="slide-3">
-                <a onclick="on()" id="texte"><img src="assets/img/texte.png" alt="" class="batiments texte"></a>
-                <a onclick="on()" id="direction"><img src="assets/img/direction.png" alt="" class="batiments direction"></a>
-                <a onclick="on()" id="decor"><img src="assets/img/decor.png" alt="" class="batiments decor"></a>
+                <a onclick="on()" id="texte"><img src="assets/img/texte.png" alt="Batiment pour le sous-domaine Texte" class="batiments texte"></a>
+                <a onclick="on()" id="direction"><img src="assets/img/direction.png" alt="Batiment pour le sous-domaine Direction" class="batiments direction"></a>
+                <a onclick="on()" id="decor"><img src="assets/img/decor.png" alt="Batiment pour le sous-domaine Décor" class="batiments decor"></a>
             </div>
 
             <div class="slide">
