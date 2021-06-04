@@ -28,7 +28,7 @@
         <div class="blocHorizontal">
             <!-- Elements sur la planètes (batiments, personnages etc) -->
             <div class="slide-1">
-                <img src="assets/img/fusee.png" alt="" class="fusee">
+                <img src="assets/img/fusee.png" alt="Fusée de décoration" class="fusee">
                 <h1 class="destination">Destination :<br>Planète Audiovisuel</h1>
                 <div class="cadre">
                     <p class="presentation">
@@ -41,7 +41,7 @@
 
                     </p>
                 </div>
-                <img src="assets/img/perso_art.png" alt="" class="perso">
+                <img src="assets/img/perso_art.png" alt="Personnage principal de la planète" class="perso">
                 <div class="scroll">
                     <div class="icon-scroll">
                         <div class="mouse">
@@ -55,17 +55,17 @@
             </div>
 
             <div class="slide-2">
-                <a role="button" href="#21"><img src="assets/img/web-designer.png" alt="" class="batiments webdesigner"></a>
-                <a role="button" href="#26"><img src="assets/img/directeur-artistique-v2.png" alt="" class="batiments directeur"></a>
-                <a role="button" href="#25"><img src="assets/img/motion-designer.png" alt="" class="batiments motion"></a>
-                <a role="button" href="#24"><img src="assets/img/game-designer.png" alt="" class="batiments game"></a>
+                <a role="button" href="#21"><img src="assets/img/web-designer.png" alt="Ordinateur pour le métier de Webdesigner" class="batiments webdesigner"></a>
+                <a role="button" href="#26"><img src="assets/img/directeur-artistique-v2.png" alt="Ampoule pour le métier de Directeur Artistique" class="batiments directeur"></a>
+                <a role="button" href="#25"><img src="assets/img/motion-designer.png" alt="Ecran pour le métier de Motion Designer" class="batiments motion"></a>
+                <a role="button" href="#24"><img src="assets/img/game-designer.png" alt="Manette de jeu pour le métier de GameDesigner" class="batiments game"></a>
             </div>
 
             <div class="slide-3">
-                <a role="button" href="#22"><img src="assets/img/designer.png" alt="" class="batiments designer"></a>
-                <a role="button" href="#19"><img src="assets/img/infographiste-v2.png" alt="" class="batiments infographiste"></a>
-                <a role="button" href="#20"><img src="assets/img/maquettiste.png" alt="" class="batiments maquettiste"></a>
-                <a role="button" href="#23"><img src="assets/img/concepteur-media-v2.png" alt="" class="batiments concepteur"></a>
+                <a role="button" href="#22"><img src="assets/img/designer.png" alt="Ecran pour le métier de Designer" class="batiments designer"></a>
+                <a role="button" href="#19"><img src="assets/img/infographiste-v2.png" alt="Stylo pour le métier d'Infographiste" class="batiments infographiste"></a>
+                <a role="button" href="#20"><img src="assets/img/maquettiste.png" alt="Batiment pour le métier de Maquettiste" class="batiments maquettiste"></a>
+                <a role="button" href="#23"><img src="assets/img/concepteur-media-v2.png" alt="Enrouage pour le métier de Concepteur" class="batiments concepteur"></a>
             </div>
 
             <div class="slide">
