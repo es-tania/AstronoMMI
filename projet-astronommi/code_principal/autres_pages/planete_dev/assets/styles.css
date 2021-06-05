@@ -369,6 +369,7 @@ body {
 .slide-2 a{
     height: max-content;
     position: relative;
+    cursor: inherit;
 }
 
 .batiments {

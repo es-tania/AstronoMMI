@@ -371,6 +371,7 @@ body {
 .slide-2 a, .slide-3 a{
     height: max-content;
     position: relative;
+    cursor: inherit;
 }
 
 .slide-3 {
