@@ -27,6 +27,27 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 17px;
+    height: 17px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #8d96d6;
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(163deg, #858ab3 14%, #616ab3 64%);
+}
+
+::-webkit-scrollbar-track {
+    background: #f0f2ff;
+    border-radius: 15px;
+    box-shadow: inset 0px 0px 10px #b5beff;
+}
+
 /*Parallax étoile*/
 * {
     border: 0;
@@ -251,7 +272,7 @@ svg {
     cursor: pointer;
 }
 
-.planeteTitre img{
+.planeteTitre img {
     -webkit-animation: rotating 75s linear infinite;
     -moz-animation: rotating 75s linear infinite;
     -ms-animation: rotating 75s linear infinite;

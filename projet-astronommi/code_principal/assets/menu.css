@@ -6,6 +6,27 @@
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+    width: 17px;
+    height: 17px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #8d96d6;
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(163deg, #858ab3 14%, #616ab3 64%);
+}
+
+::-webkit-scrollbar-track {
+    background: #f0f2ff;
+    border-radius: 15px;
+    box-shadow: inset 0px 0px 10px #b5beff;
+}
+
+
 /* Création du menu */
 
 .menu {
@@ -19,12 +40,14 @@
 .sidebar {
     position: fixed;
     top: 0;
-    right: -25vw; /*Pour mettre à gauche on change avec 'left'*/
+    right: -25vw;
+    /*Pour mettre à gauche on change avec 'left'*/
     height: 100vh;
     width: 25vw;
     background-color: rgba(42, 97, 249, 0.61);
     transition: .3s;
-    border-bottom-left-radius: 30vw; /*Arrondir les bords*/
+    border-bottom-left-radius: 30vw;
+    /*Arrondir les bords*/
     border-top-left-radius: 30vw;
 }
 
@@ -48,7 +71,7 @@ nav h2 {
     color: white;
 }
 
-.menu-link{
+.menu-link {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -62,16 +85,16 @@ nav h2 {
     margin-bottom: 2vh;
 }
 
-.menu-link ul{
+.menu-link ul {
     margin: 0;
     padding: 0;
 }
 
-.menu-link a{
+.menu-link a {
     text-decoration: none;
 }
 
-.menu-link a:hover{
+.menu-link a:hover {
     text-decoration: underline;
     color: white;
 }
@@ -91,12 +114,15 @@ ul a:hover {
 
 /*Icon menu burger */
 
-.active { /*Faire apparaître le menu*/
+.active {
+    /*Faire apparaître le menu*/
     right: 0;
 }
 
-.active-2 { /*Déplacer l'icon du menu quand on clique dessus*/
-    right: 15vw; /*Si menu à gauche: 'left'*/
+.active-2 {
+    /*Déplacer l'icon du menu quand on clique dessus*/
+    right: 15vw;
+    /*Si menu à gauche: 'left'*/
     transition: .3s;
     z-index: 21;
 }
@@ -104,7 +130,8 @@ ul a:hover {
 button {
     position: fixed;
     top: 3vh;
-    right: 3vh; /*Pour mettre à gauche on change avec 'left'*/
+    right: 3vh;
+    /*Pour mettre à gauche on change avec 'left'*/
     background-color: transparent;
     border: none;
     outline: none;
