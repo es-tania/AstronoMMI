@@ -293,7 +293,7 @@ h2 {
     width: 25vw;
 }
 
-/* Effet zoom sur les planètes */
+/* Effet zoom sur les éléments cliquables */
 
 .clickable {
     transition: 0.5s;
@@ -301,7 +301,6 @@ h2 {
 
 .clickable:hover {
     transform: scale(1.1);
-    /* transition: 0.5s; */
 }
 
 /* Bas de page */

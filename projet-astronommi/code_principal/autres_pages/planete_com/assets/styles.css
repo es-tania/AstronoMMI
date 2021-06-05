@@ -23,7 +23,7 @@ body {
     cursor: url("img/curseur.png"), auto;
 }
 
-/* Parallax en continue sur les différents calques */
+/* Parallax en continu sur les différents calques */
 
 .layer {
     position: absolute;
@@ -106,7 +106,7 @@ body {
     }
 }
 
-/* Pour l'effet d'OVERLAY donc affichage de la tablette*/
+/* Effet d'OVERLAY donc affichage de la tablette*/
 .overlay {
     position: fixed;
     display: none;

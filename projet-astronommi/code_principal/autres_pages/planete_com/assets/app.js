@@ -19,13 +19,13 @@ $(document).ready(function () {
         management: "sousdom-8",
     }
 
-    $('.blocHorizontal a').on("click", function(){
+    $('.blocHorizontal a').on("click", function () {
         $('.titre-fiche-metier').css('visibility', 'hidden');
         $('.cartefiche').hide();
         var id = $(this).attr("id");
         var classFiche = critere[id];
-        $("."+classFiche).css('visibility', 'visible');
-        $("."+classFiche).css('display', 'flex');
+        $("." + classFiche).css('visibility', 'visible');
+        $("." + classFiche).css('display', 'flex');
     })
 })
 

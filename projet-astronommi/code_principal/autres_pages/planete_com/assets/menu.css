@@ -55,18 +55,8 @@ nav h2 {
     padding-left: 20px;
     margin-top: 1vh;
     margin-bottom: 1vh;
-    /* padding: 1.5vh; */
     color: white;
 }
-
-/* nav h2 {
-    font-family: 'SpaceAge';
-    font-size: 4vh;
-    text-align: right;
-    padding: 1.5vh;
-    color: white;
-    margin: 1.5vh;
-} */
 
 .menu-link{
     display: flex;

@@ -20,13 +20,9 @@
             <!-- Div pour placer tous les élements au haut de la page -->
             <a href="#accueil"><img src="assets/image/logo_avec_nom.png" alt="Logo de notre site Astronommi" class="logo"></a>
             <img src="assets/image/fusee.png" alt="" class="rocket">
-            <a title="Le BUT MMI" href="autres_pages/apropos/but_mmi/index.html"><img
-                    src="assets/image/satelite-mmi-v2.png" alt="Satellite qui mène à la page MMI" class="mmi satellite"></a>
-            <a title="A propos" href="autres_pages/apropos/a_propos/index.html"><img
-                    src="assets/image/satelite-a-propos.png" alt="Satellite qui mène à la page A propos"
-                    class="apropos satellite"></a>
-            <a title="Contact" href="#contact"><img src="assets/image/satelite-contact-v2.png" alt="Satellite qui mène à la page Contact"
-                    class="contact satellite"></a>
+            <a title="Le BUT MMI" href="autres_pages/apropos/but_mmi/index.html"><img src="assets/image/satelite-mmi-v2.png" alt="Satellite qui mène à la page MMI" class="mmi satellite"></a>
+            <a title="A propos" href="autres_pages/apropos/a_propos/index.html"><img src="assets/image/satelite-a-propos.png" alt="Satellite qui mène à la page A propos" class="apropos satellite"></a>
+            <a title="Contact" href="#contact"><img src="assets/image/satelite-contact-v2.png" alt="Satellite qui mène à la page Contact" class="contact satellite"></a>
             <h1>Astronommi</h1>
             <p>Découvrez les métiers possibles après le DUT MMI</p>
             <div class="FiltersOrScroll">
@@ -72,21 +68,17 @@
         <div class="planete">
             <!--Planètes-->
             <div class="planeteTitre clickable">
-                <a title="Planète Audiovisuel" href="autres_pages/planete_audio/index.php"><img
-                        src="assets/image/planetes_audio.png" alt="Image de la planète Audiovisuel"></a>
+                <a title="Planète Audiovisuel" href="autres_pages/planete_audio/index.php"><img src="assets/image/planetes_audio.png" alt="Image de la planète Audiovisuel"></a>
                 <h2>Planète<br>Audiovisuel</h2>
             </div>
             <div class="planeteTitre clickable">
-                <h2>Planète<br>Développement</h2><a title="Planète Développement"
-                    href="autres_pages/planete_dev/index.php"><img src="assets/image/planete_dev.png" alt="Image de la planète Développement"></a>
+                <h2>Planète<br>Développement</h2><a title="Planète Développement" href="autres_pages/planete_dev/index.php"><img src="assets/image/planete_dev.png" alt="Image de la planète Développement"></a>
             </div>
-            <div class="planeteTitre clickable"><a title="Planète Communication"
-                    href="autres_pages/planete_com/index.php"><img src="assets/image/planete_com.png" alt="Image de la planète Communication"></a>
+            <div class="planeteTitre clickable"><a title="Planète Communication" href="autres_pages/planete_com/index.php"><img src="assets/image/planete_com.png" alt="Image de la planète Communication"></a>
                 <h2>Planète<br>Communication</h2>
             </div>
             <div class="planeteTitre clickable">
-                <h2>Planète<br>Art et Design</h2><a title="Planète Art&Design"
-                    href="autres_pages/planete_art/index.php"><img src="assets/image/planetes_art.png" alt="Image de la planète Art&Design"></a>
+                <h2>Planète<br>Art et Design</h2><a title="Planète Art&Design" href="autres_pages/planete_art/index.php"><img src="assets/image/planetes_art.png" alt="Image de la planète Art&Design"></a>
             </div>
         </div>
         <div id="contact" class="footer">
@@ -94,23 +86,18 @@
             <form action="envoi.php" method="get">
                 <fieldset>
                     <legend>Pour nous contacter</legend>
-                    <input type="text" name="nom_utilisateur" id="nom_utilisateur" placeholder="Nom*" required
-                        data-validation-required-message="Merci d'entrer votre nom."><br>
-                    <input type="text" name="prenom_utilisateur" id="prenom_utilisateur" placeholder="Prénom*" required
-                        data-validation-required-message="Merci d'entrer votre prénom."><br>
-                    <input type="email" name="courriel" id="courriel" placeholder="Email*" required
-                        data-validation-required-message="Merci d'entrer votre adresse de courriel."><br>
+                    <input type="text" name="nom_utilisateur" id="nom_utilisateur" placeholder="Nom*" required data-validation-required-message="Merci d'entrer votre nom."><br>
+                    <input type="text" name="prenom_utilisateur" id="prenom_utilisateur" placeholder="Prénom*" required data-validation-required-message="Merci d'entrer votre prénom."><br>
+                    <input type="email" name="courriel" id="courriel" placeholder="Email*" required data-validation-required-message="Merci d'entrer votre adresse de courriel."><br>
                     <textarea rows="5" cols="50" name="message" placeholder="Message"></textarea><br>
                     <input type="submit" id="envoi" value="Envoyer">
                 </fieldset>
             </form>
             <div class="reseaux">
-                <a href="https://www.instagram.com/astrono_mmi/" target="_blank"><img src="assets/image/instagram.png"
-                        alt="Notre compte Instagram">
+                <a href="https://www.instagram.com/astrono_mmi/" target="_blank"><img src="assets/image/instagram.png" alt="Notre compte Instagram">
                     <p>astrono_mmi</p>
                 </a>
-                <a href="https://linkedin.com/company/astronommi" target="_blank"><img src="assets/image/linkedin.png"
-                        alt="Notre page LinkedIn">
+                <a href="https://linkedin.com/company/astronommi" target="_blank"><img src="assets/image/linkedin.png" alt="Notre page LinkedIn">
                     <p>AstronoMMI</p>
                 </a>
             </div>
@@ -123,13 +110,13 @@
     <script src="autres_pages/page_chargement/app.js"></script>
     <script>
         // Fonction qui permet de faire apparaître le menu de droite
-        $(document).ready(function () {
-            $('.click-bouton').click(function () {
+        $(document).ready(function() {
+            $('.click-bouton').click(function() {
                 $('.sidebar').toggleClass('active');
                 $('button').toggleClass('active-2');
             });
 
-            $("#icon-menu").click(function () {
+            $("#icon-menu").click(function() {
                 $(this).toggleClass("open");
             });
         });
