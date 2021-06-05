@@ -46,16 +46,13 @@ $(document).ready(function(){
                 var id = $(this).attr("id");
                 cacherFiche(id);
                 var classFiche = critere[id];
-                // console.log("faux")
             } else {
                 afficherTout();
                 $('input[type="checkbox"]:not(:checked)').each(function () {
                     var id = $(this).attr("id");
                     cacherFiche(id);
-                    // console.log($(this).attr("id"));
                 });
             };
-        // console.log("vrai")
 
     });
 });

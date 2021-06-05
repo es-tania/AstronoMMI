@@ -73,7 +73,6 @@
         <!--Fiche métier-->
         <section class="cartefiche">
             <h2>Fiche métier</h2>
-            <!-- <div class="metier"></div> -->
             <div class="fiches">
                 <?php include('carte.php')?>
             </div>

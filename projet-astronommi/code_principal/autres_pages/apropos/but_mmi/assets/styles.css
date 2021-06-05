@@ -59,7 +59,6 @@ body {
 /* Positionnement des éléments dans l'écran */
 
 main{
-    /* border: red solid; */
     position: absolute;
     top: 8vh;
     width: 77vw;
@@ -107,7 +106,6 @@ section{
 }
 
 .fleche{
-    /* border: tan solid; */
     position: absolute;
     bottom: 0;
     right: 0;

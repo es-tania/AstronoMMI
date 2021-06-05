@@ -5,7 +5,6 @@ $(document).ready(function () {
     captionEl = $('#caption');
 
     // On cache les blocs qu'on ne veut pas voir
-    // $('#passer, #passer2, #1, #2, .infos, .fleche ').css('display', 'none');
     $('#passer, #passer2, #1, #2, .infos, .fleche ').hide();
 
     // Première action au clique

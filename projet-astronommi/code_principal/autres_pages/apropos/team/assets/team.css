@@ -33,7 +33,6 @@ body {
 }
 
 .pc {
-    /* height: 95vh; */
     position: absolute;
     top: 0;
     width: 90vw;
@@ -42,7 +41,6 @@ body {
 }
 
 .ecran {
-    /* border: solid pink; */
     height: 65vh;
     width: 75vw;
     position: absolute;
@@ -114,9 +112,6 @@ a {
 }
 
 .profils {
-    /* border: red solid; */
     display: flex;
     justify-content: space-between;
 }
-
-/* TANIA */

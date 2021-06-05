@@ -10,7 +10,6 @@
 body {
     background-color: rgb(100, 100, 100);
     padding: 1%;
-    /* color: chartreuse; */
     font-family:"Robotesqa" ;
     font-size: 1em;
     overflow: hidden;
@@ -71,7 +70,6 @@ body {
     height: 70vh;
     width: 70vw;
     z-index: 2;
-    /* padding: 5vw 7vw; */
 }
 
 .texte{
