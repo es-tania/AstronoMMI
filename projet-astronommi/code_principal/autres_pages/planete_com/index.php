@@ -36,7 +36,7 @@
         <div class="blocHorizontal">
             <!-- Elements sur la planètes (batiments, personnages etc) -->
             <div class="slide-1">
-                <img src="assets/img/fusee.png" alt="Fusée de décoration" class="fusee">
+                <img src="assets/img/Fusee.png" alt="" class="fusee">
                 <h1 class="destination">Destination :<br>Planète Communication</h1>
                 <div class="cadre">
                     <p class="presentation">
