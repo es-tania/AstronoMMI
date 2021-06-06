@@ -140,9 +140,9 @@ svg {
 }
 
 .mmi {
-    width: 13%;
+    width: 15%;
     position: absolute;
-    top: 7vh;
+    top: 13vh;
     left: 20vw;
     transform: rotate(-100deg);
     transition: 1s;
@@ -365,6 +365,10 @@ textarea {
     background-color: #b8934486;
     border: #805a09d2 2px solid;
     font-family: 'Arial Rounded MT', sans-serif;
+}
+
+textarea{
+    resize: none;
 }
 
 input[type="submit"] {
