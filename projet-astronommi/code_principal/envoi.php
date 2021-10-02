@@ -80,6 +80,7 @@
     } else {
         echo ("<p>Merci d'indiquer votre adresse mail</p>");
     };
+    
     ?>
     <a href="index.php">Retour à l'accueil</a>
 </body>
